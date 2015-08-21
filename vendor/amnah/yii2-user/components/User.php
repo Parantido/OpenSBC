@@ -83,7 +83,7 @@ class User extends \yii\web\User
     }
 
     public function getUserAttribute($attribute = "id") {
-        return $this->getUserAttribute();
+        return $this->email;
     }
 
     /**
