@@ -10,16 +10,15 @@ use yii\bootstrap\Nav;
         <div class="user-panel">
             <div class="pull-left image">
                 <img src="
-                <?=
-                    // TODO
+                <?php
                     // Check for User Preloaded Image
-                    /*if(Yii::$app->user->getProfileAvatar() != null) {
-                        $img = "data:image/png;base64,'" .Yii::$app->user->getProfileAvatar(). "'";
+                    if(!empty(Yii::$app->user->getUserAttribute("img_url"))) {
+                        $img = "data:image/png;base64,'" .Yii::$app->user->getUserAttribute("img_url"). "'";
                     } else {
                         $img = $directoryAsset . "/img/user2-160x160.jpg";
-                    }*/
+                    }
                     // Print Image to IMG Src tag
-                    $img = $directoryAsset . "/img/user2-160x160.jpg";
+                    echo $img;
                 ?>
                 " class="img-circle" alt="User Image"/>
             </div>
