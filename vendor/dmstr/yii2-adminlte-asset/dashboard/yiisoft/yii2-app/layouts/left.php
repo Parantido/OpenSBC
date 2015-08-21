@@ -12,19 +12,18 @@ use yii\bootstrap\Nav;
                 <img src="
                 <?=
                     // Check for User Preloaded Image
-                    //if(Yii::$app->user->getProfileAvatar() != null) {
-                    //    $img = "data:image/png;base64,'" .Yii::$app->user->u. "'";
-                    /*} else {
+                    if(Yii::$app->user->getProfileAvatar() != null) {
+                        $img = "data:image/png;base64,'" .Yii::$app->user->getProfileAvatar(). "'";
+                    } else {
                         $img = $directoryAsset . "/img/user2-160x160.jpg";
-                    }*/
+                    }
                     // Print Image to IMG Src tag
                     $img = $directoryAsset . "/img/user2-160x160.jpg";
                 ?>
                 " class="img-circle" alt="User Image"/>
             </div>
             <div class="pull-left info">
-                <!--<p><?php echo Yii::$app->user->getDisplayName(); ?></p>-->
-                <?php echo Yii::$app->user->email; ?>
+                <p><?php echo Yii::$app->user->getDisplayName(); ?></p>
                 <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
         </div>

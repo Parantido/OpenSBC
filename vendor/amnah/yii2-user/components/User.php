@@ -75,6 +75,14 @@ class User extends \yii\web\User
     }
 
     /**
+     * Retrieve Profile Avatar
+     * @return Blob image format
+     */
+    public function getProfileAvatar() {
+        return $this->getProfileAvatar();
+    }
+
+    /**
      * Check if user can do $permissionName.
      * If "authManager" component is set, this will simply use the default functionality.
      * Otherwise, it will use our custom permission system
