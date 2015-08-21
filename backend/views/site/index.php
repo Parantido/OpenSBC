@@ -15,12 +15,5 @@ $this->title = Yii::$app->name;
 
     <div class="body-content">
 
-        <pre>
-        <?php
-            $user = Yii::$app->getModule("user");
-            echo var_dump($user);
-        ?>
-        </pre>
-
     </div>
 </div>
