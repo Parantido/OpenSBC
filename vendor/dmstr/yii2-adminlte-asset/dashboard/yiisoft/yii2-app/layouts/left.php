@@ -61,7 +61,7 @@ use yii\bootstrap\Nav;
             </li>
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-dashboard"></i> <span>Customers</span>
+                    <i class="fa fa-users"></i> <span>Customers</span>
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
@@ -71,7 +71,7 @@ use yii\bootstrap\Nav;
             </li>
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-map-o"></i> <span>Routing</span>
+                    <i class="fa fa-map-signs"></i> <span>Routing</span>
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
@@ -102,7 +102,7 @@ use yii\bootstrap\Nav;
             </li>
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-dashboard"></i> <span>Resources</span>
+                    <i class="fa fa-trello"></i> <span>Resources</span>
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
@@ -112,7 +112,7 @@ use yii\bootstrap\Nav;
             </li>
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-dashboard"></i> <span>System</span>
+                    <i class="fa fa-cogs"></i> <span>System</span>
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
