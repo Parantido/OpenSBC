@@ -19,7 +19,7 @@ class UserSearch extends User
     {
         return [
             [['id', 'role_id', 'status'], 'integer'],
-            [['email', 'new_email', 'username', 'password', 'auth_key', 'api_key', 'login_ip', 'login_time', 'create_ip', 'create_time', 'update_time', 'ban_time', 'ban_reason', 'profile.full_name'], 'safe'],
+            [['email', 'new_email', 'username', 'password', 'display_name', 'auth_key', 'api_key', 'login_ip', 'login_time', 'create_ip', 'create_time', 'update_time', 'ban_time', 'ban_reason', 'profile.full_name'], 'safe'],
         ];
     }
 
@@ -92,6 +92,7 @@ class UserSearch extends User
             ->andFilterWhere(['like', 'new_email', $this->new_email])
             ->andFilterWhere(['like', 'username', $this->username])
             ->andFilterWhere(['like', 'password', $this->password])
+            ->andFilterWhere(['like', 'display_name', $this->display_name])
             ->andFilterWhere(['like', 'auth_key', $this->auth_key])
             ->andFilterWhere(['like', 'api_key', $this->api_key])
             ->andFilterWhere(['like', 'login_ip', $this->login_ip])

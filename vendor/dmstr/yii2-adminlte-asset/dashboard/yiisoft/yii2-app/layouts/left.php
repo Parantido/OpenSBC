@@ -12,8 +12,8 @@ use yii\bootstrap\Nav;
                 <img src="
                 <?
                     // Check for User Preloaded Image
-                    if(isset(Yii::$app->user->display_name)) {
-                        $img = "data:image/png;base64,'" . Yii::$app->user->display_name . "'";
+                    if(Yii::$app->user->getProfileAvatar() != null) {
+                        $img = "data:image/png;base64,'" .Yii::$app->user->getProfileAvatar(). "'";
                     } else {
                         $img = $directoryAsset . "/img/user2-160x160.jpg";
                     }

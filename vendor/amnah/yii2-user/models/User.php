@@ -467,6 +467,13 @@ class User extends ActiveRecord implements IdentityInterface
         return $default;
     }
 
+    public function getProfileAvatar() {
+        if(isset($this->img_url) && strlen($this->img_url) > 0)
+            return $this->img_url;
+        else
+            return null;
+    }
+
     /**
      * Send email confirmation to user
      *
