@@ -27,7 +27,9 @@ class AdminLteAsset extends AssetBundle
      * @var string|bool Choose skin color, eg. `'skin-blue'` or set `false` to disable skin loading
      * @see https://almsaeedstudio.com/themes/AdminLTE/documentation/index.html#layout
      */
-    public $skin = '_all-skins';
+    // Default
+    // public $skin = '_all-skins';
+    public $skin = 'skin-yellow';
 
     /**
      * @inheritdoc
