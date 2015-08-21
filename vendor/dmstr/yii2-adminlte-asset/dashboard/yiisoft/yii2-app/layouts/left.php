@@ -12,11 +12,11 @@ use yii\bootstrap\Nav;
                 <img src="
                 <?php
                     // Check for User Preloaded Image
-                    if(Yii::$app->user->getProfileAvatar() != null) {
-                        $img = "data:image/png;base64,'" .Yii::$app->user->getProfileAvatar(). "'";
-                    } else {
+                    //if(Yii::$app->user->getProfileAvatar() != null) {
+                        $img = "data:image/png;base64,'" .Yii::$app->user->img_url. "'";
+                    /*} else {
                         $img = $directoryAsset . "/img/user2-160x160.jpg";
-                    }
+                    }*/
                     // Print Image to IMG Src tag
                     echo $img;
                 ?>
