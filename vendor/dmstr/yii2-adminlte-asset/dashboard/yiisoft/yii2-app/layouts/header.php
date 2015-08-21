@@ -232,17 +232,15 @@ use yii\bootstrap\NavBar;
                 <li class="dropdown user user-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <img src="<?= $directoryAsset ?>/img/user2-160x160.jpg" class="user-image" alt="User Image"/>
-                        <span class="hidden-xs">Alexander Pierce</span>
+                        <span class="hidden-xs"><?= Yii::$app->user->getDisplayName() ?></span>
                     </a>
                     <ul class="dropdown-menu">
                         <!-- User image -->
                         <li class="user-header">
-                            <img src="<?= $directoryAsset ?>/img/user2-160x160.jpg" class="img-circle"
-                                 alt="User Image"/>
-
+                            <img src="<?= $directoryAsset ?>/img/user2-160x160.jpg" class="img-circle"  alt="User Image"/>
                             <p>
-                                Alexander Pierce - Web Developer
-                                <small>Member since Nov. 2012</small>
+                                <?= Yii::$app->user->getUserAttribute("display_name"); ?>
+                                <small><?= Yii::$app->user->getUserAttribute("email"); ?></small>
                             </p>
                         </li>
                         <!-- Menu Body -->

@@ -467,6 +467,17 @@ class User extends ActiveRecord implements IdentityInterface
         return $default;
     }
 
+    /**
+     * Return User Attribute value
+     * @param string $default
+     */
+    public function getUserAttribute($attribute = "id") {
+        if(!isset($attribute) && !empty($attribute)) return null;
+        if(empty($this->$attribute)) return null;
+
+        return $this->$attribute;
+    }
+
     public function getProfileAvatar() {
         if(isset($this->img_url) && strlen($this->img_url) > 0)
             return $this->img_url;

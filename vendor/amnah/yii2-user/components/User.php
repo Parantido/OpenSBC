@@ -82,6 +82,10 @@ class User extends \yii\web\User
         return $this->getProfileAvatar();
     }
 
+    public function getUserAttribute($attribute = "id") {
+        return $this->getUserAttribute();
+    }
+
     /**
      * Check if user can do $permissionName.
      * If "authManager" component is set, this will simply use the default functionality.
