@@ -65,24 +65,29 @@ use yii\bootstrap\Nav;
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="<?= \yii\helpers\Url::to(['/customers']) ?>"><span class="fa fa-angle-right"></span> Customers</a>
-                    </li>
+                    <li><a href="<?= \yii\helpers\Url::to(['/customers']) ?>"><span class="fa fa-angle-right"></span> Customers</a></li>
                 </ul>
             </li>
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-map-signs"></i> <span>Routing</span>
+                    <i class="fa fa-credit-card"></i> <span>Rate Decks</span>
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="<?= \yii\helpers\Url::to(['/dr-gateways']) ?>"><span class="fa fa-angle-right"></span> Gateways</a>
-                    </li>
-                    <li><a href="<?= \yii\helpers\Url::to(['/dr-carriers']) ?>"><span class="fa fa-angle-right"></span> Carriers</a>
-                    </li>
-                    <li><a href="<?= \yii\helpers\Url::to(['/dr-rules']) ?>"><span class="fa fa-angle-right"></span> Routing Rules</a>
-                    </li>
-                    <li><a href="<?= \yii\helpers\Url::to(['/dialplan']) ?>"><span class="fa fa-angle-right"></span> Dialplan</a>
-                    </li>
+                    <li><a href="<?= \yii\helpers\Url::to(['/customers']) ?>"><span class="fa fa-angle-right"></span> Customers</a></li>
+                    <li><a href="<?= \yii\helpers\Url::to(['/customers']) ?>"><span class="fa fa-angle-right"></span> Carriers</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-random"></i> <span>Routing</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="<?= \yii\helpers\Url::to(['/dr-gateways']) ?>"><span class="fa fa-angle-right"></span> Gateways</a></li>
+                    <li><a href="<?= \yii\helpers\Url::to(['/dr-carriers']) ?>"><span class="fa fa-angle-right"></span> Carriers</a></li>
+                    <li><a href="<?= \yii\helpers\Url::to(['/dr-rules']) ?>"><span class="fa fa-angle-right"></span> Routing Rules</a></li>
+                    <li><a href="<?= \yii\helpers\Url::to(['/dialplan']) ?>"><span class="fa fa-angle-right"></span> Dialplan</a></li>
                     <!--<li>
                         <a href="#"><i class="fa fa-circle-o"></i> Level One <i class="fa fa-angle-left pull-right"></i></a>
                         <ul class="treeview-menu">
@@ -106,8 +111,7 @@ use yii\bootstrap\Nav;
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="<?= \yii\helpers\Url::to(['/rg-groups']) ?>"><span class="fa fa-angle-right"></span> Resource Groups</a>
-                    </li>
+                    <li><a href="<?= \yii\helpers\Url::to(['/rg-groups']) ?>"><span class="fa fa-angle-right"></span> Resource Groups</a></li>
                 </ul>
             </li>
             <li class="treeview">
@@ -116,8 +120,7 @@ use yii\bootstrap\Nav;
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="<?= \yii\helpers\Url::to(['/user/admin']) ?>"><span class="fa fa-angle-right"></span> Users</a>
-                    </li>
+                    <li><a href="<?= \yii\helpers\Url::to(['/user/admin']) ?>"><span class="fa fa-angle-right"></span> Users</a></li>
                 </ul>
             </li>
         </ul>
