@@ -23,7 +23,8 @@ use yii\bootstrap\Nav;
                 " class="img-circle" alt="User Image"/>
             </div>
             <div class="pull-left info">
-                <p><?php echo Yii::$app->user->getDisplayName(); ?></p>
+                <!--<p><?php echo Yii::$app->user->getDisplayName(); ?></p>-->
+                <?php echo Yii::$app->user->email; ?>
                 <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
         </div>
