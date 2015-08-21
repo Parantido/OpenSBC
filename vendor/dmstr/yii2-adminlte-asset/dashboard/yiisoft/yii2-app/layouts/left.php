@@ -9,7 +9,8 @@ use yii\bootstrap\Nav;
         <!-- Sidebar user panel -->
         <div class="user-panel">
             <div class="pull-left image">
-                <img src="<?=
+                <img src="
+                <?
                     // Check for User Preloaded Image
                     if(isset(Yii::$app->user->display_name)) {
                         $img = "data:image/png;base64,'" . Yii::$app->user->display_name . "'";
@@ -18,7 +19,8 @@ use yii\bootstrap\Nav;
                     }
                     // Print Image to IMG Src tag
                     echo $img;
-                ?>" class="img-circle" alt="User Image"/>
+                ?>
+                " class="img-circle" alt="User Image"/>
             </div>
             <div class="pull-left info">
                 <p><?php echo Yii::$app->user->getDisplayName(); ?></p>
