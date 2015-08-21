@@ -1,0 +1,39 @@
+{
+    "name": "Open SBC",
+    "description": "Yet another Session Border Controller by Techfusion ITc",
+    "keywords": ["sbc", "open", "sip", "telephony"],
+    "homepage": "http://www.techfusion.it/",
+    "type": "project",
+    "license": "BSD-3-Clause",
+    "support": {
+        "issues": "http://www.techfusion.it/trac/",
+        "forum": "http://www.techfusion.it/forum/",
+        "wiki": "http://www.techfusion.it/wiki/",
+        "irc": "irc://opensbc",
+        "source": "http://www.techfusion.it/source/"
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": ">=2.0.4",
+        "yiisoft/yii2-bootstrap": "*",
+        "yiisoft/yii2-swiftmailer": "*",
+        "dmstr/yii2-adminlte-asset": "*",
+        "yiisoft/yii2-gii": "*",
+        "amnah/yii2-user": "~3.0"
+    },
+    "require-dev": {
+        "yiisoft/yii2-codeception": "*",
+        "yiisoft/yii2-debug": "*",
+        "yiisoft/yii2-faker": "*"
+    },
+    "config": {
+        "process-timeout": 1800
+    },
+    "extra": {
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
+    }
+}

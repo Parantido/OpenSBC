@@ -1,0 +1,51 @@
+Message-ID: <dabf3c8bed0e4097724d55188c33ef96@sbc.techfusion.it>
+Date: Sun, 09 Aug 2015 09:57:49 +0000
+Subject: app-backend - Email Confirmation
+From: Open SBC <admin@techfusion.it>
+To: admin@techfusion.it
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_v4_1439114269_1adabad40564ee826ba5cf656b59089b_=_"
+
+
+--_=_swift_v4_1439114269_1adabad40564ee826ba5cf656b59089b_=_
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+app-backend - Email Confirmation
+
+Please confirm your email addr=
+ess by clicking the link below:
+
+http://sbc.techfusion.it/admi=
+n/index.php?r=3Duser%2Fconfirm&key=3DA8kaGqtrmRM2XEXaui4fWD5h3PJhl4fb
+
+--_=_swift_v4_1439114269_1adabad40564ee826ba5cf656b59089b_=_
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.=
+org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org=
+/1999/xhtml">
+<head>
+    <meta http-equiv=3D"Content-Type" con=
+tent=3D"text/html; charset=3DUTF-8" />
+    <title></title>
+    <=
+/head>
+<body>
+
+<h3>app-backend - Email Confirmation</h3>=
+
+
+<p>Please confirm your email address by clicking the link belo=
+w:</p>
+
+<p>http://sbc.techfusion.it/admin/index.php?r=3Duser%2F=
+confirm&key=3DA8kaGqtrmRM2XEXaui4fWD5h3PJhl4fb</p></body>
+</htm=
+l>
+
+
+--_=_swift_v4_1439114269_1adabad40564ee826ba5cf656b59089b_=_--

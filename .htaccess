@@ -1,0 +1,12 @@
+RewriteEngine on
+RewriteCond %{REQUEST_URI} ^/(assets|css|js|ember)
+RewriteRule ^assets/(.*)$ frontend/web/assets/$1 [L]
+RewriteRule ^css/(.*)$ frontend/web/css/$1 [L]
+RewriteRule ^js/(.*)$ web/js/$1 [L]
+RewriteRule ^ember/(.*)$ web/ember/$1 [L]
+RewriteCond %{REQUEST_URI} !^/(frontend|backend)/web/(assets|css|js|ember)/
+RewriteCond %{REQUEST_URI} !index.php
+RewriteCond %{REQUEST_FILENAME} !-f [OR]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ frontend/web/index.php/$1 [L,QSA]
+#RewriteRule (.*) frontend/web/$1 [L]
