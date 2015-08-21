@@ -51,6 +51,26 @@ use yii\bootstrap\Nav;
         <ul class="sidebar-menu">
             <li class="treeview">
                 <a href="#">
+                    <i class="fa fa-dashboard"></i> <span>Monitoring</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="<?= \yii\helpers\Url::to(['/status']) ?>"><span class="fa fa-angle-right"></span> Status</a></li>
+                    <li><a href="<?= \yii\helpers\Url::to(['/cdrs']) ?>"><span class="fa fa-angle-right"></span> Call Details</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-dashboard"></i> <span>Customers</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="<?= \yii\helpers\Url::to(['/customers']) ?>"><span class="fa fa-angle-right"></span> Customers</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
                     <i class="fa fa-map-o"></i> <span>Routing</span>
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
@@ -78,6 +98,16 @@ use yii\bootstrap\Nav;
                             </li>
                         </ul>
                     </li>-->
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-dashboard"></i> <span>Resources</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="<?= \yii\helpers\Url::to(['/rg-groups']) ?>"><span class="fa fa-angle-right"></span> Resource Groups</a>
+                    </li>
                 </ul>
             </li>
             <li class="treeview">
