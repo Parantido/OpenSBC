@@ -75,15 +75,13 @@ class User extends \yii\web\User
     }
 
     /**
-     * Retrieve Profile Avatar
-     * @return Blob image format
+     * Return value of requested user attribute
+     * @param string $attribute
+     * @return string
      */
-    public function getProfileAvatar() {
-        return $this->getProfileAvatar();
-    }
-
     public function getUserAttribute($attribute = "id") {
-        return $this->email;
+        $user = $this->getIdentity();
+        return $user ? $user->getUserAttribute($attribute) : "";
     }
 
     /**
