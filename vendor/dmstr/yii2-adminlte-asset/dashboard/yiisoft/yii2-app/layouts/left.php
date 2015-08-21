@@ -13,7 +13,7 @@ use yii\bootstrap\Nav;
                 <?php
                     // Check for User Preloaded Image
                     if(!empty(Yii::$app->user->getUserAttribute("img_url"))) {
-                        $img = "data:image/png;base64,'" .Yii::$app->user->getUserAttribute("img_url"). "'";
+                        $img = "data:image/png;base64,'" .base64_encode(Yii::$app->user->getUserAttribute("img_url")). "'";
                     } else {
                         $img = $directoryAsset . "/img/user2-160x160.jpg";
                     }
