@@ -20,7 +20,8 @@
         "yiisoft/yii2-swiftmailer": "*",
         "dmstr/yii2-adminlte-asset": "*",
         "yiisoft/yii2-gii": "*",
-        "amnah/yii2-user": "~3.0"
+        "amnah/yii2-user": "~3.0",
+        "kartik-v/yii2-grid": "@dev"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
