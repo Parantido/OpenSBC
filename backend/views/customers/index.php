@@ -39,15 +39,28 @@ $this->params['breadcrumbs'][] = $this->title;
             [
                 'class' => 'kartik\grid\ActionColumn',
                 'urlCreator'    => function($action, $model, $key, $index) {
-                    Modal::begin([
-                        'header' => '<h2>Hello world</h2>',
-                        'toggleButton' => ['label' => 'click me'],
+
+                    /*switch($action) {
+                        case 'view':
+                            break;
+
+                        case 'update':
+                            break;
+
+                        case 'delete':
+                            break;
+                    }*/
+
+                    return Html::a('<span class="glyphicon glyphicon-eye-open"></span>','#', [
+                        'id' => 'activity-view-link',
+                        'title' => Yii::t('yii', 'View'),
+                        'data-toggle' => 'modal',
+                        'data-target' => '#activity-modal',
+                        'data-id' => $key,
+                        'data-pjax' => '0',
+
                     ]);
 
-                    echo 'Action: ' .$action. "<pre>" .print_r($model, true). "</pre>";
-
-                    Modal::end();
-                    return '#';
                 },
                 'viewOptions'   => [ 'title' => 'View Details',    'data-toggle'=>'tooltip' ],
                 'updateOptions' => [ 'title' => 'Update Customer', 'data-toggle'=>'tooltip' ],
