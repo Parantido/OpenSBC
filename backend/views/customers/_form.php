@@ -10,7 +10,7 @@ use yii\bootstrap\ActiveForm;
 
 <div class="customers-form">
 
-    <?php $form = ActiveForm::begin(['layout' => 'horizontal']); ?>
+    <?php $form = ActiveForm::begin(['layout' => 'inline']); ?>
 
     <div class="form-group">
         <?= $form->field($model, 'firstname')->textInput(['maxlength' => true]) ?>
@@ -39,19 +39,21 @@ use yii\bootstrap\ActiveForm;
         <?= $form->field($model, 'ptype3')->textInput(['maxlength' => true]) ?>
     </div>
 
-    <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
+    <div class="form-group">
+        <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
+        <?= $form->field($model, 'skypeid')->textInput(['maxlength' => true]) ?>
+        <?= $form->field($model, 'notes')->textarea(['rows' => 6]) ?>
+    </div>
 
-    <?= $form->field($model, 'skypeid')->textInput(['maxlength' => true]) ?>
+    <div class="form-group">
+        <?= $form->field($model, 'username')->textInput(['maxlength' => true]) ?>
+        <?= $form->field($model, 'password')->passwordInput(['maxlength' => true]) ?>
+        <?= $form->field($model, 'status')->textInput() ?>
+    </div>
 
-    <?= $form->field($model, 'notes')->textarea(['rows' => 6]) ?>
-
-    <?= $form->field($model, 'username')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'password')->passwordInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'status')->textInput() ?>
-
-    <?= $form->field($model, 'domain_id')->textInput() ?>
+    <div class="form-group">
+        <?= $form->field($model, 'domain_id')->textInput() ?>
+    </div>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
