@@ -22,15 +22,13 @@ use yii\widgets\ActiveForm;
         <?= $form->field($model, 'address2')->textInput(['maxlength' => true]) ?>
     </div>
 
-    <?= $form->field($model, 'city')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'country')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'province')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'state')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'zip')->textInput(['maxlength' => true]) ?>
+    <div class="row">
+        <?= $form->field($model, 'city')->textInput(['maxlength' => true]) ?>
+        <?= $form->field($model, 'country')->textInput(['maxlength' => true]) ?>
+        <?= $form->field($model, 'province')->textInput(['maxlength' => true]) ?>
+        <?= $form->field($model, 'state')->textInput(['maxlength' => true]) ?>
+        <?= $form->field($model, 'zip')->textInput(['maxlength' => true]) ?>
+    </div>
 
     <?= $form->field($model, 'phone1')->textInput(['maxlength' => true]) ?>
 
