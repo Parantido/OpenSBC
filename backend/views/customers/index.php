@@ -1,7 +1,6 @@
 <?php
 
 use yii\helpers\Html;
-//use kartik\grid\GridView;
 use kartik\dynagrid\DynaGrid;
 
 /* @var $this yii\web\View */
