@@ -1,7 +1,6 @@
 <?php
 
 use yii\helpers\Html;
-use yii\bootstrap\Modal;
 use kartik\dynagrid\DynaGrid;
 
 /* @var $this yii\web\View */
@@ -40,27 +39,17 @@ $this->params['breadcrumbs'][] = $this->title;
                 'class' => 'kartik\grid\ActionColumn',
                 'urlCreator'    => function($action, $model, $key, $index) {
 
-                    /*switch($action) {
-                        case 'view':
-                            break;
+                    $urlConfig = [];
+                    foreach ($model->primaryKey() as $pk) {
+                        $urlConfig[$pk] = $model->$pk;
+                        $urlConfig['type'] = $model->type;
+                    }
 
-                        case 'update':
-                            break;
-
-                        case 'delete':
-                            break;
-                    }*/
-
-                    return Html::a('<span class="glyphicon glyphicon-eye-open"></span>','#', [
-                        'id' => 'activity-view-link',
-                        'title' => Yii::t('yii', 'View'),
-                        'data-toggle' => 'modal',
-                        'data-target' => '#activity-modal',
-                        'data-id' => $key,
+                    $url = Url::toRoute(array_merge([$action], $urlConfig));
+                    return Html::a('<span class="glyphicon glyphicon-pencil"></span>', $url, [
+                        'title' => \Yii::t('yii', $action),
                         'data-pjax' => '0',
-
                     ]);
-
                 },
                 'viewOptions'   => [ 'title' => 'View Details',    'data-toggle'=>'tooltip' ],
                 'updateOptions' => [ 'title' => 'Update Customer', 'data-toggle'=>'tooltip' ],
