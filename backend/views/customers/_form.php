@@ -10,25 +10,31 @@ use yii\bootstrap\ActiveForm;
 
 <div class="customers-form">
 
-    <?php $form = ActiveForm::begin([
+    <?php
+    $form = ActiveForm::begin([
         'layout' => 'horizontal',
         'fieldConfig' => [
             'template' => "{label}\n{beginWrapper}\n{input}\n{hint}\n{error}\n{endWrapper}",
             'horizontalCssClasses' => [
-                'label' => 'col-sm-4',
-                'offset' => 'col-sm-offset-4',
-                'wrapper' => 'col-sm-8',
+                'label' => 'col-sm-2 col-md-2',
+                'offset' => 'col-sm-offset-3',
+                'wrapper' => 'col-sm-9',
                 'error' => '',
-                'hint' => '',
+                'hint' => 'col-sm-3',
             ],
-        ]
-    ]); ?>
+        ],
+    ]);
+    ?>
 
     <div class="form-group">
-        <?= Html::activeLabel($model, 'firstname', ['label'=>'First Name']); ?>
-        <?= $form->field($model, 'firstname', ['inline' => true, 'enableLabel' => false])->textInput(['maxlength' => true]); ?>
-        <?= Html::activeLabel($model, 'lastname', ['label'=>'Last Name']); ?>
-        <?= $form->field($model, 'lastname', ['inline' => true, 'enableLabel' => false])->textInput(['maxlength' => true]); ?>
+        <?= Html::activeLabel($model, 'firstname', ['label'=>'First Name', 'class'=>'col-sm-2 control-label']); ?>
+        <div class="col-sm-6">
+            <?= $form->field($model, 'firstname', ['inline' => true, 'enableLabel' => false])->textInput(['maxlength' => true]); ?>
+        </div>
+        <?= Html::activeLabel($model, 'lastname', ['label'=>'Last Name', 'class'=>'col-sm-2 control-label']); ?>
+        <div class="col-sm-6">
+            <?= $form->field($model, 'lastname', ['inline' => true, 'enableLabel' => false])->textInput(['maxlength' => true]); ?>
+        </div>
     </div>
 
     <div class="form-group">
