@@ -2,7 +2,7 @@
 
 use yii\helpers\Html;
 use kartik\grid\GridView;
-use kartik\detail\DetailView;
+//use kartik\detail\DetailView;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\CustomersSearch */
@@ -21,13 +21,40 @@ $this->params['breadcrumbs'][] = $this->title;
     </p>
 
     <?php
-        echo GridView::widget([
-            'dataProvider'=> $dataProvider,
-            'filterModel' => $searchModel,
-            'columns' => $gridColumns,
-            'responsive'=>true,
-            'hover'=>true
-        ]);
+    echo GridView::widget([
+        'dataProvider'=> $dataProvider,
+        'filterModel' => $searchModel,
+        'columns' => [
+            ['class' => 'yii\grid\SerialColumn'],
+            //'id',
+            'firstname',
+            'lastname',
+            'address1',
+            // 'address2',
+            // 'city',
+            // 'country',
+            // 'province',
+            // 'state',
+            // 'zip',
+            'phone1',
+            // 'phone2',
+            // 'phone3',
+            // 'ptype1',
+            // 'ptype2',
+            // 'ptype3',
+            'email:email',
+            // 'skypeid',
+            // 'location',
+            // 'notes:ntext',
+            'username',
+            'password',
+            // 'status',
+            // 'domain_id',
+            ['class' => 'yii\grid\ActionColumn'],
+        ],
+        'responsive'=>true,
+        'hover'=>true
+    ]);
     ?>
 
     <?php
