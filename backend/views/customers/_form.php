@@ -14,22 +14,22 @@ use yii\bootstrap\ActiveForm;
 
     <div class="form-group">
         <?= Html::activeLabel($model, 'firstname', ['label'=>'First Name', 'class'=>'col-sm-2 control-label']); ?>
-        <div class="col-sm-4">
+        <div class="col-sm-6">
             <?= $form->field($model, 'firstname', ['inline' => true, 'enableLabel' => false])->textInput(['maxlength' => true]); ?>
         </div>
-        <?= Html::activeLabel($model, 'lastname', ['label'=>'First Name', 'class'=>'col-sm-2 control-label']); ?>
-        <div class="col-sm-4">
+        <?= Html::activeLabel($model, 'lastname', ['label'=>'Last Name', 'class'=>'col-sm-2 control-label']); ?>
+        <div class="col-sm-6">
             <?= $form->field($model, 'lastname', ['inline' => true, 'enableLabel' => false])->textInput(['maxlength' => true]); ?>
         </div>
     </div>
 
     <div class="form-group">
         <?= Html::activeLabel($model, 'address1', ['label'=>'1st Address', 'class'=>'col-sm-2 control-label']); ?>
-        <div class="col-sm-4">
+        <div class="col-sm-6">
             <?= $form->field($model, 'address1', ['inline' => true, 'enableLabel' => false])->textInput(['maxlength' => true]); ?>
         </div>
         <?= Html::activeLabel($model, 'address2', ['label'=>'2nd Address', 'class'=>'col-sm-2 control-label']); ?>
-        <div class="col-sm-4">
+        <div class="col-sm-6">
             <?= $form->field($model, 'address2', ['inline' => true, 'enableLabel' => false])->textInput(['maxlength' => true]); ?>
         </div>
     </div>
