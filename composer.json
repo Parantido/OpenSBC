@@ -22,7 +22,8 @@
         "yiisoft/yii2-gii": "*",
         "amnah/yii2-user": "~3.0",
         "kartik-v/yii2-grid": "@dev",
-        "kartik-v/yii2-detail-view": "*"
+        "kartik-v/yii2-detail-view": "*",
+        "kartik-v/yii2-mpdf": "@dev"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
