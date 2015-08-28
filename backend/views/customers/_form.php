@@ -10,19 +10,19 @@ use yii\widgets\ActiveForm;
 
 <div class="customers-form">
 
-    <?php $form = ActiveForm::begin(); ?>
+    <?php $form = ActiveForm::begin(['layout' => 'horizontal']); ?>
 
-    <div class="row">
+    <div class="form-group">
         <?= $form->field($model, 'firstname')->textInput(['maxlength' => true]) ?>
         <?= $form->field($model, 'lastname')->textInput(['maxlength' => true]) ?>
     </div>
 
-    <div class="row">
+    <div class="form-group">
         <?= $form->field($model, 'address1')->textInput(['maxlength' => true]) ?>
         <?= $form->field($model, 'address2')->textInput(['maxlength' => true]) ?>
     </div>
 
-    <div class="row">
+    <div class="form-group">
         <?= $form->field($model, 'city')->textInput(['maxlength' => true]) ?>
         <?= $form->field($model, 'country')->textInput(['maxlength' => true]) ?>
         <?= $form->field($model, 'province')->textInput(['maxlength' => true]) ?>
@@ -30,23 +30,18 @@ use yii\widgets\ActiveForm;
         <?= $form->field($model, 'zip')->textInput(['maxlength' => true]) ?>
     </div>
 
-    <?= $form->field($model, 'phone1')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'phone2')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'phone3')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'ptype1')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'ptype2')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'ptype3')->textInput(['maxlength' => true]) ?>
+    <div class="form-group">
+        <?= $form->field($model, 'phone1')->textInput(['maxlength' => true]) ?>
+        <?= $form->field($model, 'ptype1')->textInput(['maxlength' => true]) ?>
+        <?= $form->field($model, 'phone2')->textInput(['maxlength' => true]) ?>
+        <?= $form->field($model, 'ptype2')->textInput(['maxlength' => true]) ?>
+        <?= $form->field($model, 'phone3')->textInput(['maxlength' => true]) ?>
+        <?= $form->field($model, 'ptype3')->textInput(['maxlength' => true]) ?>
+    </div>
 
     <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'skypeid')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'location')->textInput() ?>
 
     <?= $form->field($model, 'notes')->textarea(['rows' => 6]) ?>
 
