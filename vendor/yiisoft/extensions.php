@@ -147,4 +147,40 @@ return array (
       '@kartik/mpdf' => $vendorDir . '/kartik-v/yii2-mpdf',
     ),
   ),
+  'kartik-v/yii2-sortable' => 
+  array (
+    'name' => 'kartik-v/yii2-sortable',
+    'version' => '1.2.0.0',
+    'alias' => 
+    array (
+      '@kartik/sortable' => $vendorDir . '/kartik-v/yii2-sortable',
+    ),
+  ),
+  'kartik-v/yii2-widget-select2' => 
+  array (
+    'name' => 'kartik-v/yii2-widget-select2',
+    'version' => '2.0.2.0',
+    'alias' => 
+    array (
+      '@kartik/select2' => $vendorDir . '/kartik-v/yii2-widget-select2',
+    ),
+  ),
+  'kartik-v/yii2-widget-activeform' => 
+  array (
+    'name' => 'kartik-v/yii2-widget-activeform',
+    'version' => '1.4.4.0',
+    'alias' => 
+    array (
+      '@kartik/form' => $vendorDir . '/kartik-v/yii2-widget-activeform',
+    ),
+  ),
+  'kartik-v/yii2-dynagrid' => 
+  array (
+    'name' => 'kartik-v/yii2-dynagrid',
+    'version' => '1.4.2.0',
+    'alias' => 
+    array (
+      '@kartik/dynagrid' => $vendorDir . '/kartik-v/yii2-dynagrid',
+    ),
+  ),
 );
