@@ -1,9 +1,8 @@
 <?php
 
 use yii\helpers\Html;
-use kartik\grid\GridView;
+//use kartik\grid\GridView;
 use kartik\dynagrid\DynaGrid;
-//use kartik\detail\DetailView;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\CustomersSearch */
