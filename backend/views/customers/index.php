@@ -49,8 +49,8 @@ $this->params['breadcrumbs'][] = $this->title;
             // 'domain_id',
             [
                 'class' => 'kartik\grid\ActionColumn',
-                'dropdown' => $this->dropdown,
-                'dropdownOptions' => [ 'class' => 'pull-right' ],
+                //'dropdown' => $this->dropdown,
+                //'dropdownOptions' => [ 'class' => 'pull-right' ],
                 'urlCreator' => function($action, $model, $key, $index) { return '#'; },
                 'viewOptions' => [ 'title' => 'This will launch the book details page. Disabled for this demo!', 'data-toggle'=>'tooltip'],
                 'updateOptions' => [ 'title' => 'This will launch the book update page. Disabled for this demo!', 'data-toggle'=>'tooltip'],
