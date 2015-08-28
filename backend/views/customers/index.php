@@ -1,7 +1,8 @@
 <?php
 
 use yii\helpers\Html;
-use yii\grid\GridView;
+use kartik\grid\GridView;
+use kartik\detail\DetailView;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\CustomersSearch */
@@ -19,41 +20,18 @@ $this->params['breadcrumbs'][] = $this->title;
         <?= Html::a(Yii::t('app', 'Create Customers'), ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
-    <?= GridView::widget([
-        'dataProvider' => $dataProvider,
-        'filterModel' => $searchModel,
-        'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
-            //'id',
-            'firstname',
-            'lastname',
-            'address1',
-            // 'address2',
-            // 'city',
-            // 'country',
-            // 'province',
-            // 'state',
-            // 'zip',
-            'phone1',
-            // 'phone2',
-            // 'phone3',
-            // 'ptype1',
-            // 'ptype2',
-            // 'ptype3',
-            'email:email',
-            // 'skypeid',
-            // 'location',
-            // 'notes:ntext',
-            'username',
-            'password',
-            // 'status',
-            // 'domain_id',
-
-            ['class' => 'yii\grid\ActionColumn'],
-        ],
-    ]); ?>
+    <?php
+        echo GridView::widget([
+            'dataProvider'=> $dataProvider,
+            'filterModel' => $searchModel,
+            'columns' => $gridColumns,
+            'responsive'=>true,
+            'hover'=>true
+        ]);
+    ?>
 
     <?php
+    /*
     $attributes = [
         [
             'group' => true,
@@ -83,7 +61,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'value' => $model->status ?
                 '<span class="label label-success">Yes</span>' :
                 '<span class="label label-danger">No</span>',
-            'type' => \kartik\detail\DetailView::INPUT_SWITCH,
+            'type' => DetailView::INPUT_SWITCH,
             'widgetOptions' => [
                 'pluginOptions' => [
                     'onText' => 'Yes',
@@ -93,13 +71,14 @@ $this->params['breadcrumbs'][] = $this->title;
         ],
     ];
 
-    echo \kartik\detail\DetailView::widget([
+    echo DetailView::widget([
         'model' => $model,
         'attributes' => $attributes,
         'deleteOptions' => [
             'params' => ['id' => $model->id, 'custom_param' => true],
         ],
     ]);
+    */
     ?>
 
 </div>

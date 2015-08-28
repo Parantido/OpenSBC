@@ -12,7 +12,11 @@ return [
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log', 'debug'],
-    'modules' => [ ],
+    'modules' => [
+        'gridview' =>  [
+            'class' => '\kartik\grid\Module'
+        ]
+    ],
     'components' => [
         'view' => [
             'theme' => [
