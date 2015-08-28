@@ -47,7 +47,16 @@ $this->params['breadcrumbs'][] = $this->title;
             'password',
             // 'status',
             // 'domain_id',
-            ['class' => 'yii\grid\ActionColumn'],
+            [
+                'class' => 'kartik\grid\ActionColumn',
+                'dropdown' => $this->dropdown,
+                'dropdownOptions' => [ 'class' => 'pull-right' ],
+                'urlCreator' => function($action, $model, $key, $index) { return '#'; },
+                'viewOptions' => [ 'title' => 'This will launch the book details page. Disabled for this demo!', 'data-toggle'=>'tooltip'],
+                'updateOptions' => [ 'title' => 'This will launch the book update page. Disabled for this demo!', 'data-toggle'=>'tooltip'],
+                'deleteOptions' => [ 'title' => 'This will launch the book delete action. Disabled for this demo!', 'data-toggle'=>'tooltip'],
+                'headerOptions' => [ 'class' => 'kartik-sheet-style'],
+            ],
         ];
 
         echo DynaGrid::widget([
@@ -62,57 +71,6 @@ $this->params['breadcrumbs'][] = $this->title;
             'options' => [ 'id' => 'opensbc-1211' ] // a unique identifier is important
         ]);
 
-    ?>
-
-    <?php
-    /*
-    $attributes = [
-        [
-            'group' => true,
-            'label' => 'Customer Name',
-            'rowOptions' => ['class' => 'info']
-        ],
-        [
-            'columns' => [
-                [
-                    'attribute' => 'firstname',
-                    'format' => 'raw',
-                    'value' => '<kbd>' .$model->firstname. '</kbd>',
-                    'valueColOptions' => ['style'=>'width:30%']
-                ],
-                [
-                    'attribute' => 'lastname',
-                    'format' => 'raw',
-                    'value' => '<kbd>' .$model->lastname. '</kbd>',
-                    'valueColOptions' => ['style'=>'width:30%']
-                ],
-            ],
-        ],
-        [
-            'attribute' => 'status',
-            'label' => 'Available?',
-            'format' => 'raw',
-            'value' => $model->status ?
-                '<span class="label label-success">Yes</span>' :
-                '<span class="label label-danger">No</span>',
-            'type' => DetailView::INPUT_SWITCH,
-            'widgetOptions' => [
-                'pluginOptions' => [
-                    'onText' => 'Yes',
-                    'offText' => 'No',
-                ]
-            ]
-        ],
-    ];
-
-    echo DetailView::widget([
-        'model' => $model,
-        'attributes' => $attributes,
-        'deleteOptions' => [
-            'params' => ['id' => $model->id, 'custom_param' => true],
-        ],
-    ]);
-    */
     ?>
 
 </div>
