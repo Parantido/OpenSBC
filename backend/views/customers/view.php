@@ -55,4 +55,40 @@ $this->params['breadcrumbs'][] = $this->title;
         ],
     ]) ?>
 
+    <?php
+    $attributes = [
+        [
+            'group' => true,
+            'label' => 'Customer Name',
+            'rowOptions' => ['class' => 'info']
+        ],
+        [
+            'columns' => [
+                [
+                    'attribute' => 'firstname',
+                    'format' => 'raw',
+                    'value' => '<kbd>' .$model->firstname. '</kbd>',
+                    'valueColOptions' => ['style'=>'width:30%'],
+                    'displayOnly' => true
+                ],
+                [
+                    'attribute' => 'lastname',
+                    'format' => 'raw',
+                    'value' => '<kbd>' .$model->lastname. '</kbd>',
+                    'valueColOptions' => ['style'=>'width:30%'],
+                    'displayOnly' => true
+                ],
+            ],
+        ],
+    ];
+
+    echo DetailView::widget([
+        'model' => $model,
+        'attributes' => $attributes,
+        'deleteOptions' => [
+            'params' => ['id' => $model->id, 'custom_param' => true],
+        ],
+    ]);
+    ?>
+
 </div>
