@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use kartik\grid\GridView;
+use kartik\dynagrid\DynaGrid;
 //use kartik\detail\DetailView;
 
 /* @var $this yii\web\View */
@@ -21,10 +22,8 @@ $this->params['breadcrumbs'][] = $this->title;
     </p>
 
     <?php
-    echo \kartik\grid\GridView::widget([
-        'dataProvider'=> $dataProvider,
-        'filterModel' => $searchModel,
-        'columns' => [
+        // Define Columns to show
+        $columns = [
             ['class' => 'yii\grid\SerialColumn'],
             //'id',
             'firstname',
@@ -51,10 +50,20 @@ $this->params['breadcrumbs'][] = $this->title;
             // 'status',
             // 'domain_id',
             ['class' => 'yii\grid\ActionColumn'],
-        ],
-        'responsive'=>true,
-        'hover'=>true
-    ]);
+        ];
+
+        echo DynaGrid::widget([
+            'columns' => $columns,
+            'storage' => DynaGrid::TYPE_COOKIE,
+            'theme' => 'panel-danger',
+            'gridOptions' => [
+                'dataProvider' => $dataProvider,
+                'filterModel'  => $searchModel,
+                'panel' => ['heading'=>'<h3 class="panel-title">Library</h3>'],
+            ],
+            'options' => [ 'id' => 'opensbc-1211' ] // a unique identifier is important
+        ]);
+
     ?>
 
     <?php
