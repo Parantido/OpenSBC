@@ -15,7 +15,11 @@ use yii\bootstrap\ActiveForm;
     <div class="form-group">
         <?= Html::activeLabel($model, 'firstname', ['label'=>'First Name', 'class'=>'col-sm-2 control-label']); ?>
         <div class="col-sm-2">
-            <?= $form->field($model, 'firstname')->textInput(['maxlength' => true])->label(null); ?>
+            <?= $form->field($model, 'firstname', ['inline' => true, 'enableLabel' => false])->textInput(['maxlength' => true]); ?>
+        </div>
+        <?= Html::activeLabel($model, 'firstname', ['label'=>'First Name', 'class'=>'col-sm-2 control-label']); ?>
+        <div class="col-sm-2">
+            <?= $form->field($model, 'firstname', ['inline' => true, 'enableLabel' => false])->textInput(['maxlength' => true]); ?>
         </div>
 
         <!--<?= $form->field($model, 'firstname')->textInput(['maxlength' => true]); ?>
