@@ -21,7 +21,7 @@ $this->params['breadcrumbs'][] = $this->title;
     </p>
 
     <?php
-    echo GridView::widget([
+    echo \kartik\grid\GridView::widget([
         'dataProvider'=> $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [

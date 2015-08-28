@@ -5,7 +5,12 @@ return [
     'modules' => [
         'user' => [
             'class' => 'amnah\yii2\user\Module',
-            // set custom module properties here ...
+        ],
+        'dynagrid'=>[
+            'class'=>'\kartik\dynagrid\Module',
+        ],
+        'gridview'=>[
+            'class'=>'\kartik\grid\Module',
         ],
         'debug' => [
             'class' => 'yii\debug\Module',
