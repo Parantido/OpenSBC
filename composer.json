@@ -21,7 +21,8 @@
         "dmstr/yii2-adminlte-asset": "*",
         "yiisoft/yii2-gii": "*",
         "amnah/yii2-user": "~3.0",
-        "kartik-v/yii2-grid": "@dev"
+        "kartik-v/yii2-grid": "@dev",
+        "kartik-v/yii2-detail-view": "*"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
