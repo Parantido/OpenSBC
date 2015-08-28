@@ -14,21 +14,24 @@ use yii\bootstrap\ActiveForm;
 
     <div class="form-group">
         <?= Html::activeLabel($model, 'firstname', ['label'=>'First Name', 'class'=>'col-sm-2 control-label']); ?>
-        <div class="col-sm-2">
+        <div class="col-sm-4">
             <?= $form->field($model, 'firstname', ['inline' => true, 'enableLabel' => false])->textInput(['maxlength' => true]); ?>
         </div>
-        <?= Html::activeLabel($model, 'firstname', ['label'=>'First Name', 'class'=>'col-sm-2 control-label']); ?>
-        <div class="col-sm-2">
-            <?= $form->field($model, 'firstname', ['inline' => true, 'enableLabel' => false])->textInput(['maxlength' => true]); ?>
+        <?= Html::activeLabel($model, 'lastname', ['label'=>'First Name', 'class'=>'col-sm-2 control-label']); ?>
+        <div class="col-sm-4">
+            <?= $form->field($model, 'lastname', ['inline' => true, 'enableLabel' => false])->textInput(['maxlength' => true]); ?>
         </div>
-
-        <!--<?= $form->field($model, 'firstname')->textInput(['maxlength' => true]); ?>
-        <?= $form->field($model, 'lastname')->textInput(['maxlength' => true]); ?>-->
     </div>
 
     <div class="form-group">
-        <?= $form->field($model, 'address1')->textInput(['maxlength' => true]) ?>
-        <?= $form->field($model, 'address2')->textInput(['maxlength' => true]) ?>
+        <?= Html::activeLabel($model, 'address1', ['label'=>'1st Address', 'class'=>'col-sm-2 control-label']); ?>
+        <div class="col-sm-4">
+            <?= $form->field($model, 'address1', ['inline' => true, 'enableLabel' => false])->textInput(['maxlength' => true]); ?>
+        </div>
+        <?= Html::activeLabel($model, 'address2', ['label'=>'2nd Address', 'class'=>'col-sm-2 control-label']); ?>
+        <div class="col-sm-4">
+            <?= $form->field($model, 'address2', ['inline' => true, 'enableLabel' => false])->textInput(['maxlength' => true]); ?>
+        </div>
     </div>
 
     <div class="form-group">
