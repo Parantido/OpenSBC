@@ -66,17 +66,30 @@ $this->params['breadcrumbs'][] = $this->title;
                     'attribute' => 'firstname',
                     'format' => 'raw',
                     'value' => '<kbd>' .$model->firstname. '</kbd>',
-                    'valueColOptions' => ['style'=>'width:30%'],
-                    'displayOnly' => true
+                    'valueColOptions' => ['style'=>'width:30%']
                 ],
                 [
                     'attribute' => 'lastname',
                     'format' => 'raw',
                     'value' => '<kbd>' .$model->lastname. '</kbd>',
-                    'valueColOptions' => ['style'=>'width:30%'],
-                    'displayOnly' => true
+                    'valueColOptions' => ['style'=>'width:30%']
                 ],
             ],
+        ],
+        [
+            'attribute' => 'status',
+            'label' => 'Available?',
+            'format' => 'raw',
+            'value' => $model->status ?
+                '<span class="label label-success">Yes</span>' :
+                '<span class="label label-danger">No</span>',
+            'type' => DetailView::INPUT_SWITCH,
+            'widgetOptions' => [
+                'pluginOptions' => [
+                    'onText' => 'Yes',
+                    'offText' => 'No',
+                ]
+            ]
         ],
     ];
 
