@@ -1,6 +1,7 @@
 <?php
 
 use yii\helpers\Html;
+use yii\bootstrap\Modal;
 use kartik\dynagrid\DynaGrid;
 
 /* @var $this yii\web\View */
@@ -15,47 +16,43 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
-    <p>
-        <?= Html::a(Yii::t('app', 'Create Customers'), ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
-
     <?php
+        // http://demos.krajee.com/detail-view
+        /*Modal::begin([
+            'header' => '<h4 class="modal-title">Detail View Demo</h4>',
+            'toggleButton' => ['label' => '<i class="glyphicon glyphicon-th-list"></i> Detail View in Modal', 'class' => 'btn btn-primary']
+        ]);
+        echo DetailView::widget($settings); // refer the demo page for widget settings
+        Modal::end();*/
+
         // Define Columns to show
         $columns = [
             ['class' => 'yii\grid\SerialColumn'],
-            //'id',
             'firstname',
             'lastname',
             'address1',
-            // 'address2',
-            // 'city',
-            // 'country',
-            // 'province',
-            // 'state',
-            // 'zip',
             'phone1',
-            // 'phone2',
-            // 'phone3',
-            // 'ptype1',
-            // 'ptype2',
-            // 'ptype3',
             'email:email',
-            // 'skypeid',
-            // 'location',
-            // 'notes:ntext',
             'username',
             'password',
-            // 'status',
             // 'domain_id',
             [
                 'class' => 'kartik\grid\ActionColumn',
-                //'dropdown' => $this->dropdown,
-                //'dropdownOptions' => [ 'class' => 'pull-right' ],
-                'urlCreator' => function($action, $model, $key, $index) { return '#'; },
-                'viewOptions' => [ 'title' => 'This will launch the book details page. Disabled for this demo!', 'data-toggle'=>'tooltip'],
-                'updateOptions' => [ 'title' => 'This will launch the book update page. Disabled for this demo!', 'data-toggle'=>'tooltip'],
-                'deleteOptions' => [ 'title' => 'This will launch the book delete action. Disabled for this demo!', 'data-toggle'=>'tooltip'],
-                'headerOptions' => [ 'class' => 'kartik-sheet-style'],
+                'urlCreator'    => function($action, $model, $key, $index) {
+                    Modal::begin([
+                        'header' => '<h2>Hello world</h2>',
+                        'toggleButton' => ['label' => 'click me'],
+                    ]);
+
+                    echo 'Action: ' .$action. "<pre>" .print_r($model, true). "</pre>";
+
+                    Modal::end();
+                    return '#';
+                },
+                'viewOptions'   => [ 'title' => 'View Details',    'data-toggle'=>'tooltip' ],
+                'updateOptions' => [ 'title' => 'Update Customer', 'data-toggle'=>'tooltip' ],
+                'deleteOptions' => [ 'title' => 'Delete Customer', 'data-toggle'=>'tooltip' ],
+                'headerOptions' => [ 'class' => 'kartik-sheet-style' ],
             ],
         ];
 
@@ -66,7 +63,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'gridOptions' => [
                 'dataProvider' => $dataProvider,
                 'filterModel'  => $searchModel,
-                'panel' => ['heading'=>'<h3 class="panel-title">Library</h3>'],
+                'panel' => ['heading'=>'<h3 class="panel-title">Customers List</h3>'],
             ],
             'options' => [ 'id' => 'opensbc-1211' ] // a unique identifier is important
         ]);
