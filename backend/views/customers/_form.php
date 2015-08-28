@@ -10,7 +10,7 @@ use yii\bootstrap\ActiveForm;
 
 <div class="customers-form">
 
-    <?php $form = ActiveForm::begin(['layout' => 'inline']); ?>
+    <?php $form = ActiveForm::begin(['layout' => 'horizontal']); ?>
 
     <div class="form-group">
         <?= Html::activeLabel($model, 'firstname', ['label'=>'First Name', 'class'=>'col-sm-2 control-label']); ?>
