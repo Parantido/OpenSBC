@@ -13,8 +13,13 @@ use yii\bootstrap\ActiveForm;
     <?php $form = ActiveForm::begin(['layout' => 'inline']); ?>
 
     <div class="form-group">
-        <?= $form->field($model, 'firstname')->textInput(['maxlength' => true]) ?>
-        <?= $form->field($model, 'lastname')->textInput(['maxlength' => true]) ?>
+        <?= Html::activeLabel($model, 'firstname', ['label'=>'First Name', 'class'=>'col-sm-2 control-label']) ?>
+        <div class="col-sm-2">
+            <?= $form->field($model, 'firstname', ['showLabels' => false])->textInput(['placeholder' => 'First Name']); ?>
+        </div>
+
+        <!--<?= $form->field($model, 'firstname')->textInput(['maxlength' => true]) ?>
+        <?= $form->field($model, 'lastname')->textInput(['maxlength' => true]) ?>-->
     </div>
 
     <div class="form-group">
