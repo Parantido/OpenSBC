@@ -4,6 +4,7 @@ use yii\helpers\Html;
 use kartik\widgets\ActiveForm;
 use kartik\builder\Form;
 use app\models\Domain;
+use app\models\Countries;
 use yii\helpers\ArrayHelper;
 use kartik\depdrop\DepDrop;
 
@@ -18,7 +19,7 @@ use kartik\depdrop\DepDrop;
 
     <?php
     $domains_list = ArrayHelper::map(Domain::find()->all(), 'id', 'domain');
-    $countries_list = ArrayHelper::map(Domain::find()->where(['countries_type' => 1])->all(), 'id', 'name');
+    $countries_list = ArrayHelper::map(Countries::find()->where(['countries_type' => 1])->all(), 'id', 'name');
 
     $form = ActiveForm::begin(['type' => ActiveForm::TYPE_HORIZONTAL]); echo Form::widget([
         'model' => $model,
