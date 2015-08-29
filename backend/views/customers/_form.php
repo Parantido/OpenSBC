@@ -3,6 +3,7 @@
 use yii\helpers\Html;
 use kartik\widgets\ActiveForm;
 use kartik\builder\Form;
+use app\models\Domain;
 use kartik\datecontrol\DateControl;
 
 /**
@@ -15,7 +16,7 @@ use kartik\datecontrol\DateControl;
 <div class="customers-form">
 
     <?php
-    $domains_list = \app\models\Domain::findAll();
+    $domains_list = Domain::find()->all();
 
     $form = ActiveForm::begin(['type'=>ActiveForm::TYPE_HORIZONTAL]); echo Form::widget([
         'model' => $model,
