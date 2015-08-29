@@ -73,9 +73,11 @@ $this->params['breadcrumbs'][] = $this->title;
         // Register CRUD Java Script Handler
         $this->registerJs(
             "function init_click_handlers(){
+                var modelId = $(this).closest('tr').data('key');
+                alert('This: ' + modelId);
                 $('.activity-view-link').click(function() {
                     $.get(
-                        'modelid', {
+                        'view', {
                             id: $(this).closest('tr').data('key')
                         },
                         function (data) {
@@ -86,7 +88,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 });
                 $('.activity-update-link').click(function() {
                     $.get(
-                        'modelid', {
+                        'update', {
                             id: $(this).closest('tr').data('key')
                         },
                         function (data) {
@@ -97,7 +99,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 });
                 $('.activity-delete-link').click(function() {
                     $.get(
-                        'modelid', {
+                        'delete', {
                             id: $(this).closest('tr').data('key')
                         },
                         function (data) {
