@@ -33,7 +33,7 @@ use kartik\depdrop\DepDrop;
             'address1'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter 1st Address...', 'maxlength'=>200]],
             'address2'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter 2nd Address...', 'maxlength'=>200]],
             'state'=>['type'=> Form::INPUT_DROPDOWN_LIST, 'items' => $countries_list, 'options'=>['id' => 'state-id', 'placeholder'=>'Enter State...', 'maxlength'=>50]],
-            'city'=>['type'=> Form::INPUT_WIDGET, 'widgetClass' => DepDrop::classname(), 'options'=>['id' => 'cities-id', 'placeholder'=>'Select City...', 'maxlength'=>50, 'pluginOptions' => [
+            'city'=>['type'=> Form::INPUT_WIDGET, 'widgetClass' => DepDrop::classname(), 'options'=>['id' => 'cities-id', 'maxlength'=>50, 'pluginOptions' => [
                 'depends' => ['state-id'],
                 'placeholder' => 'Select City...',
                 'url' => \yii\helpers\Url::to(['/customers/getCities'])
