@@ -34,8 +34,8 @@ $this->params['breadcrumbs'][] = $this->title;
                 'class' => 'kartik\grid\ActionColumn',
                 'buttons' => [
                     'view' => function ($url, $model, $key) {
-                        return Html::a('<span class="glyphicon glyphicon-eye-open"></span>','#', [
-                            'id' => 'activity-view-link',
+                        return Html::a('<span class="glyphicon glyphicon-eye-open"></span>',Url::to(['/customers/update', 'id' => $key]), [
+                            'class' => 'activity-view-link',
                             'value' => Url::to(['/customers/update', 'id' => $key]),
                             'title' => Yii::t('yii', 'View'),
                             'data-toggle' => 'modal',
