@@ -29,7 +29,7 @@ use kartik\datecontrol\DateControl;
 
             'status'=>['type'=> Form::INPUT_DROPDOWN_LIST, 'items' => ['Active', 'Disabled'],'options'=>['placeholder'=>'Enter Status...']],
 
-            'domain_id'=>['type'=> Form::INPUT_DROPDOWN_LIST, 'items' => $domains_list, 'options'=>['placeholder'=>'Enter Domain ID...']],
+            'domain_id'=>['type'=> Form::INPUT_DROPDOWN_LIST, 'items' => [], 'options'=>['placeholder'=>'Enter Domain ID...']],
 
             'address1'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter 1st Address...', 'maxlength'=>200]],
 
