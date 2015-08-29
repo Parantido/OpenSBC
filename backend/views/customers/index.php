@@ -84,6 +84,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             id: $(this).closest('tr').data('key')
                         },
                         function (data) {
+                            alert('Data: ' + data.toString());
                             $('#activity-modal-view').find('.modal-body').html(data);
                             $('#activity-modal-view').modal();
                         }
