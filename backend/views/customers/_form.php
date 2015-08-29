@@ -4,6 +4,7 @@ use yii\helpers\Html;
 use kartik\widgets\ActiveForm;
 use kartik\builder\Form;
 use app\models\Domain;
+use yii\helpers\ArrayHelper;
 use kartik\datecontrol\DateControl;
 
 /**
@@ -16,7 +17,7 @@ use kartik\datecontrol\DateControl;
 <div class="customers-form">
 
     <?php
-    $domains_list = Domain::find()->all();
+    $domains_list = ArrayHelper::map(Domain::find()->all(), 'id', 'domain');
 
     $form = ActiveForm::begin(['type'=>ActiveForm::TYPE_HORIZONTAL]); echo Form::widget([
         'model' => $model,
@@ -29,7 +30,7 @@ use kartik\datecontrol\DateControl;
 
             'status'=>['type'=> Form::INPUT_DROPDOWN_LIST, 'items' => ['Active', 'Disabled'],'options'=>['placeholder'=>'Enter Status...']],
 
-            'domain_id'=>['type'=> Form::INPUT_DROPDOWN_LIST, 'items' => [], 'options'=>['placeholder'=>'Enter Domain ID...']],
+            'domain_id'=>['type'=> Form::INPUT_DROPDOWN_LIST, 'items' => $domains_list, 'label' => 'domain', 'options'=>['placeholder'=>'Enter Domain ID...']],
 
             'address1'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter 1st Address...', 'maxlength'=>200]],
 
