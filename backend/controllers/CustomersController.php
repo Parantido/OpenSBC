@@ -120,7 +120,7 @@ class CustomersController extends Controller
                 $out = [];
                 $cities = Countries::find()->where(['parent_id' => $parents[0], 'countries_type' => '1'])->all();
                 foreach($cities as $city) {
-                    $entry = ['id' => $city->id, 'name' => $city->name];
+                    $entry = ['id' => $city->countries_id, 'name' => $city->name];
                     array_push($out, $entry);
                 }
                 echo Json::encode(['output' => $out, 'selected' => '']);
