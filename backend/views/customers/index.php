@@ -7,6 +7,7 @@ use yii\bootstrap\Modal;
 use kartik\dynagrid\DynaGrid;
 
 /* @var $this yii\web\View */
+/* @var $selectedModel app\models\Customers */
 /* @var $searchModel app\models\CustomersSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
@@ -19,6 +20,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <?php
+        $selectedModel = null;
         // Define Columns to show
         $columns = [
             ['class' => 'yii\grid\SerialColumn'],
@@ -34,9 +36,9 @@ $this->params['breadcrumbs'][] = $this->title;
                 'class' => 'kartik\grid\ActionColumn',
                 'buttons' => [
                     'view' => function ($url, $model, $key) {
-                        return Html::a('<span class="glyphicon glyphicon-eye-open"></span>',Url::to(['/customers/update', 'id' => $key]), [
+                        return Html::a('<span class="glyphicon glyphicon-eye-open"></span>','#', [
                             'class' => 'activity-view-link',
-                            'value' => Url::to(['/customers/update', 'id' => $key]),
+                            'value' => $url,
                             'title' => Yii::t('yii', 'View'),
                             'data-toggle' => 'modal',
                             'data-target' => '#activity-modal-view',
@@ -46,7 +48,8 @@ $this->params['breadcrumbs'][] = $this->title;
                     },
                     'update' => function ($url, $model, $key) {
                         return Html::a('<span class="glyphicon glyphicon-pencil"></span>','#', [
-                            'id' => 'activity-update-link',
+                            'class' => 'activity-update-link',
+                            'value' => $url,
                             'title' => Yii::t('yii', 'Update'),
                             'data-toggle' => 'modal',
                             'data-target' => '#activity-modal-update',
@@ -55,8 +58,10 @@ $this->params['breadcrumbs'][] = $this->title;
                         ]);
                     },
                     'delete' => function ($url, $model, $key) {
+                        $selectedModel = $model;
                         return Html::a('<span class="glyphicon glyphicon-remove"></span>','#', [
-                            'id' => 'activity-delete-link',
+                            'class' => 'activity-delete-link',
+                            'value' => $url,
                             'title' => Yii::t('yii', 'Delete'),
                             'data-toggle' => 'modal',
                             'data-target' => '#activity-modal-delete',
@@ -70,16 +75,15 @@ $this->params['breadcrumbs'][] = $this->title;
         ];
 
         // Register CRUD Java Script Handler
-        /*$this->registerJs(
+        $this->registerJs(
             "function init_click_handlers(){
+                alert('Initializing');
                 $('.activity-view-link').click(function() {
                     $.get(
                         'view', {
                             id: $(this).closest('tr').data('key')
                         },
                         function (data) {
-                            var modelId = $(this).closest('tr').data('key');
-                            alert('This: ' + modelId);
                             $('#activity-modal-view').find('.modal-body').html(data);
                             $('#activity-modal-view').modal();
                         }
@@ -113,7 +117,7 @@ $this->params['breadcrumbs'][] = $this->title;
             $('#datagrid-pjax-id').on('pjax:success', function() {
                 init_click_handlers(); // Reactivate DataGrid click action handlers every update (pagination)
             });"
-        );*/
+        );
 
         // Datagrid Component
         Pjax::begin(['id' => 'datagrid-pjax-id']);
@@ -131,13 +135,13 @@ $this->params['breadcrumbs'][] = $this->title;
         Pjax::end();
 
         // Datagrid View Action Modal Popup
-        /*Modal::begin([
+        Modal::begin([
             'id' => 'activity-modal-view',
             'header' => '<h4 class="modal-title">View Customer</h4>',
             'footer' => '<a href="#" class="btn btn-primary" data-dismiss="modal">Close</a>',
 
         ]); ?>
-        <div class="well"></div>
+        <div class="well"><pre><?php print_r($selectedModel); ?></pre></div>
         <?php Modal::end();
 
         // Datagrid Update Action Modal Popup
@@ -158,7 +162,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
         ]); ?>
         <div class="well"></div>
-        <?php Modal::end();*/
+        <?php Modal::end();
     ?>
 
 </div>
