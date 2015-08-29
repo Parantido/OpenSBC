@@ -1,90 +1,77 @@
 <?php
 
 use yii\helpers\Html;
-use yii\bootstrap\ActiveForm;
+use kartik\widgets\ActiveForm;
+use kartik\builder\Form;
+use kartik\datecontrol\DateControl;
 
-/* @var $this yii\web\View */
-/* @var $model app\models\Customers */
-/* @var $form yii\widgets\ActiveForm */
+/**
+ * @var yii\web\View $this
+ * @var app\models\Customers $model
+ * @var yii\widgets\ActiveForm $form
+ */
 ?>
 
 <div class="customers-form">
 
-    <?php
-    $form = ActiveForm::begin([
-        'layout' => 'horizontal',
-        'fieldConfig' => [
-            'template' => "{label}\n{beginWrapper}\n{input}\n{hint}\n{error}\n{endWrapper}",
-            'horizontalCssClasses' => [
-                'label' => 'col-sm-2 col-md-2',
-                'offset' => 'col-sm-offset-3',
-                'wrapper' => 'col-sm-9',
-                'error' => '',
-                'hint' => 'col-sm-3',
-            ],
-        ],
+    <?php $form = ActiveForm::begin(['type'=>ActiveForm::TYPE_HORIZONTAL]); echo Form::widget([
+
+    'model' => $model,
+    'form' => $form,
+    'columns' => 1,
+    'attributes' => [
+
+'location'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Location...']], 
+
+'status'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Status...']], 
+
+'domain_id'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Domain ID...']], 
+
+'notes'=>['type'=> Form::INPUT_TEXTAREA, 'options'=>['placeholder'=>'Enter Notes...','rows'=> 6]], 
+
+'firstname'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter First Name...', 'maxlength'=>50]], 
+
+'lastname'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Last Name...', 'maxlength'=>50]], 
+
+'city'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter City...', 'maxlength'=>50]], 
+
+'state'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter State...', 'maxlength'=>50]], 
+
+'phone1'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter 1st Phone...', 'maxlength'=>50]], 
+
+'phone2'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter 2nd Phone...', 'maxlength'=>50]], 
+
+'phone3'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter 3rd Phone...', 'maxlength'=>50]], 
+
+'ptype1'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter 1st Phone Type...', 'maxlength'=>50]], 
+
+'ptype2'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter 2nd Phone Type...', 'maxlength'=>50]], 
+
+'ptype3'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter 3rd Phone Type...', 'maxlength'=>50]], 
+
+'email'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Email...', 'maxlength'=>50]], 
+
+'username'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Username...', 'maxlength'=>50]], 
+
+'address1'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter 1st Address...', 'maxlength'=>200]], 
+
+'address2'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter 2nd Address...', 'maxlength'=>200]], 
+
+'country'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Country...', 'maxlength'=>255]], 
+
+'province'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Province...', 'maxlength'=>255]], 
+
+'skypeid'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Skype Id...', 'maxlength'=>255]], 
+
+'password'=>['type'=> Form::INPUT_PASSWORD, 'options'=>['placeholder'=>'Enter Password...', 'maxlength'=>255]], 
+
+'zip'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Zip...', 'maxlength'=>12]], 
+
+    ]
+
+
     ]);
-    ?>
-
-    <div class="form-group">
-        <?= Html::activeLabel($model, 'firstname', ['label'=>'First Name', 'class'=>'col-sm-2 control-label']); ?>
-        <div class="col-sm-6">
-            <?= $form->field($model, 'firstname', ['inline' => true, 'enableLabel' => false])->textInput(['maxlength' => true]); ?>
-        </div>
-        <?= Html::activeLabel($model, 'lastname', ['label'=>'Last Name', 'class'=>'col-sm-2 control-label']); ?>
-        <div class="col-sm-6">
-            <?= $form->field($model, 'lastname', ['inline' => true, 'enableLabel' => false])->textInput(['maxlength' => true]); ?>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <?= Html::activeLabel($model, 'address1', ['label'=>'1st Address', 'class'=>'col-sm-2 control-label']); ?>
-        <div class="col-sm-6">
-            <?= $form->field($model, 'address1', ['inline' => true, 'enableLabel' => false])->textInput(['maxlength' => true]); ?>
-        </div>
-        <?= Html::activeLabel($model, 'address2', ['label'=>'2nd Address', 'class'=>'col-sm-2 control-label']); ?>
-        <div class="col-sm-6">
-            <?= $form->field($model, 'address2', ['inline' => true, 'enableLabel' => false])->textInput(['maxlength' => true]); ?>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <?= $form->field($model, 'city')->textInput(['maxlength' => true]) ?>
-        <?= $form->field($model, 'country')->textInput(['maxlength' => true]) ?>
-        <?= $form->field($model, 'province')->textInput(['maxlength' => true]) ?>
-        <?= $form->field($model, 'state')->textInput(['maxlength' => true]) ?>
-        <?= $form->field($model, 'zip')->textInput(['maxlength' => true]) ?>
-    </div>
-
-    <div class="form-group">
-        <?= $form->field($model, 'phone1')->textInput(['maxlength' => true]) ?>
-        <?= $form->field($model, 'ptype1')->textInput(['maxlength' => true]) ?>
-        <?= $form->field($model, 'phone2')->textInput(['maxlength' => true]) ?>
-        <?= $form->field($model, 'ptype2')->textInput(['maxlength' => true]) ?>
-        <?= $form->field($model, 'phone3')->textInput(['maxlength' => true]) ?>
-        <?= $form->field($model, 'ptype3')->textInput(['maxlength' => true]) ?>
-    </div>
-
-    <div class="form-group">
-        <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
-        <?= $form->field($model, 'skypeid')->textInput(['maxlength' => true]) ?>
-        <?= $form->field($model, 'notes')->textarea(['rows' => 6]) ?>
-    </div>
-
-    <div class="form-group">
-        <?= $form->field($model, 'username')->textInput(['maxlength' => true]) ?>
-        <?= $form->field($model, 'password')->passwordInput(['maxlength' => true]) ?>
-        <?= $form->field($model, 'status')->textInput() ?>
-    </div>
-
-    <div class="form-group">
-        <?= $form->field($model, 'domain_id')->textInput() ?>
-    </div>
-
-    <div class="form-group">
-        <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
-    </div>
-
-    <?php ActiveForm::end(); ?>
+    echo Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']);
+    ActiveForm::end(); ?>
 
 </div>

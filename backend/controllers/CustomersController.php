@@ -5,12 +5,9 @@ namespace backend\controllers;
 use Yii;
 use app\models\Customers;
 use app\models\CustomersSearch;
-use yii\helpers\Json;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-use yii\helpers\Url;
-use yii\base\InvalidCallException;
 
 /**
  * CustomersController implements the CRUD actions for Customers model.
@@ -35,12 +32,12 @@ class CustomersController extends Controller
      */
     public function actionIndex()
     {
-        $searchModel = new CustomersSearch();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $searchModel = new CustomersSearch;
+        $dataProvider = $searchModel->search(Yii::$app->request->getQueryParams());
 
         return $this->render('index', [
-            'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
+            'searchModel' => $searchModel,
         ]);
     }
 
@@ -51,17 +48,13 @@ class CustomersController extends Controller
      */
     public function actionView($id)
     {
-        $model=$this->findModel($id);
+        $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            Yii::$app->session->setFlash('kv-detail-success', 'Saved record successfully');
-            // Multiple alerts can be set like below
-            Yii::$app->session->setFlash('kv-detail-warning', 'A last warning for completing all data.');
-            Yii::$app->session->setFlash('kv-detail-info', '<b>Note:</b> You can proceed by clicking <a href="#">this link</a>.');
-            return $this->redirect(['view', 'id'=>$model->id]);
+        return $this->redirect(['view', 'id' => $model->id]);
         } else {
-            return $this->render('view', ['model'=>$model]);
-        }
+        return $this->render('view', ['model' => $model]);
+}
     }
 
     /**
@@ -71,7 +64,7 @@ class CustomersController extends Controller
      */
     public function actionCreate()
     {
-        $model = new Customers();
+        $model = new Customers;
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -109,29 +102,9 @@ class CustomersController extends Controller
      */
     public function actionDelete($id)
     {
-        $post = Yii::$app->request->post();
-        if (Yii::$app->request->isAjax && isset($post['custom_param'])) {
-            $id = $post['id'];
-            if ($this->findModel($id)->delete()) {
-                echo Json::encode([
-                    'success' => true,
-                    'messages' => [
-                        'kv-detail-info' => 'Customer # ' . $id . ' was successfully deleted. <a href="' .
-                            Url::to(['/site/view']) . '" class="btn btn-sm btn-info">' .
-                            '<i class="glyphicon glyphicon-hand-right"></i>  Click here</a> to proceed.'
-                    ]
-                ]);
-            } else {
-                echo Json::encode([
-                    'success' => false,
-                    'messages' => [
-                        'kv-detail-error' => 'Cannot delete customer # ' . $id . '.'
-                    ]
-                ]);
-            }
-            return;
-        }
-        throw new InvalidCallException("You are not allowed to do this operation. Contact the administrator.");
+        $this->findModel($id)->delete();
+
+        return $this->redirect(['index']);
     }
 
     /**

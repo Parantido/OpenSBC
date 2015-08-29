@@ -19,6 +19,11 @@ if (!YII_ENV_TEST) {
 	'class' => 'yii\gii\Module',
 	'allowedIPs' => ['*'],
     ];
+    $config['modules']['gii']['generators'] = [
+        'kartikgii-crud' => [
+		'class' => 'warrence\kartikgii\crud\Generator'
+	],
+    ];
 }
 
 return $config;
