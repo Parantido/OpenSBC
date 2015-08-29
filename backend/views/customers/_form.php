@@ -29,11 +29,15 @@ use kartik\depdrop\DepDrop;
             'firstname'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter First Name...', 'maxlength'=>50]],
             'lastname'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Last Name...', 'maxlength'=>50]],
             'status'=>['type'=> Form::INPUT_DROPDOWN_LIST, 'items' => ['Active', 'Disabled'],'options'=>['placeholder'=>'Enter Status...']],
-            'domain_id'=>['type'=> Form::INPUT_DROPDOWN_LIST, 'items' => $domains_list, 'label' => 'domain', 'options'=>['placeholder'=>'Enter Domain ID...']],
+            'domain_id'=>['type'=> Form::INPUT_DROPDOWN_LIST, 'items' => $domains_list, 'options'=>['placeholder'=>'Enter Domain ID...']],
             'address1'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter 1st Address...', 'maxlength'=>200]],
             'address2'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter 2nd Address...', 'maxlength'=>200]],
-            'state'=>['type'=> Form::INPUT_DROPDOWN_LIST, 'items' => $countries_list, 'label' => 'name', 'options'=>['placeholder'=>'Enter State...', 'maxlength'=>50]],
-            'city'=>['type'=> Form::INPUT_DROPDOWN_LIST, 'items' => [], 'options'=>['placeholder'=>'Enter City...', 'maxlength'=>50]],
+            'state'=>['type'=> Form::INPUT_DROPDOWN_LIST, 'items' => $countries_list, 'options'=>['id' => 'state-id', 'placeholder'=>'Enter State...', 'maxlength'=>50]],
+            'city'=>['type'=> Form::INPUT_DROPDOWN_LIST, 'items' => [], 'options'=>['id' => 'cities-id', 'placeholder'=>'Select City...', 'maxlength'=>50], 'pluginOptions' => [
+                'depends' => ['state-id'],
+                'placeholder' => 'Select City...',
+                'url' => \yii\helpers\Url::to(['/customers/getCities'])
+            ]],
             'country'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Country...', 'maxlength'=>255]],
             'province'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Province...', 'maxlength'=>255]],
             'zip'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Zip...', 'maxlength'=>12]],

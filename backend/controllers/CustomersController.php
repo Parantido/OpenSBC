@@ -2,6 +2,7 @@
 
 namespace backend\controllers;
 
+use app\models\Countries;
 use Yii;
 use app\models\Customers;
 use app\models\CustomersSearch;
@@ -105,6 +106,23 @@ class CustomersController extends Controller
         $this->findModel($id)->delete();
 
         return $this->redirect(['index']);
+    }
+
+    /**
+     *
+     */
+    public function actionGetCities() {
+        $out = [];
+        if (isset($_POST['depdrop_parents'])) {
+            $parents = $_POST['depdrop_parents'];
+            if ($parents != null) {
+                $state_id = $parents[0];
+                $out =  ArrayHelper::map(Countries::find()->where(['parent_id' => $state_id])->all(), 'countries_id', 'name');
+                echo Json::encode(['output' => $out, 'selected' => '']);
+                return;
+            }
+        }
+        echo Json::encode(['output'=>'', 'selected'=>'']);
     }
 
     /**
