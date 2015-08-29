@@ -6,6 +6,8 @@ use app\models\Countries;
 use Yii;
 use app\models\Customers;
 use app\models\CustomersSearch;
+use yii\helpers\ArrayHelper;
+use yii\helpers\Json;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
