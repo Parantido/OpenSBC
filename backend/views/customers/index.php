@@ -70,9 +70,9 @@ $this->params['breadcrumbs'][] = $this->title;
         ];
 
         // Register CRUD Java Script Handler
-        $this->registerJs(
+        /*$this->registerJs(
             "function init_click_handlers(){
-                /*$('.activity-view-link').click(function() {
+                $('.activity-view-link').click(function() {
                     $.get(
                         'view', {
                             id: $(this).closest('tr').data('key')
@@ -84,7 +84,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             $('#activity-modal-view').modal();
                         }
                     );
-                });*/
+                });
                 $('.activity-update-link').click(function() {
                     $.get(
                         'update', {
@@ -113,7 +113,7 @@ $this->params['breadcrumbs'][] = $this->title;
             $('#datagrid-pjax-id').on('pjax:success', function() {
                 init_click_handlers(); // Reactivate DataGrid click action handlers every update (pagination)
             });"
-        );
+        );*/
 
         // Datagrid Component
         Pjax::begin(['id' => 'datagrid-pjax-id']);
@@ -131,7 +131,7 @@ $this->params['breadcrumbs'][] = $this->title;
         Pjax::end();
 
         // Datagrid View Action Modal Popup
-        Modal::begin([
+        /*Modal::begin([
             'id' => 'activity-modal-view',
             'header' => '<h4 class="modal-title">View Customer</h4>',
             'footer' => '<a href="#" class="btn btn-primary" data-dismiss="modal">Close</a>',
@@ -158,7 +158,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
         ]); ?>
         <div class="well"></div>
-        <?php Modal::end();
+        <?php Modal::end();*/
     ?>
 
 </div>
