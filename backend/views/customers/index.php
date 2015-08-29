@@ -73,14 +73,14 @@ $this->params['breadcrumbs'][] = $this->title;
         // Register CRUD Java Script Handler
         $this->registerJs(
             "function init_click_handlers(){
-                var modelId = $(this).closest('tr').data('key');
-                alert('This: ' + modelId);
                 $('.activity-view-link').click(function() {
                     $.get(
                         'view', {
                             id: $(this).closest('tr').data('key')
                         },
                         function (data) {
+                            var modelId = $(this).closest('tr').data('key');
+                            alert('This: ' + modelId);
                             $('#activity-modal-view').find('.modal-body').html(data);
                             $('#activity-modal-view').modal();
                         }
