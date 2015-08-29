@@ -29,11 +29,11 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
+//            'id',
             'firstname',
             'lastname',
             'address1',
-            'address2',
+//            'address2',
 //            'city', 
 //            'country', 
 //            'province', 
@@ -45,23 +45,22 @@ $this->params['breadcrumbs'][] = $this->title;
 //            'ptype1', 
 //            'ptype2', 
 //            'ptype3', 
-//            'email:email', 
+            'email:email',
 //            'skypeid', 
 //            'location', 
 //            'notes:ntext', 
-//            'username', 
+            'username',
 //            'password', 
-//            'status', 
+            'status',
 //            'domain_id', 
 
             [
                 'class' => 'yii\grid\ActionColumn',
                 'buttons' => [
                 'update' => function ($url, $model) {
-                                    return Html::a('<span class="glyphicon glyphicon-pencil"></span>', Yii::$app->urlManager->createUrl(['customers/view','id' => $model->id,'edit'=>'t']), [
-                                                    'title' => Yii::t('yii', 'Edit'),
-                                                  ]);}
-
+                    return Html::a('<span class="glyphicon glyphicon-pencil"></span>', Yii::$app->urlManager->createUrl(['customers/view','id' => $model->id,'edit'=>'t']), [
+                        'title' => Yii::t('yii', 'Edit'),
+                    ]);}
                 ],
             ],
         ],
@@ -69,9 +68,6 @@ $this->params['breadcrumbs'][] = $this->title;
         'hover'=>true,
         'condensed'=>true,
         'floatHeader'=>true,
-
-
-
 
         'panel' => [
             'heading'=>'<h3 class="panel-title"><i class="glyphicon glyphicon-th-list"></i> '.Html::encode($this->title).' </h3>',

@@ -18,57 +18,54 @@ use kartik\datecontrol\DateControl;
 
     'model' => $model,
     'form' => $form,
-    'columns' => 1,
+    'columns' => 2,
     'attributes' => [
+        'firstname'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter First Name...', 'maxlength'=>50]],
 
-'location'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Location...']], 
+        'lastname'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Last Name...', 'maxlength'=>50]],
 
-'status'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Status...']], 
+        'status'=>['type'=> Form::INPUT_CHECKBOX, 'options'=>['placeholder'=>'Enter Status...']],
 
-'domain_id'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Domain ID...']], 
+        'domain_id'=>['type'=> Form::INPUT_CHECKBOX, 'options'=>['placeholder'=>'Enter Domain ID...']],
 
-'notes'=>['type'=> Form::INPUT_TEXTAREA, 'options'=>['placeholder'=>'Enter Notes...','rows'=> 6]], 
+        'address1'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter 1st Address...', 'maxlength'=>200]],
 
-'firstname'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter First Name...', 'maxlength'=>50]], 
+        'address2'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter 2nd Address...', 'maxlength'=>200]],
 
-'lastname'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Last Name...', 'maxlength'=>50]], 
+        'city'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter City...', 'maxlength'=>50]],
 
-'city'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter City...', 'maxlength'=>50]], 
+        'state'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter State...', 'maxlength'=>50]],
 
-'state'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter State...', 'maxlength'=>50]], 
+        'country'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Country...', 'maxlength'=>255]],
 
-'phone1'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter 1st Phone...', 'maxlength'=>50]], 
+        'province'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Province...', 'maxlength'=>255]],
 
-'phone2'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter 2nd Phone...', 'maxlength'=>50]], 
+        'zip'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Zip...', 'maxlength'=>12]],
 
-'phone3'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter 3rd Phone...', 'maxlength'=>50]], 
+        'location'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Location...']],
 
-'ptype1'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter 1st Phone Type...', 'maxlength'=>50]], 
+        'phone1'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter 1st Phone...', 'maxlength'=>50]],
 
-'ptype2'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter 2nd Phone Type...', 'maxlength'=>50]], 
+        'ptype1'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter 1st Phone Type...', 'maxlength'=>50]],
 
-'ptype3'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter 3rd Phone Type...', 'maxlength'=>50]], 
+        'phone2'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter 2nd Phone...', 'maxlength'=>50]],
 
-'email'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Email...', 'maxlength'=>50]], 
+        'ptype2'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter 2nd Phone Type...', 'maxlength'=>50]],
 
-'username'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Username...', 'maxlength'=>50]], 
+        'phone3'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter 3rd Phone...', 'maxlength'=>50]],
 
-'address1'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter 1st Address...', 'maxlength'=>200]], 
+        'ptype3'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter 3rd Phone Type...', 'maxlength'=>50]],
 
-'address2'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter 2nd Address...', 'maxlength'=>200]], 
+        'email'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Email...', 'maxlength'=>50]],
 
-'country'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Country...', 'maxlength'=>255]], 
+        'username'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Username...', 'maxlength'=>50]],
 
-'province'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Province...', 'maxlength'=>255]], 
+        'password'=>['type'=> Form::INPUT_PASSWORD, 'options'=>['placeholder'=>'Enter Password...', 'maxlength'=>255]],
 
-'skypeid'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Skype Id...', 'maxlength'=>255]], 
+        'skypeid'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Skype Id...', 'maxlength'=>255]],
 
-'password'=>['type'=> Form::INPUT_PASSWORD, 'options'=>['placeholder'=>'Enter Password...', 'maxlength'=>255]], 
-
-'zip'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Zip...', 'maxlength'=>12]], 
-
+        'notes'=>['type'=> Form::INPUT_TEXTAREA, 'options'=>['placeholder'=>'Enter Notes...','rows'=> 6]],
     ]
-
 
     ]);
     echo Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']);

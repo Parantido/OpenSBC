@@ -9,6 +9,35 @@
       <sourceFolder url="file://$MODULE_DIR$/vendor/dmstr/yii2-adminlte-asset" isTestSource="false" packagePrefix="dmstr" />
       <sourceFolder url="file://$MODULE_DIR$/backend" isTestSource="false" packagePrefix="app" />
       <sourceFolder url="file://$MODULE_DIR$/vendor/fzaninotto/faker/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/bower/jquery-ui" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/components/flag-icon-css" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/fortawesome/font-awesome" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/kartik-v/bootstrap-fileinput" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/kartik-v/bootstrap-star-rating" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/kartik-v/dependent-dropdown" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/kartik-v/php-date-formatter" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/kartik-v/yii2-builder" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/kartik-v/yii2-datecontrol" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/kartik-v/yii2-icons" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-affix" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-alert" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-colorinput" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-datepicker" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-datetimepicker" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-depdrop" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-fileinput" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-growl" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-rangeinput" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-rating" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-sidenav" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-spinner" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-switchinput" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-timepicker" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-touchspin" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-typeahead" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widgets" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/warrence/yii2-kartikgii" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/yii2-jui" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -19,6 +48,72 @@
         </CLASSES>
         <SOURCES>
           <root url="phar://$MODULE_DIR$/console/runtime/composer.phar" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="PHP">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/php-date-formatter" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-datepicker" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-affix" />
+          <root url="file://$MODULE_DIR$/vendor/fortawesome/font-awesome" />
+          <root url="file://$MODULE_DIR$/vendor/components/flag-icon-css" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-timepicker" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/bootstrap-star-rating" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widgets" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/bootstrap-fileinput" />
+          <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-jui" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/dependent-dropdown" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-touchspin" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-sidenav" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-rangeinput" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-rating" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-datecontrol" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-datetimepicker" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-builder" />
+          <root url="file://$MODULE_DIR$/vendor/warrence/yii2-kartikgii" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-icons" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-growl" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-alert" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-typeahead" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-fileinput" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-depdrop" />
+          <root url="file://$MODULE_DIR$/vendor/bower/jquery-ui" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-switchinput" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-spinner" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-colorinput" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/php-date-formatter" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-datepicker" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-affix" />
+          <root url="file://$MODULE_DIR$/vendor/fortawesome/font-awesome" />
+          <root url="file://$MODULE_DIR$/vendor/components/flag-icon-css" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-timepicker" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/bootstrap-star-rating" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widgets" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/bootstrap-fileinput" />
+          <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-jui" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/dependent-dropdown" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-touchspin" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-sidenav" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-rangeinput" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-rating" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-datecontrol" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-datetimepicker" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-builder" />
+          <root url="file://$MODULE_DIR$/vendor/warrence/yii2-kartikgii" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-icons" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-growl" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-alert" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-typeahead" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-fileinput" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-depdrop" />
+          <root url="file://$MODULE_DIR$/vendor/bower/jquery-ui" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-switchinput" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-spinner" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-colorinput" />
         </SOURCES>
       </library>
     </orderEntry>
