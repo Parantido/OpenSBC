@@ -35,12 +35,12 @@ $this->params['breadcrumbs'][] = $this->title;
                     'view' => function ($url, $model, $key) {
                         return Html::a('<span class="glyphicon glyphicon-eye-open"></span>','#', [
                             'id' => 'activity-view-link',
+                            'value' => Url::to(['/customers/update', 'id' => $key]),
                             'title' => Yii::t('yii', 'View'),
                             'data-toggle' => 'modal',
                             'data-target' => '#activity-modal-view',
                             'data-id' => $key,
-                            'data-pjax' => '0',
-
+                            'data-pjax' => '1',
                         ]);
                     },
                     'update' => function ($url, $model, $key) {
@@ -51,7 +51,6 @@ $this->params['breadcrumbs'][] = $this->title;
                             'data-target' => '#activity-modal-update',
                             'data-id' => $key,
                             'data-pjax' => '0',
-
                         ]);
                     },
                     'delete' => function ($url, $model, $key) {
@@ -62,7 +61,6 @@ $this->params['breadcrumbs'][] = $this->title;
                             'data-target' => '#activity-modal-delete',
                             'data-id' => $key,
                             'data-pjax' => '0',
-
                         ]);
                     },
                 ],
@@ -73,7 +71,7 @@ $this->params['breadcrumbs'][] = $this->title;
         // Register CRUD Java Script Handler
         $this->registerJs(
             "function init_click_handlers(){
-                $('.activity-view-link').click(function() {
+                /*$('.activity-view-link').click(function() {
                     $.get(
                         'view', {
                             id: $(this).closest('tr').data('key')
@@ -85,7 +83,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             $('#activity-modal-view').modal();
                         }
                     );
-                });
+                });*/
                 $('.activity-update-link').click(function() {
                     $.get(
                         'update', {
