@@ -19,7 +19,7 @@ use kartik\depdrop\DepDrop;
 
     <?php
     $domains_list = ArrayHelper::map(Domain::find()->all(), 'id', 'domain');
-    $countries_list = ArrayHelper::map(Countries::find()->where(['countries_type' => 1])->all(), 'id', 'name');
+    $countries_list = ArrayHelper::map(Countries::find()->where(['countries_type' => 1])->all(), 'countries_id', 'name');
 
     $form = ActiveForm::begin(['type' => ActiveForm::TYPE_HORIZONTAL]); echo Form::widget([
         'model' => $model,
