@@ -79,6 +79,11 @@ $this->params['breadcrumbs'][] = $this->title;
             "function init_click_handlers(){
                 alert('Initializing');
                 $('.activity-view-link').click(function() {
+                    var modelId = $(this).closest('tr').data('key');
+                    alert('Model Id: ' + modelId + ' Data: ' + data.toString());
+
+                    $('#activity-modal-view').find('.modal-body').html(data);
+                    $('#activity-modal-view').modal();
                     $.get(
                         'view', {
                             id: $(this).closest('tr').data('key')
