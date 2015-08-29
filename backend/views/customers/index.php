@@ -80,9 +80,9 @@ $this->params['breadcrumbs'][] = $this->title;
                 alert('Initializing');
                 $('.activity-view-link').click(function() {
                     var modelId = $(this).closest('tr').data('key');
-                    alert('Model Id: ' + modelId + ' Data: ' + data.toString());
+                    alert('Model Id: ' + modelId);
 
-                    $('#activity-modal-view').find('.modal-body').html(data);
+                    $('#activity-modal-view').find('.modal-body').html(modelId);
                     $('#activity-modal-view').modal();
                     $.get(
                         'view', {
