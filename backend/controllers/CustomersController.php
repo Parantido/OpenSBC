@@ -2,10 +2,12 @@
 
 namespace backend\controllers;
 
-use Yii;
 use app\models\Countries;
+use Yii;
 use app\models\Customers;
 use app\models\CustomersSearch;
+use yii\helpers\ArrayHelper;
+use yii\helpers\Json;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -116,14 +118,11 @@ class CustomersController extends Controller
             $parents = $_POST['depdrop_parents'];
             if ($parents != null) {
                 $cities = Countries::find()->where(['parent_id' => $parents[0], 'countries_type' => '2'])->all();
-                foreach($cities as $city){
-                    echo "<option value='" .$city->countries_id. "'>" .$city->name. "</option>";
-                }
-
+                echo Json::encode(['output' => $cities, 'selected' => '']);
                 return;
             }
         }
-        echo "<option>-</option>";
+        echo Json::encode(['output'=>'', 'selected'=>'']);
     }
 
     /**
