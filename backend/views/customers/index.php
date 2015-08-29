@@ -70,52 +70,52 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
         ];
 
-        // Register View Java Script Handler
+        // Register CRUD Java Script Handler
         $this->registerJs(
-            "$('.activity-view-link').click(function() {
-                $.get(
-                    'modelid', {
-                        id: $(this).closest('tr').data('key')
-                    },
-                    function (data) {
-                        $('#activity-modal-view').find('.modal-body').html(data);
-                        $('#activity-modal-view').modal();
-                    }
-                );
+            "function init_click_handlers(){
+                $('.activity-view-link').click(function() {
+                    $.get(
+                        'modelid', {
+                            id: $(this).closest('tr').data('key')
+                        },
+                        function (data) {
+                            $('#activity-modal-view').find('.modal-body').html(data);
+                            $('#activity-modal-view').modal();
+                        }
+                    );
+                });
+                $('.activity-update-link').click(function() {
+                    $.get(
+                        'modelid', {
+                            id: $(this).closest('tr').data('key')
+                        },
+                        function (data) {
+                            $('#activity-modal-update').find('.modal-body').html(data);
+                            $('#activity-modal-update').modal();
+                        }
+                    );
+                });
+                $('.activity-delete-link').click(function() {
+                    $.get(
+                        'modelid', {
+                            id: $(this).closest('tr').data('key')
+                        },
+                        function (data) {
+                            $('#activity-modal-delete').find('.modal-body').html(data);
+                            $('#activity-modal-delete').modal();
+                        }
+                    );
+                });
+            }
+
+            init_click_handlers(); // First Run
+            $('#datagrid-pjax-id').on('pjax:success', function() {
+                init_click_handlers(); // Reactivate DataGrid click action handlers every update (pagination)
             });"
         );
 
-        // Register Update Java Script Handler
-        $this->registerJs(
-            "$('.activity-update-link').click(function() {
-                $.get(
-                    'modelid', {
-                        id: $(this).closest('tr').data('key')
-                    },
-                    function (data) {
-                        $('#activity-modal-update').find('.modal-body').html(data);
-                        $('#activity-modal-update').modal();
-                    }
-                );
-            });"
-        );
-
-        // Register Delete Java Script Handler
-        $this->registerJs(
-            "$('.activity-delete-link').click(function() {
-                $.get(
-                    'modelid', {
-                        id: $(this).closest('tr').data('key')
-                    },
-                    function (data) {
-                        $('#activity-modal-delete').find('.modal-body').html(data);
-                        $('#activity-modal-delete').modal();
-                    }
-                );
-            });"
-        );
-
-        Pjax::begin();
+        // Datagrid Component
+        Pjax::begin(['id' => 'datagrid-pjax-id']);
         echo DynaGrid::widget([
             'columns' => $columns,
             'storage' => DynaGrid::TYPE_COOKIE,
