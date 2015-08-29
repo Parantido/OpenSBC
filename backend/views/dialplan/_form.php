@@ -1,39 +1,49 @@
 <?php
 
 use yii\helpers\Html;
-use yii\widgets\ActiveForm;
+use kartik\widgets\ActiveForm;
+use kartik\builder\Form;
+use kartik\datecontrol\DateControl;
 
-/* @var $this yii\web\View */
-/* @var $model app\models\Dialplan */
-/* @var $form yii\widgets\ActiveForm */
+/**
+ * @var yii\web\View $this
+ * @var app\models\Dialplan $model
+ * @var yii\widgets\ActiveForm $form
+ */
 ?>
 
 <div class="dialplan-form">
 
-    <?php $form = ActiveForm::begin(); ?>
+    <?php $form = ActiveForm::begin(['type'=>ActiveForm::TYPE_HORIZONTAL]); echo Form::widget([
 
-    <?= $form->field($model, 'dpid')->textInput() ?>
+    'model' => $model,
+    'form' => $form,
+    'columns' => 1,
+    'attributes' => [
 
-    <?= $form->field($model, 'pr')->textInput() ?>
+'dpid'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Dpid...']], 
 
-    <?= $form->field($model, 'match_op')->textInput() ?>
+'pr'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Pr...']], 
 
-    <?= $form->field($model, 'match_exp')->textInput(['maxlength' => true]) ?>
+'match_op'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Match Op...']], 
 
-    <?= $form->field($model, 'match_flags')->textInput() ?>
+'match_exp'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Match Exp...', 'maxlength'=>64]], 
 
-    <?= $form->field($model, 'subst_exp')->textInput(['maxlength' => true]) ?>
+'match_flags'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Match Flags...']], 
 
-    <?= $form->field($model, 'repl_exp')->textInput(['maxlength' => true]) ?>
+'subst_exp'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Subst Exp...', 'maxlength'=>64]], 
 
-    <?= $form->field($model, 'disabled')->textInput() ?>
+'repl_exp'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Repl Exp...', 'maxlength'=>32]], 
 
-    <?= $form->field($model, 'attrs')->textInput(['maxlength' => true]) ?>
+'attrs'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Attrs...', 'maxlength'=>32]], 
 
-    <div class="form-group">
-        <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
-    </div>
+'disabled'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Disabled...']], 
 
-    <?php ActiveForm::end(); ?>
+    ]
+
+
+    ]);
+    echo Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']);
+    ActiveForm::end(); ?>
 
 </div>

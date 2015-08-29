@@ -3,9 +3,11 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
-/* @var $this yii\web\View */
-/* @var $model app\models\UserSearch */
-/* @var $form yii\widgets\ActiveForm */
+/**
+ * @var yii\web\View $this
+ * @var app\models\UserSearch $model
+ * @var yii\widgets\ActiveForm $form
+ */
 ?>
 
 <div class="user-search">
@@ -29,6 +31,8 @@ use yii\widgets\ActiveForm;
 
     <?php // echo $form->field($model, 'password') ?>
 
+    <?php // echo $form->field($model, 'display_name') ?>
+
     <?php // echo $form->field($model, 'auth_key') ?>
 
     <?php // echo $form->field($model, 'api_key') ?>
@@ -47,9 +51,11 @@ use yii\widgets\ActiveForm;
 
     <?php // echo $form->field($model, 'ban_reason') ?>
 
+    <?php // echo $form->field($model, 'img_url') ?>
+
     <div class="form-group">
-        <?= Html::submitButton(Yii::t('app', 'Search'), ['class' => 'btn btn-primary']) ?>
-        <?= Html::resetButton(Yii::t('app', 'Reset'), ['class' => 'btn btn-default']) ?>
+        <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>
+        <?= Html::resetButton('Reset', ['class' => 'btn btn-default']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

@@ -1,37 +1,47 @@
 <?php
 
 use yii\helpers\Html;
-use yii\widgets\ActiveForm;
+use kartik\widgets\ActiveForm;
+use kartik\builder\Form;
+use kartik\datecontrol\DateControl;
 
-/* @var $this yii\web\View */
-/* @var $model app\models\DrRules */
-/* @var $form yii\widgets\ActiveForm */
+/**
+ * @var yii\web\View $this
+ * @var app\models\DrRules $model
+ * @var yii\widgets\ActiveForm $form
+ */
 ?>
 
 <div class="dr-rules-form">
 
-    <?php $form = ActiveForm::begin(); ?>
+    <?php $form = ActiveForm::begin(['type'=>ActiveForm::TYPE_HORIZONTAL]); echo Form::widget([
 
-    <?= $form->field($model, 'groupid')->textInput(['maxlength' => true]) ?>
+    'model' => $model,
+    'form' => $form,
+    'columns' => 1,
+    'attributes' => [
 
-    <?= $form->field($model, 'prefix')->textInput(['maxlength' => true]) ?>
+'groupid'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Groupid...', 'maxlength'=>255]], 
 
-    <?= $form->field($model, 'timerec')->textInput(['maxlength' => true]) ?>
+'prefix'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Prefix...', 'maxlength'=>64]], 
 
-    <?= $form->field($model, 'priority')->textInput() ?>
+'timerec'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Timerec...', 'maxlength'=>255]], 
 
-    <?= $form->field($model, 'routeid')->textInput(['maxlength' => true]) ?>
+'gwlist'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Gwlist...', 'maxlength'=>255]], 
 
-    <?= $form->field($model, 'gwlist')->textInput(['maxlength' => true]) ?>
+'priority'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Priority...']], 
 
-    <?= $form->field($model, 'attrs')->textInput(['maxlength' => true]) ?>
+'routeid'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Routeid...', 'maxlength'=>255]], 
 
-    <?= $form->field($model, 'description')->textInput(['maxlength' => true]) ?>
+'attrs'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Attrs...', 'maxlength'=>255]], 
 
-    <div class="form-group">
-        <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
-    </div>
+'description'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Description...', 'maxlength'=>128]], 
 
-    <?php ActiveForm::end(); ?>
+    ]
+
+
+    ]);
+    echo Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']);
+    ActiveForm::end(); ?>
 
 </div>

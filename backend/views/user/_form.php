@@ -1,51 +1,61 @@
 <?php
 
 use yii\helpers\Html;
-use yii\widgets\ActiveForm;
+use kartik\widgets\ActiveForm;
+use kartik\builder\Form;
+use kartik\datecontrol\DateControl;
 
-/* @var $this yii\web\View */
-/* @var $model app\models\User */
-/* @var $form yii\widgets\ActiveForm */
+/**
+ * @var yii\web\View $this
+ * @var app\models\User $model
+ * @var yii\widgets\ActiveForm $form
+ */
 ?>
 
 <div class="user-form">
 
-    <?php $form = ActiveForm::begin(); ?>
+    <?php $form = ActiveForm::begin(['type'=>ActiveForm::TYPE_HORIZONTAL]); echo Form::widget([
 
-    <?= $form->field($model, 'role_id')->textInput() ?>
+    'model' => $model,
+    'form' => $form,
+    'columns' => 1,
+    'attributes' => [
 
-    <?= $form->field($model, 'status')->textInput() ?>
+'role_id'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Role ID...']], 
 
-    <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
+'status'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Status...']], 
 
-    <?= $form->field($model, 'new_email')->textInput(['maxlength' => true]) ?>
+'login_time'=>['type'=> Form::INPUT_WIDGET, 'widgetClass'=>DateControl::classname(),'options'=>['type'=>DateControl::FORMAT_DATETIME]], 
 
-    <?= $form->field($model, 'username')->textInput(['maxlength' => true]) ?>
+'create_time'=>['type'=> Form::INPUT_WIDGET, 'widgetClass'=>DateControl::classname(),'options'=>['type'=>DateControl::FORMAT_DATETIME]], 
 
-    <?= $form->field($model, 'password')->passwordInput(['maxlength' => true]) ?>
+'update_time'=>['type'=> Form::INPUT_WIDGET, 'widgetClass'=>DateControl::classname(),'options'=>['type'=>DateControl::FORMAT_DATETIME]], 
 
-    <?= $form->field($model, 'auth_key')->textInput(['maxlength' => true]) ?>
+'ban_time'=>['type'=> Form::INPUT_WIDGET, 'widgetClass'=>DateControl::classname(),'options'=>['type'=>DateControl::FORMAT_DATETIME]], 
 
-    <?= $form->field($model, 'api_key')->textInput(['maxlength' => true]) ?>
+'email'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Email...', 'maxlength'=>255]], 
 
-    <?= $form->field($model, 'login_ip')->textInput(['maxlength' => true]) ?>
+'new_email'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter New Email...', 'maxlength'=>255]], 
 
-    <?= $form->field($model, 'login_time')->textInput() ?>
+'username'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Username...', 'maxlength'=>255]], 
 
-    <?= $form->field($model, 'create_ip')->textInput(['maxlength' => true]) ?>
+'password'=>['type'=> Form::INPUT_PASSWORD, 'options'=>['placeholder'=>'Enter Password...', 'maxlength'=>255]], 
 
-    <?= $form->field($model, 'create_time')->textInput() ?>
+'auth_key'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Auth Key...', 'maxlength'=>255]], 
 
-    <?= $form->field($model, 'update_time')->textInput() ?>
+'api_key'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Api Key...', 'maxlength'=>255]], 
 
-    <?= $form->field($model, 'ban_time')->textInput() ?>
+'login_ip'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Login Ip...', 'maxlength'=>255]], 
 
-    <?= $form->field($model, 'ban_reason')->textInput(['maxlength' => true]) ?>
+'create_ip'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Create Ip...', 'maxlength'=>255]], 
 
-    <div class="form-group">
-        <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
-    </div>
+'ban_reason'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Ban Reason...', 'maxlength'=>255]], 
 
-    <?php ActiveForm::end(); ?>
+    ]
+
+
+    ]);
+    echo Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']);
+    ActiveForm::end(); ?>
 
 </div>

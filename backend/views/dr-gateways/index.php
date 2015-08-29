@@ -1,25 +1,29 @@
 <?php
 
 use yii\helpers\Html;
-use yii\grid\GridView;
+use kartik\grid\GridView;
+use yii\widgets\Pjax;
 
-/* @var $this yii\web\View */
-/* @var $searchModel app\models\DrGatewaysSearch */
-/* @var $dataProvider yii\data\ActiveDataProvider */
+/**
+ * @var yii\web\View $this
+ * @var yii\data\ActiveDataProvider $dataProvider
+ * @var app\models\DrGatewaysSearch $searchModel
+ */
 
-$this->title = Yii::t('app', 'Dr Gateways');
+$this->title = 'Dr Gateways';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="dr-gateways-index">
-
-    <h1><?= Html::encode($this->title) ?></h1>
+    <div class="page-header">
+            <h1><?= Html::encode($this->title) ?></h1>
+    </div>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a(Yii::t('app', 'Create Dr Gateways'), ['create'], ['class' => 'btn btn-success']) ?>
+        <?php /* echo Html::a('Create Dr Gateways', ['create'], ['class' => 'btn btn-success'])*/  ?>
     </p>
 
-    <?= GridView::widget([
+    <?php Pjax::begin(); echo GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
@@ -30,15 +34,38 @@ $this->params['breadcrumbs'][] = $this->title;
             'type',
             'address',
             'strip',
-            // 'pri_prefix',
-            // 'attrs',
-            // 'probe_mode',
-            // 'state',
-            // 'socket',
-            // 'description',
+//            'pri_prefix', 
+//            'attrs', 
+//            'probe_mode', 
+//            'state', 
+//            'socket', 
+//            'description', 
 
-            ['class' => 'yii\grid\ActionColumn'],
+            [
+                'class' => 'yii\grid\ActionColumn',
+                'buttons' => [
+                'update' => function ($url, $model) {
+                                    return Html::a('<span class="glyphicon glyphicon-pencil"></span>', Yii::$app->urlManager->createUrl(['dr-gateways/view','id' => $model->id,'edit'=>'t']), [
+                                                    'title' => Yii::t('yii', 'Edit'),
+                                                  ]);}
+
+                ],
+            ],
         ],
-    ]); ?>
+        'responsive'=>true,
+        'hover'=>true,
+        'condensed'=>true,
+        'floatHeader'=>true,
+
+
+
+
+        'panel' => [
+            'heading'=>'<h3 class="panel-title"><i class="glyphicon glyphicon-th-list"></i> '.Html::encode($this->title).' </h3>',
+            'type'=>'info',
+            'before'=>Html::a('<i class="glyphicon glyphicon-plus"></i> Add', ['create'], ['class' => 'btn btn-success']),                                                                                                                                                          'after'=>Html::a('<i class="glyphicon glyphicon-repeat"></i> Reset List', ['index'], ['class' => 'btn btn-info']),
+            'showFooter'=>false
+        ],
+    ]); Pjax::end(); ?>
 
 </div>

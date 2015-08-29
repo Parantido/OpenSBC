@@ -2,15 +2,15 @@
 
 use yii\helpers\Html;
 
-/* @var $this yii\web\View */
-/* @var $model app\models\DrRules */
+/**
+ * @var yii\web\View $this
+ * @var app\models\DrRules $model
+ */
 
-$this->title = Yii::t('app', 'Update {modelClass}: ', [
-    'modelClass' => 'Dr Rules',
-]) . ' ' . $model->ruleid;
-$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Dr Rules'), 'url' => ['index']];
+$this->title = 'Update Dr Rules: ' . ' ' . $model->ruleid;
+$this->params['breadcrumbs'][] = ['label' => 'Dr Rules', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->ruleid, 'url' => ['view', 'id' => $model->ruleid]];
-$this->params['breadcrumbs'][] = Yii::t('app', 'Update');
+$this->params['breadcrumbs'][] = 'Update';
 ?>
 <div class="dr-rules-update">
 

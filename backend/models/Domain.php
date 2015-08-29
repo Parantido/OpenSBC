@@ -10,6 +10,8 @@ use Yii;
  * @property integer $id
  * @property string $domain
  * @property string $last_modified
+ *
+ * @property Customers[] $customers
  */
 class Domain extends \yii\db\ActiveRecord
 {
@@ -43,6 +45,14 @@ class Domain extends \yii\db\ActiveRecord
             'domain' => Yii::t('app', 'Domain'),
             'last_modified' => Yii::t('app', 'Last Modified'),
         ];
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getCustomers()
+    {
+        return $this->hasMany(Customers::className(), ['domain_id' => 'id']);
     }
 
     /**

@@ -2,15 +2,15 @@
 
 use yii\helpers\Html;
 
-/* @var $this yii\web\View */
-/* @var $model app\models\Dialplan */
+/**
+ * @var yii\web\View $this
+ * @var app\models\Dialplan $model
+ */
 
-$this->title = Yii::t('app', 'Update {modelClass}: ', [
-    'modelClass' => 'Dialplan',
-]) . ' ' . $model->id;
-$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Dialplans'), 'url' => ['index']];
+$this->title = 'Update Dialplan: ' . ' ' . $model->id;
+$this->params['breadcrumbs'][] = ['label' => 'Dialplans', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->id, 'url' => ['view', 'id' => $model->id]];
-$this->params['breadcrumbs'][] = Yii::t('app', 'Update');
+$this->params['breadcrumbs'][] = 'Update';
 ?>
 <div class="dialplan-update">
 

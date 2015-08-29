@@ -1,41 +1,51 @@
 <?php
 
 use yii\helpers\Html;
-use yii\widgets\ActiveForm;
+use kartik\widgets\ActiveForm;
+use kartik\builder\Form;
+use kartik\datecontrol\DateControl;
 
-/* @var $this yii\web\View */
-/* @var $model app\models\DrGateways */
-/* @var $form yii\widgets\ActiveForm */
+/**
+ * @var yii\web\View $this
+ * @var app\models\DrGateways $model
+ * @var yii\widgets\ActiveForm $form
+ */
 ?>
 
 <div class="dr-gateways-form">
 
-    <?php $form = ActiveForm::begin(); ?>
+    <?php $form = ActiveForm::begin(['type'=>ActiveForm::TYPE_HORIZONTAL]); echo Form::widget([
 
-    <?= $form->field($model, 'gwid')->textInput(['maxlength' => true]) ?>
+    'model' => $model,
+    'form' => $form,
+    'columns' => 1,
+    'attributes' => [
 
-    <?= $form->field($model, 'type')->textInput() ?>
+'gwid'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Gwid...', 'maxlength'=>64]], 
 
-    <?= $form->field($model, 'address')->textInput(['maxlength' => true]) ?>
+'address'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Address...', 'maxlength'=>128]], 
 
-    <?= $form->field($model, 'strip')->textInput() ?>
+'type'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Type...']], 
 
-    <?= $form->field($model, 'pri_prefix')->textInput(['maxlength' => true]) ?>
+'strip'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Strip...']], 
 
-    <?= $form->field($model, 'attrs')->textInput(['maxlength' => true]) ?>
+'probe_mode'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Probe Mode...']], 
 
-    <?= $form->field($model, 'probe_mode')->textInput() ?>
+'state'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter State...']], 
 
-    <?= $form->field($model, 'state')->textInput() ?>
+'socket'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Socket...', 'maxlength'=>128]], 
 
-    <?= $form->field($model, 'socket')->textInput(['maxlength' => true]) ?>
+'description'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Description...', 'maxlength'=>128]], 
 
-    <?= $form->field($model, 'description')->textInput(['maxlength' => true]) ?>
+'pri_prefix'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Pri Prefix...', 'maxlength'=>16]], 
 
-    <div class="form-group">
-        <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
-    </div>
+'attrs'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Attrs...', 'maxlength'=>255]], 
 
-    <?php ActiveForm::end(); ?>
+    ]
+
+
+    ]);
+    echo Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']);
+    ActiveForm::end(); ?>
 
 </div>

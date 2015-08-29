@@ -1,33 +1,43 @@
 <?php
 
 use yii\helpers\Html;
-use yii\widgets\ActiveForm;
+use kartik\widgets\ActiveForm;
+use kartik\builder\Form;
+use kartik\datecontrol\DateControl;
 
-/* @var $this yii\web\View */
-/* @var $model app\models\DrCarriers */
-/* @var $form yii\widgets\ActiveForm */
+/**
+ * @var yii\web\View $this
+ * @var app\models\DrCarriers $model
+ * @var yii\widgets\ActiveForm $form
+ */
 ?>
 
 <div class="dr-carriers-form">
 
-    <?php $form = ActiveForm::begin(); ?>
+    <?php $form = ActiveForm::begin(['type'=>ActiveForm::TYPE_HORIZONTAL]); echo Form::widget([
 
-    <?= $form->field($model, 'carrierid')->textInput(['maxlength' => true]) ?>
+    'model' => $model,
+    'form' => $form,
+    'columns' => 1,
+    'attributes' => [
 
-    <?= $form->field($model, 'gwlist')->textInput(['maxlength' => true]) ?>
+'carrierid'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Carrierid...', 'maxlength'=>64]], 
 
-    <?= $form->field($model, 'flags')->textInput() ?>
+'gwlist'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Gwlist...', 'maxlength'=>255]], 
 
-    <?= $form->field($model, 'state')->textInput() ?>
+'flags'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Flags...']], 
 
-    <?= $form->field($model, 'attrs')->textInput(['maxlength' => true]) ?>
+'state'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter State...']], 
 
-    <?= $form->field($model, 'description')->textInput(['maxlength' => true]) ?>
+'attrs'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Attrs...', 'maxlength'=>255]], 
 
-    <div class="form-group">
-        <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
-    </div>
+'description'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Description...', 'maxlength'=>128]], 
 
-    <?php ActiveForm::end(); ?>
+    ]
+
+
+    ]);
+    echo Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']);
+    ActiveForm::end(); ?>
 
 </div>

@@ -2,18 +2,19 @@
 
 use yii\helpers\Html;
 
+/**
+ * @var yii\web\View $this
+ * @var app\models\DrRules $model
+ */
 
-/* @var $this yii\web\View */
-/* @var $model app\models\DrRules */
-
-$this->title = Yii::t('app', 'Create Dr Rules');
-$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Dr Rules'), 'url' => ['index']];
+$this->title = 'Create Dr Rules';
+$this->params['breadcrumbs'][] = ['label' => 'Dr Rules', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="dr-rules-create">
-
-    <h1><?= Html::encode($this->title) ?></h1>
-
+    <div class="page-header">
+        <h1><?= Html::encode($this->title) ?></h1>
+    </div>
     <?= $this->render('_form', [
         'model' => $model,
     ]) ?>
