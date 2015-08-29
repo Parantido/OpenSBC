@@ -37,7 +37,29 @@ $this->params['breadcrumbs'][] = $this->title;
                             'id' => 'activity-view-link',
                             'title' => Yii::t('yii', 'View'),
                             'data-toggle' => 'modal',
-                            'data-target' => '#activity-modal',
+                            'data-target' => '#activity-modal-view',
+                            'data-id' => $key,
+                            'data-pjax' => '0',
+
+                        ]);
+                    },
+                    'update' => function ($url, $model, $key) {
+                        return Html::a('<span class="glyphicon glyphicon-pencil"></span>','#', [
+                            'id' => 'activity-update-link',
+                            'title' => Yii::t('yii', 'Update'),
+                            'data-toggle' => 'modal',
+                            'data-target' => '#activity-modal-update',
+                            'data-id' => $key,
+                            'data-pjax' => '0',
+
+                        ]);
+                    },
+                    'delete' => function ($url, $model, $key) {
+                        return Html::a('<span class="glyphicon glyphicon-remove"></span>','#', [
+                            'id' => 'activity-delete-link',
+                            'title' => Yii::t('yii', 'Delete'),
+                            'data-toggle' => 'modal',
+                            'data-target' => '#activity-modal-delete',
                             'data-id' => $key,
                             'data-pjax' => '0',
 
@@ -47,6 +69,51 @@ $this->params['breadcrumbs'][] = $this->title;
                 'headerOptions' => [ 'class' => 'kartik-sheet-style' ],
             ],
         ];
+
+        // Register View Java Script Handler
+        $this->registerJs(
+            "$('.activity-view-link').click(function() {
+                $.get(
+                    'modelid', {
+                        id: $(this).closest('tr').data('key')
+                    },
+                    function (data) {
+                        $('#activity-modal-view').find('.modal-body').html(data);
+                        $('#activity-modal-view').modal();
+                    }
+                );
+            });"
+        );
+
+        // Register Update Java Script Handler
+        $this->registerJs(
+            "$('.activity-update-link').click(function() {
+                $.get(
+                    'modelid', {
+                        id: $(this).closest('tr').data('key')
+                    },
+                    function (data) {
+                        $('#activity-modal-update').find('.modal-body').html(data);
+                        $('#activity-modal-update').modal();
+                    }
+                );
+            });"
+        );
+
+        // Register Delete Java Script Handler
+        $this->registerJs(
+            "$('.activity-delete-link').click(function() {
+                $.get(
+                    'modelid', {
+                        id: $(this).closest('tr').data('key')
+                    },
+                    function (data) {
+                        $('#activity-modal-delete').find('.modal-body').html(data);
+                        $('#activity-modal-delete').modal();
+                    }
+                );
+            });"
+        );
 
         Pjax::begin();
         echo DynaGrid::widget([
@@ -62,25 +129,30 @@ $this->params['breadcrumbs'][] = $this->title;
         ]);
         Pjax::end();
 
-        // Register Java Script Handler
-        $this->registerJs(
-            "$('.activity-view-link').click(function() {
-                $.get(
-                    'imgview', {
-                        id: $(this).closest('tr').data('key')
-                    },
-                    function (data) {
-                        $('.modal-body').html(data);
-                        $('#activity-modal').modal();
-                    }
-                );
-            });"
-        );
-
         // Datagrid View Action Modal Popup
         Modal::begin([
-            'id' => 'activity-modal',
-            'header' => '<h4 class="modal-title">View Image</h4>',
+            'id' => 'activity-modal-view',
+            'header' => '<h4 class="modal-title">View Customer</h4>',
+            'footer' => '<a href="#" class="btn btn-primary" data-dismiss="modal">Close</a>',
+
+        ]); ?>
+        <div class="well"></div>
+        <?php Modal::end();
+
+        // Datagrid Update Action Modal Popup
+        Modal::begin([
+                'id' => 'activity-modal-update',
+                'header' => '<h4 class="modal-title">Update Customer</h4>',
+                'footer' => '<a href="#" class="btn btn-primary" data-dismiss="modal">Close</a>',
+
+            ]); ?>
+        <div class="well"></div>
+        <?php Modal::end();
+
+        // Datagrid Delete Action Modal Popup
+        Modal::begin([
+            'id' => 'activity-modal-delete',
+            'header' => '<h4 class="modal-title">Delete Customer</h4>',
             'footer' => '<a href="#" class="btn btn-primary" data-dismiss="modal">Close</a>',
 
         ]); ?>
