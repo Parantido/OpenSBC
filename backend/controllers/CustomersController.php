@@ -118,7 +118,7 @@ class CustomersController extends Controller
             $parents = $_POST['depdrop_parents'];
             if ($parents != null) {
                 $out = [];
-                $cities = Countries::find()->where(['parent_id' => $parents[0], 'countries_type' => '2'])->all();
+                $cities = Countries::find()->where(['parent_id' => $parents[0], 'countries_type' => '1'])->all();
                 foreach($cities as $city) {
                     $entry = ['id' => $city->id, 'name' => $city->name];
                     array_push($out, $entry);
