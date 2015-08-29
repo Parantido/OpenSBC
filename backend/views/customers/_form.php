@@ -19,7 +19,7 @@ use kartik\depdrop\DepDrop;
 
     <?php
     $domains_list = ArrayHelper::map(Domain::find()->all(), 'id', 'domain');
-    $countries_list = ArrayHelper::map(Countries::find()->where(['countries_type' => 1])->all(), 'countries_id', 'name');
+    $countries_list = ArrayHelper::map(Countries::find()->where(['countries_type' => '0'])->all(), 'countries_id', 'name');
 
     $form = ActiveForm::begin(['type' => ActiveForm::TYPE_HORIZONTAL]); echo Form::widget([
         'model' => $model,
@@ -33,7 +33,7 @@ use kartik\depdrop\DepDrop;
             'address1'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter 1st Address...', 'maxlength'=>200]],
             'address2'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter 2nd Address...', 'maxlength'=>200]],
             'state'=>['type'=> Form::INPUT_DROPDOWN_LIST, 'items' => $countries_list, 'label' => 'name', 'options'=>['placeholder'=>'Enter State...', 'maxlength'=>50]],
-            'city'=>['type'=> DepDrop::TYPE_DEFAULT, 'options'=>['placeholder'=>'Enter City...', 'maxlength'=>50]],
+            'city'=>['type'=> Form::INPUT_DROPDOWN_LIST, 'options'=>['placeholder'=>'Enter City...', 'maxlength'=>50]],
             'country'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Country...', 'maxlength'=>255]],
             'province'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Province...', 'maxlength'=>255]],
             'zip'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Zip...', 'maxlength'=>12]],
