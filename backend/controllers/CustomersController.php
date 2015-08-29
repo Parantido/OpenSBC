@@ -113,7 +113,7 @@ class CustomersController extends Controller
     /**
      *
      */
-    public function actionGetCities() {
+    public function actionGetcities() {
         $out = [];
         if (isset($_POST['depdrop_parents'])) {
             $parents = $_POST['depdrop_parents'];

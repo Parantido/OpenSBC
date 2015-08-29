@@ -37,7 +37,7 @@ use kartik\depdrop\DepDrop;
                 'maxlength' => 50,
                 'depends' => ['state-id'],
                 'placeholder' => 'Select City...',
-                'url' => \yii\helpers\Url::to(['/customers/getCities'])
+                'url' => \yii\helpers\Url::to(['/customers/getcities'])
             ]]],
             'country'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Country...', 'maxlength'=>255]],
             'province'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Province...', 'maxlength'=>255]],
