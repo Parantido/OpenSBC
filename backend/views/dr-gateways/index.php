@@ -10,7 +10,7 @@ use yii\widgets\Pjax;
  * @var app\models\DrGatewaysSearch $searchModel
  */
 
-$this->title = 'Dr Gateways';
+$this->title = Yii::t('app', 'Dr Gateways');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="dr-gateways-index">
@@ -20,7 +20,9 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?php /* echo Html::a('Create Dr Gateways', ['create'], ['class' => 'btn btn-success'])*/  ?>
+        <?php /* echo Html::a(Yii::t('app', 'Create {modelClass}', [
+    'modelClass' => 'Dr Gateways',
+]), ['create'], ['class' => 'btn btn-success'])*/  ?>
     </p>
 
     <?php Pjax::begin(); echo GridView::widget([
@@ -31,9 +33,10 @@ $this->params['breadcrumbs'][] = $this->title;
 
             'id',
             'gwid',
+            'cust_id',
             'type',
             'address',
-            'strip',
+//            'strip', 
 //            'pri_prefix', 
 //            'attrs', 
 //            'probe_mode', 

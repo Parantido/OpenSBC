@@ -23,6 +23,8 @@ use kartik\datecontrol\DateControl;
 
 'gwid'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Gwid...', 'maxlength'=>64]], 
 
+'cust_id'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Cust ID...']], 
+
 'address'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Address...', 'maxlength'=>128]], 
 
 'type'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Type...']], 

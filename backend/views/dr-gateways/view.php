@@ -10,7 +10,7 @@ use kartik\datecontrol\DateControl;
  */
 
 $this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Dr Gateways', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Dr Gateways'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="dr-gateways-view">
@@ -31,6 +31,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             'id',
             'gwid',
+            'cust_id',
             'type',
             'address',
             'strip',

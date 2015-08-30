@@ -15,7 +15,7 @@ class DrGatewaysSearch extends DrGateways
     public function rules()
     {
         return [
-            [['id', 'type', 'strip', 'probe_mode', 'state'], 'integer'],
+            [['id', 'cust_id', 'type', 'strip', 'probe_mode', 'state'], 'integer'],
             [['gwid', 'address', 'pri_prefix', 'attrs', 'socket', 'description'], 'safe'],
         ];
     }
@@ -40,6 +40,7 @@ class DrGatewaysSearch extends DrGateways
 
         $query->andFilterWhere([
             'id' => $this->id,
+            'cust_id' => $this->cust_id,
             'type' => $this->type,
             'strip' => $this->strip,
             'probe_mode' => $this->probe_mode,

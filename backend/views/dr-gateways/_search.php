@@ -21,11 +21,13 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'gwid') ?>
 
+    <?= $form->field($model, 'cust_id') ?>
+
     <?= $form->field($model, 'type') ?>
 
     <?= $form->field($model, 'address') ?>
 
-    <?= $form->field($model, 'strip') ?>
+    <?php // echo $form->field($model, 'strip') ?>
 
     <?php // echo $form->field($model, 'pri_prefix') ?>
 
@@ -40,8 +42,8 @@ use yii\widgets\ActiveForm;
     <?php // echo $form->field($model, 'description') ?>
 
     <div class="form-group">
-        <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>
-        <?= Html::resetButton('Reset', ['class' => 'btn btn-default']) ?>
+        <?= Html::submitButton(Yii::t('app', 'Search'), ['class' => 'btn btn-primary']) ?>
+        <?= Html::resetButton(Yii::t('app', 'Reset'), ['class' => 'btn btn-default']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

@@ -7,8 +7,10 @@ use yii\helpers\Html;
  * @var app\models\DrGateways $model
  */
 
-$this->title = 'Create Dr Gateways';
-$this->params['breadcrumbs'][] = ['label' => 'Dr Gateways', 'url' => ['index']];
+$this->title = Yii::t('app', 'Create {modelClass}', [
+    'modelClass' => 'Dr Gateways',
+]);
+$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Dr Gateways'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="dr-gateways-create">
