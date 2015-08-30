@@ -33,25 +33,24 @@ use kartik\widgets\ActiveForm;
             'description' => ['attribute'=>'description', 'type'=> DetailView::INPUT_TEXTAREA],
         ];
 
+        $form = ActiveForm::begin([
+            'type' => ActiveForm::TYPE_HORIZONTAL,
+        ]);
 
-    $form = ActiveForm::begin([
-        'type' => ActiveForm::TYPE_HORIZONTAL,
-        'fullSpan' => 12,
-    ]);
+        echo DetailView::widget([
+            'model' => $model,
+            'condensed'=> true,
+            'hover' => true,
+            'mode' => DetailView::MODE_VIEW,
+            'panel' => [
+                'heading'=>'Gateway # ' . $model->id,
+                'type'=>DetailView::TYPE_INFO,
+            ],
+            'attributes' => $formColumns
+        ]);
 
-    echo DetailView::widget([
-        'model' => $model,
-        'condensed'=> true,
-        'hover' => true,
-        'mode' => DetailView::MODE_VIEW,
-        'panel' => [
-            'heading'=>'Customer # ' . $model->id,
-            'type'=>DetailView::TYPE_INFO,
-        ],
-        'attributes' => $formColumns
-    ]);
-
-    echo Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']);
-    ActiveForm::end(); ?>
+        echo Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']);
+        ActiveForm::end();
+    ?>
 
 </div>
