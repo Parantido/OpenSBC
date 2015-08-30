@@ -7,16 +7,16 @@ use yii\helpers\Html;
  * @var app\models\DrGateways $model
  */
 
-$this->title = Yii::t('app', 'Create {modelClass}', [
-    'modelClass' => 'Dr Gateways',
+$this->title = Yii::t('app', 'Creating {modelClass}', [
+    'modelClass' => 'Gateway',
 ]);
-$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Dr Gateways'), 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Gateway'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="dr-gateways-create">
-    <div class="page-header">
+    <!--<div class="page-header">
         <h1><?= Html::encode($this->title) ?></h1>
-    </div>
+    </div>-->
     <?= $this->render('_form', [
         'model' => $model,
     ]) ?>
