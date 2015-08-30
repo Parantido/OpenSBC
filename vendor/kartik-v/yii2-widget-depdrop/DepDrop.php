@@ -49,7 +49,7 @@ class DepDrop extends \kartik\base\InputWidget
     public function init()
     {
         if (empty($this->pluginOptions['url'])) {
-            throw new InvalidConfigException("The 'pluginOptions[\"url\"]' property has not been set: " .print_r($this, true));
+            throw new InvalidConfigException("The 'pluginOptions[\"url\"]' property has not been set.");
         }
         if (empty($this->pluginOptions['depends']) || !is_array($this->pluginOptions['depends'])) {
             throw new InvalidConfigException("The 'pluginOptions[\"depends\"]' property must be set and must be an array of dependent dropdown element ID.");

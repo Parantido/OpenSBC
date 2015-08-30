@@ -3,6 +3,7 @@
 use yii\helpers\Html;
 use app\models\Domain;
 use app\models\Countries;
+use app\models\PhoneTypes;
 use yii\helpers\ArrayHelper;
 use kartik\detail\DetailView;
 
@@ -21,6 +22,7 @@ $this->params['breadcrumbs'][] = $this->title;
     </div>-->
 
     <?php
+        $ptypes_list = ArrayHelper::map(PhoneTypes::find()->all(), 'id', 'type');
         $domains_list = ArrayHelper::map(Domain::find()->all(), 'id', 'domain');
         $countries_list = ArrayHelper::map(Countries::find()->where(['countries_type' => '0'])->all(), 'countries_id', 'name');
 
@@ -45,11 +47,11 @@ $this->params['breadcrumbs'][] = $this->title;
             'zip'=>['attribute'=>'zip', 'type'=> DetailView::INPUT_TEXT],
             'location'=>['attribute'=>'location', 'type'=> DetailView::INPUT_TEXT],
             'phone1'=>['attribute'=>'phone1', 'type'=> DetailView::INPUT_TEXT],
-            'ptype1'=>['attribute'=>'ptype1', 'type'=> DetailView::INPUT_DROPDOWN_LIST],
+            'ptype1'=>['attribute'=>'ptype1', 'items' => $ptypes_list, 'type'=> DetailView::INPUT_DROPDOWN_LIST],
             'phone2'=>['attribute'=>'phone2', 'type'=> DetailView::INPUT_TEXT],
-            'ptype2'=>['attribute'=>'ptype2', 'type'=> DetailView::INPUT_DROPDOWN_LIST],
+            'ptype2'=>['attribute'=>'ptype2', 'items' => $ptypes_list, 'type'=> DetailView::INPUT_DROPDOWN_LIST],
             'phone3'=>['attribute'=>'phone3', 'type'=> DetailView::INPUT_TEXT],
-            'ptype3'=>['attribute'=>'ptype3', 'type'=> DetailView::INPUT_DROPDOWN_LIST],
+            'ptype3'=>['attribute'=>'ptype3', 'items' => $ptypes_list, 'type'=> DetailView::INPUT_DROPDOWN_LIST],
             'email'=>['attribute'=>'email', 'type'=> DetailView::INPUT_TEXT],
             'username'=>['attribute'=>'username', 'type'=> DetailView::INPUT_TEXT],
             'password'=>['attribute'=>'password', 'type'=> DetailView::INPUT_PASSWORD],
