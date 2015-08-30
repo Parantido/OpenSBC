@@ -1,9 +1,11 @@
 <?php
 
 use yii\helpers\Html;
+use app\models\Domain;
+use app\models\Customers;
+use yii\helpers\ArrayHelper;
+use kartik\detail\DetailView;
 use kartik\widgets\ActiveForm;
-use kartik\builder\Form;
-use kartik\datecontrol\DateControl;
 
 /**
  * @var yii\web\View $this
@@ -14,39 +16,41 @@ use kartik\datecontrol\DateControl;
 
 <div class="dr-gateways-form">
 
-    <?php $form = ActiveForm::begin(['type'=>ActiveForm::TYPE_HORIZONTAL]); echo Form::widget([
+    <?php
+        $domains_list = ArrayHelper::map(Domain::find()->all(), 'id', 'domain');
+        $customers_list = ArrayHelper::map(Customers::find()->all(), 'id', 'username');
 
-    'model' => $model,
-    'form' => $form,
-    'columns' => 1,
-    'attributes' => [
-
-'gwid'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Gwid...', 'maxlength'=>64]], 
-
-'cust_id'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Cust ID...']], 
-
-'address'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Address...', 'maxlength'=>128]], 
-
-'type'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Type...']], 
-
-'strip'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Strip...']], 
-
-'probe_mode'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Probe Mode...']], 
-
-'state'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter State...']], 
-
-'socket'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Socket...', 'maxlength'=>128]], 
-
-'description'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Description...', 'maxlength'=>128]], 
-
-'pri_prefix'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Pri Prefix...', 'maxlength'=>16]], 
-
-'attrs'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Attrs...', 'maxlength'=>255]], 
-
-    ]
+        $formColumns = [
+            'type' => ['attribute'=>'type', 'type'=> DetailView::INPUT_TEXT],
+            'address' => ['attribute'=>'address', 'type'=> DetailView::INPUT_TEXT],
+            'strip' => ['attribute'=>'strip', 'type'=> DetailView::INPUT_DROPDOWN_LIST],
+            'cust_id' => ['attribute'=>'cust_id', 'items' => $customers_list, 'type'=> DetailView::INPUT_DROPDOWN_LIST],
+            'pri_prefix' => ['attribute'=>'pri_prefix', 'type'=> DetailView::INPUT_TEXT],
+            'attrs' => ['attribute'=>'attrs', 'type'=> DetailView::INPUT_TEXT],
+            'probe_mode' => ['attribute'=>'probe_mode', 'type'=> DetailView::INPUT_TEXT],
+            'state' => ['attribute'=>'state', 'type'=> DetailView::INPUT_TEXT],
+            'socket' => ['attribute'=>'socket', 'type'=> DetailView::INPUT_TEXT],
+            'description' => ['attribute'=>'description', 'type'=> DetailView::INPUT_TEXTAREA],
+        ];
 
 
+    $form = ActiveForm::begin([
+        'type' => ActiveForm::TYPE_HORIZONTAL,
+        'fullSpan' => 12,
     ]);
+
+    echo DetailView::widget([
+        'model' => $model,
+        'condensed'=> true,
+        'hover' => true,
+        'mode' => DetailView::MODE_VIEW,
+        'panel' => [
+            'heading'=>'Customer # ' . $model->id,
+            'type'=>DetailView::TYPE_INFO,
+        ],
+        'attributes' => $formColumns
+    ]);
+
     echo Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']);
     ActiveForm::end(); ?>
 
