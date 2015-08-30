@@ -50,12 +50,21 @@ class Customers extends \yii\db\ActiveRecord
         return [
             [['location', 'status', 'domain_id'], 'integer'],
             [['notes'], 'string'],
-            [['firstname', 'lastname', 'city', 'state', 'phone1', 'phone2', 'phone3', 'ptype1', 'ptype2', 'ptype3', 'email', 'username'], 'string', 'max' => 50],
+            ['email', 'email'],
+            ['password', 'validatePassword'],
+            [['firstname', 'lastname', 'city', 'state', 'phone1', 'phone2', 'phone3', 'ptype1', 'ptype2', 'ptype3', 'username'], 'string', 'max' => 50],
             [['address1', 'address2'], 'string', 'max' => 200],
             [['country', 'province', 'skypeid', 'password'], 'string', 'max' => 255],
             [['username', 'password', 'firstname', 'lastname'], 'required'],
             [['zip'], 'string', 'max' => 12]
         ];
+    }
+
+    /**
+     * Doing Password Validation
+     */
+    public function validatePassword() {
+
     }
 
     /**

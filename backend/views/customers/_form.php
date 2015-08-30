@@ -51,8 +51,7 @@ use kartik\depdrop\DepDrop;
             'ptype3'=>['type'=> Form::INPUT_DROPDOWN_LIST, 'items' => ['Mobile', 'Landline', 'Fax', 'Other'], 'options'=>['placeholder'=>'Enter 3rd Phone Type...', 'maxlength'=>50]],
             'email'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Email...', 'maxlength'=>50]],
             'username'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Username...', 'maxlength'=>50]],
-            //'password'=>['type'=> Form::INPUT_PASSWORD, 'options'=>['placeholder'=>'Enter Password...', 'maxlength'=>255]],
-            'password'=>['type'=> Form::INPUT_WIDGET, 'widgetClass' => PasswordInput::classname(), 'options'=>[]],
+            'password'=>['type'=> Form::INPUT_PASSWORD, 'options'=>['placeholder'=>'Enter Password...', 'maxlength'=>255]],
             'skypeid'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Skype Id...', 'maxlength'=>255]],
             'notes'=>['type'=> Form::INPUT_TEXTAREA, 'options'=>['placeholder'=>'Enter Notes...','rows'=> 6]],
         ]
