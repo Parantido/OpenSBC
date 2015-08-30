@@ -19,6 +19,9 @@ $this->params['breadcrumbs'][] = $this->title;
     </div>-->
 
     <?php
+        $domains_list = ArrayHelper::map(Domain::find()->all(), 'id', 'domain');
+        $countries_list = ArrayHelper::map(Countries::find()->where(['countries_type' => '0'])->all(), 'countries_id', 'name');
+    
         $detailViewColumns = [
             'firstname'=>['attribute'=>'firstname', 'type'=> DetailView::INPUT_TEXT],
             'lastname'=>['attribute'=>'lastname', 'type'=> DetailView::INPUT_TEXT],
