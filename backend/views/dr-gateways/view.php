@@ -12,7 +12,7 @@ use kartik\detail\DetailView;
  */
 
 $this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Dr Gateways', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Gateways', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="dr-gateways-view">
