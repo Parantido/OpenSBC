@@ -9,15 +9,14 @@ use kartik\datecontrol\DateControl;
  * @var app\models\Customers $model
  */
 
-$this->title = $model->id;
+$this->title = 'Customer: ' .$model->firstname. ' ' .$model->lastname. '(' .$model->username. ')';
 $this->params['breadcrumbs'][] = ['label' => 'Customers', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="customers-view">
-    <div class="page-header">
+    <!--<div class="page-header">
         <h1><?= Html::encode($this->title) ?></h1>
-    </div>
-
+    </div>-->
 
     <?= DetailView::widget([
             'model' => $model,
