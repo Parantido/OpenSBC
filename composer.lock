@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2298dca828f293d39c1f9832b5abaf23",
+    "hash": "1ab829563e96a49ec75558746a3b7696",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -1318,6 +1318,53 @@
                 "yii2"
             ],
             "time": "2015-04-21 15:19:01"
+        },
+        {
+            "name": "kartik-v/yii2-slider",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-slider.git",
+                "reference": "25b93d3db8a23f5a94b1959b4ce676c525facf57"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-slider/zipball/25b93d3db8a23f5a94b1959b4ce676c525facf57",
+                "reference": "25b93d3db8a23f5a94b1959b4ce676c525facf57",
+                "shasum": ""
+            },
+            "require": {
+                "kartik-v/yii2-krajee-base": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "kartik\\slider\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD 3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "An advanced slider input for Yii Framework 2 for both touch enabled and desktop devices based on bootstrap-slider.",
+            "homepage": "https://github.com/kartik-v/yii2-slider",
+            "keywords": [
+                "bootstrap",
+                "bootstrap 3",
+                "extension",
+                "range",
+                "slider",
+                "widget",
+                "yii2"
+            ],
+            "time": "2015-05-05 11:59:53"
         },
         {
             "name": "kartik-v/yii2-sortable",
@@ -3076,7 +3123,8 @@
         "kartik-v/yii2-grid": 20,
         "kartik-v/yii2-mpdf": 20,
         "kartik-v/yii2-dynagrid": 20,
-        "warrence/yii2-kartikgii": 20
+        "warrence/yii2-kartikgii": 20,
+        "kartik-v/yii2-slider": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

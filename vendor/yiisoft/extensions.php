@@ -372,4 +372,13 @@ return array (
       '@kartik/icons' => $vendorDir . '/kartik-v/yii2-icons',
     ),
   ),
+  'kartik-v/yii2-slider' => 
+  array (
+    'name' => 'kartik-v/yii2-slider',
+    'version' => '9999999-dev',
+    'alias' => 
+    array (
+      '@kartik/slider' => $vendorDir . '/kartik-v/yii2-slider',
+    ),
+  ),
 );

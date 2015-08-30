@@ -11673,3 +11673,1820 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1440946666.012
     'REQUEST_TIME' => 1440946666
 ]
+2015-08-30 15:17:44 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/DrGatewaysController.php:41
+2015-08-30 15:17:44 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/DrGatewaysController.php:41
+2015-08-30 15:17:44 [62.10.81.205][1][-][info][application] $_GET = [
+    'r' => 'dr-gateways'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.2.37984932.1436264237'
+    'PHPSESSID' => 'dti73jcnu1no0bbrsfvmm2dlk4'
+    '_csrf' => '30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yU2ozv-yEUviix7rR2VebXYpQjbpwZUR\";}'
+    '_identity' => '313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sbc.techfusion.it'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://sbc.techfusion.it/admin/index.php?r=dr-carriers'
+    'HTTP_COOKIE' => '_ga=GA1.2.37984932.1436264237; PHPSESSID=dti73jcnu1no0bbrsfvmm2dlk4; _csrf=30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yU2ozv-yEUviix7rR2VebXYpQjbpwZUR%22%3B%7D; _identity=313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'sbc.techfusion.it'
+    'SERVER_ADDR' => '82.165.137.15'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '62.10.81.205'
+    'DOCUMENT_ROOT' => '/var/www/html/OpenSBC'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => '/admin'
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/OpenSBC/backend/web'
+    'SERVER_ADMIN' => 'parantido@techfusion.it'
+    'SCRIPT_FILENAME' => '/var/www/html/OpenSBC/backend/web/index.php'
+    'REMOTE_PORT' => '34904'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dr-gateways'
+    'REQUEST_URI' => '/admin/index.php?r=dr-gateways'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1440947864.662
+    'REQUEST_TIME' => 1440947864
+]
+2015-08-30 15:18:09 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/DrGatewaysController.php:74
+2015-08-30 15:18:09 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/DrGatewaysController.php:74
+2015-08-30 15:18:09 [62.10.81.205][1][-][info][application] $_GET = [
+    'r' => 'dr-gateways/create'
+    '_pjax' => '#w0'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.2.37984932.1436264237'
+    'PHPSESSID' => 'ftmv0ronb6arqu4eh7hlker2b5'
+    '_csrf' => '30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yU2ozv-yEUviix7rR2VebXYpQjbpwZUR\";}'
+    '_identity' => '313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sbc.techfusion.it'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'cFptVDAtOVgJD187SlsUITUPGz1ZVQ4qImg7MVJ1YCghMA8kR3dsCg=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#w0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://sbc.techfusion.it/admin/index.php?r=dr-gateways'
+    'HTTP_COOKIE' => '_ga=GA1.2.37984932.1436264237; PHPSESSID=ftmv0ronb6arqu4eh7hlker2b5; _csrf=30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yU2ozv-yEUviix7rR2VebXYpQjbpwZUR%22%3B%7D; _identity=313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'sbc.techfusion.it'
+    'SERVER_ADDR' => '82.165.137.15'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '62.10.81.205'
+    'DOCUMENT_ROOT' => '/var/www/html/OpenSBC'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => '/admin'
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/OpenSBC/backend/web'
+    'SERVER_ADMIN' => 'parantido@techfusion.it'
+    'SCRIPT_FILENAME' => '/var/www/html/OpenSBC/backend/web/index.php'
+    'REMOTE_PORT' => '34917'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dr-gateways%2Fcreate&_pjax=%23w0'
+    'REQUEST_URI' => '/admin/index.php?r=dr-gateways%2Fcreate&_pjax=%23w0'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1440947889.132
+    'REQUEST_TIME' => 1440947889
+]
+2015-08-30 15:18:09 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/DrGatewaysController.php:74
+2015-08-30 15:18:09 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/DrGatewaysController.php:74
+2015-08-30 15:18:09 [62.10.81.205][1][-][info][application] $_GET = [
+    'r' => 'dr-gateways/create'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.2.37984932.1436264237'
+    'PHPSESSID' => 'ftmv0ronb6arqu4eh7hlker2b5'
+    '_csrf' => '30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yU2ozv-yEUviix7rR2VebXYpQjbpwZUR\";}'
+    '_identity' => '313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sbc.techfusion.it'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://sbc.techfusion.it/admin/index.php?r=dr-gateways'
+    'HTTP_COOKIE' => '_ga=GA1.2.37984932.1436264237; PHPSESSID=ftmv0ronb6arqu4eh7hlker2b5; _csrf=30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yU2ozv-yEUviix7rR2VebXYpQjbpwZUR%22%3B%7D; _identity=313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'sbc.techfusion.it'
+    'SERVER_ADDR' => '82.165.137.15'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '62.10.81.205'
+    'DOCUMENT_ROOT' => '/var/www/html/OpenSBC'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => '/admin'
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/OpenSBC/backend/web'
+    'SERVER_ADMIN' => 'parantido@techfusion.it'
+    'SCRIPT_FILENAME' => '/var/www/html/OpenSBC/backend/web/index.php'
+    'REMOTE_PORT' => '34917'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dr-gateways%2Fcreate'
+    'REQUEST_URI' => '/admin/index.php?r=dr-gateways%2Fcreate'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1440947889.295
+    'REQUEST_TIME' => 1440947889
+]
+2015-08-30 15:19:41 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/DrGatewaysController.php:74
+2015-08-30 15:19:41 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/DrGatewaysController.php:74
+2015-08-30 15:19:40 [62.10.81.205][1][-][info][application] $_GET = [
+    'r' => 'dr-gateways/create'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.2.37984932.1436264237'
+    'PHPSESSID' => 'ftmv0ronb6arqu4eh7hlker2b5'
+    '_csrf' => '30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yU2ozv-yEUviix7rR2VebXYpQjbpwZUR\";}'
+    '_identity' => '313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sbc.techfusion.it'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_ga=GA1.2.37984932.1436264237; PHPSESSID=ftmv0ronb6arqu4eh7hlker2b5; _csrf=30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yU2ozv-yEUviix7rR2VebXYpQjbpwZUR%22%3B%7D; _identity=313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'sbc.techfusion.it'
+    'SERVER_ADDR' => '82.165.137.15'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '62.10.81.205'
+    'DOCUMENT_ROOT' => '/var/www/html/OpenSBC'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => '/admin'
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/OpenSBC/backend/web'
+    'SERVER_ADMIN' => 'parantido@techfusion.it'
+    'SCRIPT_FILENAME' => '/var/www/html/OpenSBC/backend/web/index.php'
+    'REMOTE_PORT' => '34940'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dr-gateways%2Fcreate'
+    'REQUEST_URI' => '/admin/index.php?r=dr-gateways%2Fcreate'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1440947980.977
+    'REQUEST_TIME' => 1440947980
+]
+2015-08-30 15:26:19 [71.252.200.20][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 71.252.200.20
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main-login.php:26
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:16
+    in /var/www/html/OpenSBC/vendor/amnah/yii2-user/controllers/DefaultController.php:83
+2015-08-30 15:26:19 [71.252.200.20][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 71.252.200.20
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main-login.php:26
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:16
+    in /var/www/html/OpenSBC/vendor/amnah/yii2-user/controllers/DefaultController.php:83
+2015-08-30 15:26:19 [71.252.200.20][-][-][info][application] $_GET = [
+    'r' => 'user/login'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'm67t77aaugm6t0sukp9lhpm713'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sbc.techfusion.it'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => 'PHPSESSID=m67t77aaugm6t0sukp9lhpm713'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'sbc.techfusion.it'
+    'SERVER_ADDR' => '82.165.137.15'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '71.252.200.20'
+    'DOCUMENT_ROOT' => '/var/www/html/OpenSBC'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => '/admin'
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/OpenSBC/backend/web'
+    'SERVER_ADMIN' => 'parantido@techfusion.it'
+    'SCRIPT_FILENAME' => '/var/www/html/OpenSBC/backend/web/index.php'
+    'REMOTE_PORT' => '53014'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Flogin'
+    'REQUEST_URI' => '/admin/index.php?r=user%2Flogin'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1440948379.273
+    'REQUEST_TIME' => 1440948379
+]
+2015-08-30 15:26:35 [71.252.200.20][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 71.252.200.20
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/SiteController.php:58
+2015-08-30 15:26:35 [71.252.200.20][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 71.252.200.20
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/SiteController.php:58
+2015-08-30 15:26:35 [71.252.200.20][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'bnjvjv1170fsu2go1qmj8u3a51'
+    '_csrf' => 'ad5429c362e57b5f5e7ba41d324e0b8a5b7493d6c18ed26e94c81c3e8af19cfba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"EKBi_oE_R2vfCdNoJJt04qLpyPnVRFrN\";}'
+    '_identity' => '313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sbc.techfusion.it'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://sbc.techfusion.it/admin/index.php?r=user%2Flogin'
+    'HTTP_COOKIE' => 'PHPSESSID=bnjvjv1170fsu2go1qmj8u3a51; _csrf=ad5429c362e57b5f5e7ba41d324e0b8a5b7493d6c18ed26e94c81c3e8af19cfba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22EKBi_oE_R2vfCdNoJJt04qLpyPnVRFrN%22%3B%7D; _identity=313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'sbc.techfusion.it'
+    'SERVER_ADDR' => '82.165.137.15'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '71.252.200.20'
+    'DOCUMENT_ROOT' => '/var/www/html/OpenSBC'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => '/admin'
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/OpenSBC/backend/web'
+    'SERVER_ADMIN' => 'parantido@techfusion.it'
+    'SCRIPT_FILENAME' => '/var/www/html/OpenSBC/backend/web/index.php'
+    'REMOTE_PORT' => '53023'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1440948395.322
+    'REQUEST_TIME' => 1440948395
+]
+2015-08-30 15:26:40 [71.252.200.20][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 71.252.200.20
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/CustomersController.php:44
+2015-08-30 15:26:40 [71.252.200.20][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 71.252.200.20
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/CustomersController.php:44
+2015-08-30 15:26:40 [71.252.200.20][1][-][info][application] $_GET = [
+    'r' => 'customers'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'bnjvjv1170fsu2go1qmj8u3a51'
+    '_csrf' => 'ad5429c362e57b5f5e7ba41d324e0b8a5b7493d6c18ed26e94c81c3e8af19cfba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"EKBi_oE_R2vfCdNoJJt04qLpyPnVRFrN\";}'
+    '_identity' => '313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sbc.techfusion.it'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://sbc.techfusion.it/admin/'
+    'HTTP_COOKIE' => 'PHPSESSID=bnjvjv1170fsu2go1qmj8u3a51; _csrf=ad5429c362e57b5f5e7ba41d324e0b8a5b7493d6c18ed26e94c81c3e8af19cfba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22EKBi_oE_R2vfCdNoJJt04qLpyPnVRFrN%22%3B%7D; _identity=313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'sbc.techfusion.it'
+    'SERVER_ADDR' => '82.165.137.15'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '71.252.200.20'
+    'DOCUMENT_ROOT' => '/var/www/html/OpenSBC'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => '/admin'
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/OpenSBC/backend/web'
+    'SERVER_ADMIN' => 'parantido@techfusion.it'
+    'SCRIPT_FILENAME' => '/var/www/html/OpenSBC/backend/web/index.php'
+    'REMOTE_PORT' => '53023'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=customers'
+    'REQUEST_URI' => '/admin/index.php?r=customers'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1440948400.812
+    'REQUEST_TIME' => 1440948400
+]
+2015-08-30 15:27:09 [71.252.200.20][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 71.252.200.20
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/CustomersController.php:59
+2015-08-30 15:27:09 [71.252.200.20][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 71.252.200.20
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/CustomersController.php:59
+2015-08-30 15:27:09 [71.252.200.20][1][-][info][application] $_GET = [
+    'r' => 'customers/view'
+    'id' => '1'
+    'edit' => 't'
+    '_pjax' => '#w0'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'bnjvjv1170fsu2go1qmj8u3a51'
+    '_csrf' => 'ad5429c362e57b5f5e7ba41d324e0b8a5b7493d6c18ed26e94c81c3e8af19cfba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"EKBi_oE_R2vfCdNoJJt04qLpyPnVRFrN\";}'
+    '_identity' => '313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sbc.techfusion.it'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_X_CSRF_TOKEN' => 'Sk1qNE82QTcPBihdEFkEaBh/HFIMUg9YAAceBHtHDUczHQRiHXAzeQ=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#w0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://sbc.techfusion.it/admin/index.php?r=customers'
+    'HTTP_COOKIE' => 'PHPSESSID=bnjvjv1170fsu2go1qmj8u3a51; _csrf=ad5429c362e57b5f5e7ba41d324e0b8a5b7493d6c18ed26e94c81c3e8af19cfba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22EKBi_oE_R2vfCdNoJJt04qLpyPnVRFrN%22%3B%7D; _identity=313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'sbc.techfusion.it'
+    'SERVER_ADDR' => '82.165.137.15'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '71.252.200.20'
+    'DOCUMENT_ROOT' => '/var/www/html/OpenSBC'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => '/admin'
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/OpenSBC/backend/web'
+    'SERVER_ADMIN' => 'parantido@techfusion.it'
+    'SCRIPT_FILENAME' => '/var/www/html/OpenSBC/backend/web/index.php'
+    'REMOTE_PORT' => '53034'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=customers%2Fview&id=1&edit=t&_pjax=%23w0'
+    'REQUEST_URI' => '/admin/index.php?r=customers%2Fview&id=1&edit=t&_pjax=%23w0'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1440948429.768
+    'REQUEST_TIME' => 1440948429
+]
+2015-08-30 15:27:10 [71.252.200.20][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 71.252.200.20
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/CustomersController.php:59
+2015-08-30 15:27:10 [71.252.200.20][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 71.252.200.20
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/CustomersController.php:59
+2015-08-30 15:27:10 [71.252.200.20][1][-][info][application] $_GET = [
+    'r' => 'customers/view'
+    'id' => '1'
+    'edit' => 't'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'bnjvjv1170fsu2go1qmj8u3a51'
+    '_csrf' => 'ad5429c362e57b5f5e7ba41d324e0b8a5b7493d6c18ed26e94c81c3e8af19cfba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"EKBi_oE_R2vfCdNoJJt04qLpyPnVRFrN\";}'
+    '_identity' => '313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sbc.techfusion.it'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://sbc.techfusion.it/admin/index.php?r=customers'
+    'HTTP_COOKIE' => 'PHPSESSID=bnjvjv1170fsu2go1qmj8u3a51; _csrf=ad5429c362e57b5f5e7ba41d324e0b8a5b7493d6c18ed26e94c81c3e8af19cfba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22EKBi_oE_R2vfCdNoJJt04qLpyPnVRFrN%22%3B%7D; _identity=313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'sbc.techfusion.it'
+    'SERVER_ADDR' => '82.165.137.15'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '71.252.200.20'
+    'DOCUMENT_ROOT' => '/var/www/html/OpenSBC'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => '/admin'
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/OpenSBC/backend/web'
+    'SERVER_ADMIN' => 'parantido@techfusion.it'
+    'SCRIPT_FILENAME' => '/var/www/html/OpenSBC/backend/web/index.php'
+    'REMOTE_PORT' => '53034'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=customers%2Fview&id=1&edit=t'
+    'REQUEST_URI' => '/admin/index.php?r=customers%2Fview&id=1&edit=t'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1440948430.561
+    'REQUEST_TIME' => 1440948430
+]
+2015-08-30 15:53:51 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/DrCarriersController.php:41
+2015-08-30 15:53:51 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/DrCarriersController.php:41
+2015-08-30 15:53:51 [62.10.81.205][1][-][info][application] $_GET = [
+    'r' => 'dr-carriers'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.2.37984932.1436264237'
+    'PHPSESSID' => 'ftmv0ronb6arqu4eh7hlker2b5'
+    '_csrf' => '30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yU2ozv-yEUviix7rR2VebXYpQjbpwZUR\";}'
+    '_identity' => '313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sbc.techfusion.it'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://sbc.techfusion.it/admin/index.php?r=dr-gateways%2Fcreate'
+    'HTTP_COOKIE' => '_ga=GA1.2.37984932.1436264237; PHPSESSID=ftmv0ronb6arqu4eh7hlker2b5; _csrf=30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yU2ozv-yEUviix7rR2VebXYpQjbpwZUR%22%3B%7D; _identity=313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'sbc.techfusion.it'
+    'SERVER_ADDR' => '82.165.137.15'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '62.10.81.205'
+    'DOCUMENT_ROOT' => '/var/www/html/OpenSBC'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => '/admin'
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/OpenSBC/backend/web'
+    'SERVER_ADMIN' => 'parantido@techfusion.it'
+    'SCRIPT_FILENAME' => '/var/www/html/OpenSBC/backend/web/index.php'
+    'REMOTE_PORT' => '35113'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dr-carriers'
+    'REQUEST_URI' => '/admin/index.php?r=dr-carriers'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1440950031.496
+    'REQUEST_TIME' => 1440950031
+]
+2015-08-30 15:53:56 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/DrGatewaysController.php:41
+2015-08-30 15:53:56 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/DrGatewaysController.php:41
+2015-08-30 15:53:56 [62.10.81.205][1][-][info][application] $_GET = [
+    'r' => 'dr-gateways'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.2.37984932.1436264237'
+    'PHPSESSID' => 'ftmv0ronb6arqu4eh7hlker2b5'
+    '_csrf' => '30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yU2ozv-yEUviix7rR2VebXYpQjbpwZUR\";}'
+    '_identity' => '313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sbc.techfusion.it'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://sbc.techfusion.it/admin/index.php?r=dr-carriers'
+    'HTTP_COOKIE' => '_ga=GA1.2.37984932.1436264237; PHPSESSID=ftmv0ronb6arqu4eh7hlker2b5; _csrf=30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yU2ozv-yEUviix7rR2VebXYpQjbpwZUR%22%3B%7D; _identity=313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'sbc.techfusion.it'
+    'SERVER_ADDR' => '82.165.137.15'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '62.10.81.205'
+    'DOCUMENT_ROOT' => '/var/www/html/OpenSBC'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => '/admin'
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/OpenSBC/backend/web'
+    'SERVER_ADMIN' => 'parantido@techfusion.it'
+    'SCRIPT_FILENAME' => '/var/www/html/OpenSBC/backend/web/index.php'
+    'REMOTE_PORT' => '35115'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dr-gateways'
+    'REQUEST_URI' => '/admin/index.php?r=dr-gateways'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1440950036.515
+    'REQUEST_TIME' => 1440950036
+]
+2015-08-30 15:54:00 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/DrGatewaysController.php:74
+2015-08-30 15:54:00 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/DrGatewaysController.php:74
+2015-08-30 15:54:00 [62.10.81.205][1][-][info][application] $_GET = [
+    'r' => 'dr-gateways/create'
+    '_pjax' => '#w0'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.2.37984932.1436264237'
+    'PHPSESSID' => 'ftmv0ronb6arqu4eh7hlker2b5'
+    '_csrf' => '30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yU2ozv-yEUviix7rR2VebXYpQjbpwZUR\";}'
+    '_identity' => '313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sbc.techfusion.it'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'TU9VcHo0Y000GmcfAEJONAgaIxkTTFQ/H30DFRhsOj0cJTcADW42Hw=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#w0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://sbc.techfusion.it/admin/index.php?r=dr-gateways'
+    'HTTP_COOKIE' => '_ga=GA1.2.37984932.1436264237; PHPSESSID=ftmv0ronb6arqu4eh7hlker2b5; _csrf=30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yU2ozv-yEUviix7rR2VebXYpQjbpwZUR%22%3B%7D; _identity=313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'sbc.techfusion.it'
+    'SERVER_ADDR' => '82.165.137.15'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '62.10.81.205'
+    'DOCUMENT_ROOT' => '/var/www/html/OpenSBC'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => '/admin'
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/OpenSBC/backend/web'
+    'SERVER_ADMIN' => 'parantido@techfusion.it'
+    'SCRIPT_FILENAME' => '/var/www/html/OpenSBC/backend/web/index.php'
+    'REMOTE_PORT' => '35115'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dr-gateways%2Fcreate&_pjax=%23w0'
+    'REQUEST_URI' => '/admin/index.php?r=dr-gateways%2Fcreate&_pjax=%23w0'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1440950040.091
+    'REQUEST_TIME' => 1440950040
+]
+2015-08-30 15:54:00 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/DrGatewaysController.php:74
+2015-08-30 15:54:00 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/DrGatewaysController.php:74
+2015-08-30 15:54:00 [62.10.81.205][1][-][info][application] $_GET = [
+    'r' => 'dr-gateways/create'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.2.37984932.1436264237'
+    'PHPSESSID' => 'ftmv0ronb6arqu4eh7hlker2b5'
+    '_csrf' => '30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yU2ozv-yEUviix7rR2VebXYpQjbpwZUR\";}'
+    '_identity' => '313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sbc.techfusion.it'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://sbc.techfusion.it/admin/index.php?r=dr-gateways'
+    'HTTP_COOKIE' => '_ga=GA1.2.37984932.1436264237; PHPSESSID=ftmv0ronb6arqu4eh7hlker2b5; _csrf=30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yU2ozv-yEUviix7rR2VebXYpQjbpwZUR%22%3B%7D; _identity=313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'sbc.techfusion.it'
+    'SERVER_ADDR' => '82.165.137.15'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '62.10.81.205'
+    'DOCUMENT_ROOT' => '/var/www/html/OpenSBC'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => '/admin'
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/OpenSBC/backend/web'
+    'SERVER_ADMIN' => 'parantido@techfusion.it'
+    'SCRIPT_FILENAME' => '/var/www/html/OpenSBC/backend/web/index.php'
+    'REMOTE_PORT' => '35118'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dr-gateways%2Fcreate'
+    'REQUEST_URI' => '/admin/index.php?r=dr-gateways%2Fcreate'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1440950040.244
+    'REQUEST_TIME' => 1440950040
+]
+2015-08-30 15:59:37 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/DrGatewaysController.php:41
+2015-08-30 15:59:37 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/DrGatewaysController.php:41
+2015-08-30 15:59:37 [62.10.81.205][1][-][info][application] $_GET = [
+    'r' => 'dr-gateways'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.2.37984932.1436264237'
+    'PHPSESSID' => 'ftmv0ronb6arqu4eh7hlker2b5'
+    '_csrf' => '30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yU2ozv-yEUviix7rR2VebXYpQjbpwZUR\";}'
+    '_identity' => '313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sbc.techfusion.it'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://sbc.techfusion.it/admin/index.php?r=dr-gateways%2Fcreate'
+    'HTTP_COOKIE' => '_ga=GA1.2.37984932.1436264237; PHPSESSID=ftmv0ronb6arqu4eh7hlker2b5; _csrf=30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yU2ozv-yEUviix7rR2VebXYpQjbpwZUR%22%3B%7D; _identity=313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'sbc.techfusion.it'
+    'SERVER_ADDR' => '82.165.137.15'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '62.10.81.205'
+    'DOCUMENT_ROOT' => '/var/www/html/OpenSBC'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => '/admin'
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/OpenSBC/backend/web'
+    'SERVER_ADMIN' => 'parantido@techfusion.it'
+    'SCRIPT_FILENAME' => '/var/www/html/OpenSBC/backend/web/index.php'
+    'REMOTE_PORT' => '35134'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dr-gateways'
+    'REQUEST_URI' => '/admin/index.php?r=dr-gateways'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1440950377.712
+    'REQUEST_TIME' => 1440950377
+]
+2015-08-30 15:59:42 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/DrGatewaysController.php:74
+2015-08-30 15:59:42 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/DrGatewaysController.php:74
+2015-08-30 15:59:42 [62.10.81.205][1][-][info][application] $_GET = [
+    'r' => 'dr-gateways/create'
+    '_pjax' => '#w0'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.2.37984932.1436264237'
+    'PHPSESSID' => 'ftmv0ronb6arqu4eh7hlker2b5'
+    '_csrf' => '30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yU2ozv-yEUviix7rR2VebXYpQjbpwZUR\";}'
+    '_identity' => '313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sbc.techfusion.it'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'R3BPaF90RTA.JX0HJQJoSQIlOQE2DHJCFUIZDT0sHEAWGi0YKC4QYg=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#w0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://sbc.techfusion.it/admin/index.php?r=dr-gateways'
+    'HTTP_COOKIE' => '_ga=GA1.2.37984932.1436264237; PHPSESSID=ftmv0ronb6arqu4eh7hlker2b5; _csrf=30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yU2ozv-yEUviix7rR2VebXYpQjbpwZUR%22%3B%7D; _identity=313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'sbc.techfusion.it'
+    'SERVER_ADDR' => '82.165.137.15'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '62.10.81.205'
+    'DOCUMENT_ROOT' => '/var/www/html/OpenSBC'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => '/admin'
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/OpenSBC/backend/web'
+    'SERVER_ADMIN' => 'parantido@techfusion.it'
+    'SCRIPT_FILENAME' => '/var/www/html/OpenSBC/backend/web/index.php'
+    'REMOTE_PORT' => '35134'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dr-gateways%2Fcreate&_pjax=%23w0'
+    'REQUEST_URI' => '/admin/index.php?r=dr-gateways%2Fcreate&_pjax=%23w0'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1440950382.765
+    'REQUEST_TIME' => 1440950382
+]
+2015-08-30 15:59:42 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/DrGatewaysController.php:74
+2015-08-30 15:59:42 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/DrGatewaysController.php:74
+2015-08-30 15:59:42 [62.10.81.205][1][-][info][application] $_GET = [
+    'r' => 'dr-gateways/create'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.2.37984932.1436264237'
+    'PHPSESSID' => 'ftmv0ronb6arqu4eh7hlker2b5'
+    '_csrf' => '30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yU2ozv-yEUviix7rR2VebXYpQjbpwZUR\";}'
+    '_identity' => '313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sbc.techfusion.it'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://sbc.techfusion.it/admin/index.php?r=dr-gateways'
+    'HTTP_COOKIE' => '_ga=GA1.2.37984932.1436264237; PHPSESSID=ftmv0ronb6arqu4eh7hlker2b5; _csrf=30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yU2ozv-yEUviix7rR2VebXYpQjbpwZUR%22%3B%7D; _identity=313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'sbc.techfusion.it'
+    'SERVER_ADDR' => '82.165.137.15'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '62.10.81.205'
+    'DOCUMENT_ROOT' => '/var/www/html/OpenSBC'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => '/admin'
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/OpenSBC/backend/web'
+    'SERVER_ADMIN' => 'parantido@techfusion.it'
+    'SCRIPT_FILENAME' => '/var/www/html/OpenSBC/backend/web/index.php'
+    'REMOTE_PORT' => '35134'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dr-gateways%2Fcreate'
+    'REQUEST_URI' => '/admin/index.php?r=dr-gateways%2Fcreate'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1440950382.924
+    'REQUEST_TIME' => 1440950382
+]
+2015-08-30 16:02:49 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/DrGatewaysController.php:41
+2015-08-30 16:02:49 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/DrGatewaysController.php:41
+2015-08-30 16:02:49 [62.10.81.205][1][-][info][application] $_GET = [
+    'r' => 'dr-gateways'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.2.37984932.1436264237'
+    'PHPSESSID' => 'ftmv0ronb6arqu4eh7hlker2b5'
+    '_csrf' => '30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yU2ozv-yEUviix7rR2VebXYpQjbpwZUR\";}'
+    '_identity' => '313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sbc.techfusion.it'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://sbc.techfusion.it/admin/index.php?r=dr-gateways%2Fcreate'
+    'HTTP_COOKIE' => '_ga=GA1.2.37984932.1436264237; PHPSESSID=ftmv0ronb6arqu4eh7hlker2b5; _csrf=30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yU2ozv-yEUviix7rR2VebXYpQjbpwZUR%22%3B%7D; _identity=313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'sbc.techfusion.it'
+    'SERVER_ADDR' => '82.165.137.15'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '62.10.81.205'
+    'DOCUMENT_ROOT' => '/var/www/html/OpenSBC'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => '/admin'
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/OpenSBC/backend/web'
+    'SERVER_ADMIN' => 'parantido@techfusion.it'
+    'SCRIPT_FILENAME' => '/var/www/html/OpenSBC/backend/web/index.php'
+    'REMOTE_PORT' => '35212'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dr-gateways'
+    'REQUEST_URI' => '/admin/index.php?r=dr-gateways'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1440950569.062
+    'REQUEST_TIME' => 1440950569
+]
+2015-08-30 16:02:53 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/DrGatewaysController.php:74
+2015-08-30 16:02:53 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/DrGatewaysController.php:74
+2015-08-30 16:02:53 [62.10.81.205][1][-][info][application] $_GET = [
+    'r' => 'dr-gateways/create'
+    '_pjax' => '#w0'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.2.37984932.1436264237'
+    'PHPSESSID' => 'ftmv0ronb6arqu4eh7hlker2b5'
+    '_csrf' => '30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yU2ozv-yEUviix7rR2VebXYpQjbpwZUR\";}'
+    '_identity' => '313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sbc.techfusion.it'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'NE4tem9iTzVNGx8VFRRiTHEbWxMGGnhHZnx7Hw06FkVlJE8KGDgaZw=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#w0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://sbc.techfusion.it/admin/index.php?r=dr-gateways'
+    'HTTP_COOKIE' => '_ga=GA1.2.37984932.1436264237; PHPSESSID=ftmv0ronb6arqu4eh7hlker2b5; _csrf=30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yU2ozv-yEUviix7rR2VebXYpQjbpwZUR%22%3B%7D; _identity=313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'sbc.techfusion.it'
+    'SERVER_ADDR' => '82.165.137.15'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '62.10.81.205'
+    'DOCUMENT_ROOT' => '/var/www/html/OpenSBC'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => '/admin'
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/OpenSBC/backend/web'
+    'SERVER_ADMIN' => 'parantido@techfusion.it'
+    'SCRIPT_FILENAME' => '/var/www/html/OpenSBC/backend/web/index.php'
+    'REMOTE_PORT' => '35214'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dr-gateways%2Fcreate&_pjax=%23w0'
+    'REQUEST_URI' => '/admin/index.php?r=dr-gateways%2Fcreate&_pjax=%23w0'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1440950573.769
+    'REQUEST_TIME' => 1440950573
+]
+2015-08-30 16:02:54 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/DrGatewaysController.php:74
+2015-08-30 16:02:54 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/DrGatewaysController.php:74
+2015-08-30 16:02:53 [62.10.81.205][1][-][info][application] $_GET = [
+    'r' => 'dr-gateways/create'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.2.37984932.1436264237'
+    'PHPSESSID' => 'ftmv0ronb6arqu4eh7hlker2b5'
+    '_csrf' => '30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yU2ozv-yEUviix7rR2VebXYpQjbpwZUR\";}'
+    '_identity' => '313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sbc.techfusion.it'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://sbc.techfusion.it/admin/index.php?r=dr-gateways'
+    'HTTP_COOKIE' => '_ga=GA1.2.37984932.1436264237; PHPSESSID=ftmv0ronb6arqu4eh7hlker2b5; _csrf=30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yU2ozv-yEUviix7rR2VebXYpQjbpwZUR%22%3B%7D; _identity=313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'sbc.techfusion.it'
+    'SERVER_ADDR' => '82.165.137.15'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '62.10.81.205'
+    'DOCUMENT_ROOT' => '/var/www/html/OpenSBC'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => '/admin'
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/OpenSBC/backend/web'
+    'SERVER_ADMIN' => 'parantido@techfusion.it'
+    'SCRIPT_FILENAME' => '/var/www/html/OpenSBC/backend/web/index.php'
+    'REMOTE_PORT' => '35214'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dr-gateways%2Fcreate'
+    'REQUEST_URI' => '/admin/index.php?r=dr-gateways%2Fcreate'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1440950573.963
+    'REQUEST_TIME' => 1440950573
+]
+2015-08-30 16:09:40 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/CustomersController.php:44
+2015-08-30 16:09:40 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/CustomersController.php:44
+2015-08-30 16:09:40 [62.10.81.205][1][-][info][application] $_GET = [
+    'r' => 'customers'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.2.37984932.1436264237'
+    'PHPSESSID' => 'ftmv0ronb6arqu4eh7hlker2b5'
+    '_csrf' => '30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yU2ozv-yEUviix7rR2VebXYpQjbpwZUR\";}'
+    '_identity' => '313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sbc.techfusion.it'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://sbc.techfusion.it/admin/index.php?r=dr-gateways%2Fcreate'
+    'HTTP_COOKIE' => '_ga=GA1.2.37984932.1436264237; PHPSESSID=ftmv0ronb6arqu4eh7hlker2b5; _csrf=30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yU2ozv-yEUviix7rR2VebXYpQjbpwZUR%22%3B%7D; _identity=313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'sbc.techfusion.it'
+    'SERVER_ADDR' => '82.165.137.15'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '62.10.81.205'
+    'DOCUMENT_ROOT' => '/var/www/html/OpenSBC'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => '/admin'
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/OpenSBC/backend/web'
+    'SERVER_ADMIN' => 'parantido@techfusion.it'
+    'SCRIPT_FILENAME' => '/var/www/html/OpenSBC/backend/web/index.php'
+    'REMOTE_PORT' => '35284'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=customers'
+    'REQUEST_URI' => '/admin/index.php?r=customers'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1440950980.223
+    'REQUEST_TIME' => 1440950980
+]
+2015-08-30 16:09:45 [62.10.81.205][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: ptypes_list' in /var/www/html/OpenSBC/backend/views/customers/_form.php:45
+Stack trace:
+#0 /var/www/html/OpenSBC/backend/views/customers/_form.php(45): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/O...', 45, Array)
+#1 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/O...')
+#2 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/O...', Array)
+#3 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/O...', Array, NULL)
+#4 /var/www/html/OpenSBC/backend/views/customers/create.php(20): yii\base\View->render('_form', Array)
+#5 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/O...')
+#6 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/O...', Array)
+#7 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/O...', Array, Object(backend\controllers\CustomersController))
+#8 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('create', Array, Object(backend\controllers\CustomersController))
+#9 /var/www/html/OpenSBC/backend/controllers/CustomersController.php(77): yii\base\Controller->render('create', Array)
+#10 [internal function]: backend\controllers\CustomersController->actionCreate()
+#11 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#12 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#13 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('create', Array)
+#14 /var/www/html/OpenSBC/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('customers/creat...', Array)
+#15 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /var/www/html/OpenSBC/backend/web/index.php(18): yii\base\Application->run()
+#17 {main}
+2015-08-30 16:09:45 [62.10.81.205][-][-][info][application] $_GET = [
+    'r' => 'customers/create'
+    '_pjax' => '#w0'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.2.37984932.1436264237'
+    'PHPSESSID' => 'ftmv0ronb6arqu4eh7hlker2b5'
+    '_csrf' => '30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yU2ozv-yEUviix7rR2VebXYpQjbpwZUR\";}'
+    '_identity' => '313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sbc.techfusion.it'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'aEdCN0R3UzEREnBYPgF.SC0SNF4tD2RDOnUUUiYvCkE5LSBHMy0GYw=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#w0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://sbc.techfusion.it/admin/index.php?r=customers'
+    'HTTP_COOKIE' => '_ga=GA1.2.37984932.1436264237; PHPSESSID=ftmv0ronb6arqu4eh7hlker2b5; _csrf=30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yU2ozv-yEUviix7rR2VebXYpQjbpwZUR%22%3B%7D; _identity=313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'sbc.techfusion.it'
+    'SERVER_ADDR' => '82.165.137.15'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '62.10.81.205'
+    'DOCUMENT_ROOT' => '/var/www/html/OpenSBC'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => '/admin'
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/OpenSBC/backend/web'
+    'SERVER_ADMIN' => 'parantido@techfusion.it'
+    'SCRIPT_FILENAME' => '/var/www/html/OpenSBC/backend/web/index.php'
+    'REMOTE_PORT' => '35286'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=customers%2Fcreate&_pjax=%23w0'
+    'REQUEST_URI' => '/admin/index.php?r=customers%2Fcreate&_pjax=%23w0'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1440950985.276
+    'REQUEST_TIME' => 1440950985
+]
+2015-08-30 16:09:45 [62.10.81.205][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: ptypes_list' in /var/www/html/OpenSBC/backend/views/customers/_form.php:45
+Stack trace:
+#0 /var/www/html/OpenSBC/backend/views/customers/_form.php(45): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/O...', 45, Array)
+#1 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/O...')
+#2 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/O...', Array)
+#3 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/O...', Array, NULL)
+#4 /var/www/html/OpenSBC/backend/views/customers/create.php(20): yii\base\View->render('_form', Array)
+#5 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/O...')
+#6 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/O...', Array)
+#7 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/O...', Array, Object(backend\controllers\CustomersController))
+#8 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('create', Array, Object(backend\controllers\CustomersController))
+#9 /var/www/html/OpenSBC/backend/controllers/CustomersController.php(77): yii\base\Controller->render('create', Array)
+#10 [internal function]: backend\controllers\CustomersController->actionCreate()
+#11 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#12 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#13 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('create', Array)
+#14 /var/www/html/OpenSBC/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('customers/creat...', Array)
+#15 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /var/www/html/OpenSBC/backend/web/index.php(18): yii\base\Application->run()
+#17 {main}
+2015-08-30 16:09:45 [62.10.81.205][-][-][info][application] $_GET = [
+    'r' => 'customers/create'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.2.37984932.1436264237'
+    'PHPSESSID' => 'ftmv0ronb6arqu4eh7hlker2b5'
+    '_csrf' => '30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yU2ozv-yEUviix7rR2VebXYpQjbpwZUR\";}'
+    '_identity' => '313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sbc.techfusion.it'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://sbc.techfusion.it/admin/index.php?r=customers'
+    'HTTP_COOKIE' => '_ga=GA1.2.37984932.1436264237; PHPSESSID=ftmv0ronb6arqu4eh7hlker2b5; _csrf=30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yU2ozv-yEUviix7rR2VebXYpQjbpwZUR%22%3B%7D; _identity=313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'sbc.techfusion.it'
+    'SERVER_ADDR' => '82.165.137.15'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '62.10.81.205'
+    'DOCUMENT_ROOT' => '/var/www/html/OpenSBC'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => '/admin'
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/OpenSBC/backend/web'
+    'SERVER_ADMIN' => 'parantido@techfusion.it'
+    'SCRIPT_FILENAME' => '/var/www/html/OpenSBC/backend/web/index.php'
+    'REMOTE_PORT' => '35284'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=customers%2Fcreate'
+    'REQUEST_URI' => '/admin/index.php?r=customers%2Fcreate'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1440950985.468
+    'REQUEST_TIME' => 1440950985
+]
+2015-08-30 16:11:19 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/CustomersController.php:77
+2015-08-30 16:11:19 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/CustomersController.php:77
+2015-08-30 16:11:19 [62.10.81.205][1][-][info][application] $_GET = [
+    'r' => 'customers/create'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.2.37984932.1436264237'
+    'PHPSESSID' => 'ftmv0ronb6arqu4eh7hlker2b5'
+    '_csrf' => '30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yU2ozv-yEUviix7rR2VebXYpQjbpwZUR\";}'
+    '_identity' => '313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sbc.techfusion.it'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_ga=GA1.2.37984932.1436264237; PHPSESSID=ftmv0ronb6arqu4eh7hlker2b5; _csrf=30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yU2ozv-yEUviix7rR2VebXYpQjbpwZUR%22%3B%7D; _identity=313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'sbc.techfusion.it'
+    'SERVER_ADDR' => '82.165.137.15'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '62.10.81.205'
+    'DOCUMENT_ROOT' => '/var/www/html/OpenSBC'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => '/admin'
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/OpenSBC/backend/web'
+    'SERVER_ADMIN' => 'parantido@techfusion.it'
+    'SCRIPT_FILENAME' => '/var/www/html/OpenSBC/backend/web/index.php'
+    'REMOTE_PORT' => '35297'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=customers%2Fcreate'
+    'REQUEST_URI' => '/admin/index.php?r=customers%2Fcreate'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1440951079.185
+    'REQUEST_TIME' => 1440951079
+]
+2015-08-30 16:11:31 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/CustomersController.php:44
+2015-08-30 16:11:31 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/CustomersController.php:44
+2015-08-30 16:11:31 [62.10.81.205][1][-][info][application] $_GET = [
+    'r' => 'customers'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.2.37984932.1436264237'
+    'PHPSESSID' => 'ftmv0ronb6arqu4eh7hlker2b5'
+    '_csrf' => '30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yU2ozv-yEUviix7rR2VebXYpQjbpwZUR\";}'
+    '_identity' => '313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sbc.techfusion.it'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://sbc.techfusion.it/admin/index.php?r=customers%2Fcreate'
+    'HTTP_COOKIE' => '_ga=GA1.2.37984932.1436264237; PHPSESSID=ftmv0ronb6arqu4eh7hlker2b5; _csrf=30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yU2ozv-yEUviix7rR2VebXYpQjbpwZUR%22%3B%7D; _identity=313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'sbc.techfusion.it'
+    'SERVER_ADDR' => '82.165.137.15'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '62.10.81.205'
+    'DOCUMENT_ROOT' => '/var/www/html/OpenSBC'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => '/admin'
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/OpenSBC/backend/web'
+    'SERVER_ADMIN' => 'parantido@techfusion.it'
+    'SCRIPT_FILENAME' => '/var/www/html/OpenSBC/backend/web/index.php'
+    'REMOTE_PORT' => '35306'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=customers'
+    'REQUEST_URI' => '/admin/index.php?r=customers'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1440951091.104
+    'REQUEST_TIME' => 1440951091
+]
+2015-08-30 16:11:33 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/CustomersController.php:59
+2015-08-30 16:11:33 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/CustomersController.php:59
+2015-08-30 16:11:33 [62.10.81.205][1][-][info][application] $_GET = [
+    'r' => 'customers/view'
+    'id' => '1'
+    'edit' => 't'
+    '_pjax' => '#w0'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.2.37984932.1436264237'
+    'PHPSESSID' => 'ftmv0ronb6arqu4eh7hlker2b5'
+    '_csrf' => '30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yU2ozv-yEUviix7rR2VebXYpQjbpwZUR\";}'
+    '_identity' => '313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sbc.techfusion.it'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'TGlvQ2FSZWY1PF0sGyRIHwk8GSoIKlIUHls5JgMKPBYdAw0zFggwNA=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#w0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://sbc.techfusion.it/admin/index.php?r=customers'
+    'HTTP_COOKIE' => '_ga=GA1.2.37984932.1436264237; PHPSESSID=ftmv0ronb6arqu4eh7hlker2b5; _csrf=30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yU2ozv-yEUviix7rR2VebXYpQjbpwZUR%22%3B%7D; _identity=313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'sbc.techfusion.it'
+    'SERVER_ADDR' => '82.165.137.15'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '62.10.81.205'
+    'DOCUMENT_ROOT' => '/var/www/html/OpenSBC'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => '/admin'
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/OpenSBC/backend/web'
+    'SERVER_ADMIN' => 'parantido@techfusion.it'
+    'SCRIPT_FILENAME' => '/var/www/html/OpenSBC/backend/web/index.php'
+    'REMOTE_PORT' => '35306'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=customers%2Fview&id=1&edit=t&_pjax=%23w0'
+    'REQUEST_URI' => '/admin/index.php?r=customers%2Fview&id=1&edit=t&_pjax=%23w0'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1440951093.791
+    'REQUEST_TIME' => 1440951093
+]
+2015-08-30 16:11:34 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/CustomersController.php:59
+2015-08-30 16:11:34 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/CustomersController.php:59
+2015-08-30 16:11:33 [62.10.81.205][1][-][info][application] $_GET = [
+    'r' => 'customers/view'
+    'id' => '1'
+    'edit' => 't'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.2.37984932.1436264237'
+    'PHPSESSID' => 'ftmv0ronb6arqu4eh7hlker2b5'
+    '_csrf' => '30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yU2ozv-yEUviix7rR2VebXYpQjbpwZUR\";}'
+    '_identity' => '313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sbc.techfusion.it'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://sbc.techfusion.it/admin/index.php?r=customers'
+    'HTTP_COOKIE' => '_ga=GA1.2.37984932.1436264237; PHPSESSID=ftmv0ronb6arqu4eh7hlker2b5; _csrf=30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yU2ozv-yEUviix7rR2VebXYpQjbpwZUR%22%3B%7D; _identity=313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'sbc.techfusion.it'
+    'SERVER_ADDR' => '82.165.137.15'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '62.10.81.205'
+    'DOCUMENT_ROOT' => '/var/www/html/OpenSBC'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => '/admin'
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/OpenSBC/backend/web'
+    'SERVER_ADMIN' => 'parantido@techfusion.it'
+    'SCRIPT_FILENAME' => '/var/www/html/OpenSBC/backend/web/index.php'
+    'REMOTE_PORT' => '35306'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=customers%2Fview&id=1&edit=t'
+    'REQUEST_URI' => '/admin/index.php?r=customers%2Fview&id=1&edit=t'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1440951093.996
+    'REQUEST_TIME' => 1440951093
+]
+2015-08-30 16:11:48 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/DrGatewaysController.php:41
+2015-08-30 16:11:48 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/DrGatewaysController.php:41
+2015-08-30 16:11:48 [62.10.81.205][1][-][info][application] $_GET = [
+    'r' => 'dr-gateways'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.2.37984932.1436264237'
+    'PHPSESSID' => 'ftmv0ronb6arqu4eh7hlker2b5'
+    '_csrf' => '30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yU2ozv-yEUviix7rR2VebXYpQjbpwZUR\";}'
+    '_identity' => '313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sbc.techfusion.it'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://sbc.techfusion.it/admin/index.php?r=customers%2Fview&id=1&edit=t'
+    'HTTP_COOKIE' => '_ga=GA1.2.37984932.1436264237; PHPSESSID=ftmv0ronb6arqu4eh7hlker2b5; _csrf=30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yU2ozv-yEUviix7rR2VebXYpQjbpwZUR%22%3B%7D; _identity=313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'sbc.techfusion.it'
+    'SERVER_ADDR' => '82.165.137.15'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '62.10.81.205'
+    'DOCUMENT_ROOT' => '/var/www/html/OpenSBC'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => '/admin'
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/OpenSBC/backend/web'
+    'SERVER_ADMIN' => 'parantido@techfusion.it'
+    'SCRIPT_FILENAME' => '/var/www/html/OpenSBC/backend/web/index.php'
+    'REMOTE_PORT' => '35314'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dr-gateways'
+    'REQUEST_URI' => '/admin/index.php?r=dr-gateways'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1440951108.649
+    'REQUEST_TIME' => 1440951108
+]
+2015-08-30 16:20:32 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/DrGatewaysController.php:41
+2015-08-30 16:20:32 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/DrGatewaysController.php:41
+2015-08-30 16:20:31 [62.10.81.205][1][-][info][application] $_GET = [
+    'r' => 'dr-gateways'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.2.37984932.1436264237'
+    'PHPSESSID' => 'ftmv0ronb6arqu4eh7hlker2b5'
+    '_csrf' => '30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yU2ozv-yEUviix7rR2VebXYpQjbpwZUR\";}'
+    '_identity' => '313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sbc.techfusion.it'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://sbc.techfusion.it/admin/index.php?r=dr-gateways'
+    'HTTP_COOKIE' => '_ga=GA1.2.37984932.1436264237; PHPSESSID=ftmv0ronb6arqu4eh7hlker2b5; _csrf=30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yU2ozv-yEUviix7rR2VebXYpQjbpwZUR%22%3B%7D; _identity=313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'sbc.techfusion.it'
+    'SERVER_ADDR' => '82.165.137.15'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '62.10.81.205'
+    'DOCUMENT_ROOT' => '/var/www/html/OpenSBC'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => '/admin'
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/OpenSBC/backend/web'
+    'SERVER_ADMIN' => 'parantido@techfusion.it'
+    'SCRIPT_FILENAME' => '/var/www/html/OpenSBC/backend/web/index.php'
+    'REMOTE_PORT' => '35440'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dr-gateways'
+    'REQUEST_URI' => '/admin/index.php?r=dr-gateways'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1440951631.996
+    'REQUEST_TIME' => 1440951631
+]
+2015-08-30 16:20:35 [62.10.81.205][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The class '\kartik\slider\Slider' was not found and is required as an input widget for DetailView edit mode.
+
+Please ensure you have installed the 'yii2-slider' extension. To install, you can run this console command from your application root:
+
+php composer.phar require kartik-v/yii2-slider: "@dev"' in /var/www/html/OpenSBC/vendor/kartik-v/yii2-krajee-base/Config.php:118
+Stack trace:
+#0 /var/www/html/OpenSBC/vendor/kartik-v/yii2-krajee-base/Config.php(195): kartik\base\Config::checkDependency('\kartik\slider\...', 'yii2-slider', 'as an input wid...')
+#1 /var/www/html/OpenSBC/vendor/kartik-v/yii2-detail-view/DetailView.php(799): kartik\base\Config::validateInputWidget('\kartik\slider\...', 'as an input wid...')
+#2 /var/www/html/OpenSBC/vendor/kartik-v/yii2-detail-view/DetailView.php(735): kartik\detail\DetailView->renderFormAttribute(Array)
+#3 /var/www/html/OpenSBC/vendor/kartik-v/yii2-detail-view/DetailView.php(698): kartik\detail\DetailView->renderAttributeItem(Array)
+#4 /var/www/html/OpenSBC/vendor/kartik-v/yii2-detail-view/DetailView.php(659): kartik\detail\DetailView->renderAttributeRow(Array)
+#5 /var/www/html/OpenSBC/vendor/kartik-v/yii2-detail-view/DetailView.php(562): kartik\detail\DetailView->renderDetailView()
+#6 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/Widget.php(97): kartik\detail\DetailView->run()
+#7 /var/www/html/OpenSBC/backend/views/dr-gateways/_form.php(56): yii\base\Widget::widget(Array)
+#8 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/O...')
+#9 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/O...', Array)
+#10 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/O...', Array, NULL)
+#11 /var/www/html/OpenSBC/backend/views/dr-gateways/create.php(22): yii\base\View->render('_form', Array)
+#12 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/O...')
+#13 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/O...', Array)
+#14 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/O...', Array, Object(backend\controllers\DrGatewaysController))
+#15 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('create', Array, Object(backend\controllers\DrGatewaysController))
+#16 /var/www/html/OpenSBC/backend/controllers/DrGatewaysController.php(74): yii\base\Controller->render('create', Array)
+#17 [internal function]: backend\controllers\DrGatewaysController->actionCreate()
+#18 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#19 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#20 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('create', Array)
+#21 /var/www/html/OpenSBC/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('dr-gateways/cre...', Array)
+#22 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /var/www/html/OpenSBC/backend/web/index.php(18): yii\base\Application->run()
+#24 {main}
+2015-08-30 16:20:35 [62.10.81.205][-][-][info][application] $_GET = [
+    'r' => 'dr-gateways/create'
+    '_pjax' => '#w0'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.2.37984932.1436264237'
+    'PHPSESSID' => 'ftmv0ronb6arqu4eh7hlker2b5'
+    '_csrf' => '30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yU2ozv-yEUviix7rR2VebXYpQjbpwZUR\";}'
+    '_identity' => '313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sbc.techfusion.it'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'UnA1bGQyY1YrJQcDHkROLxclQwUNSlQkAEJjCQZqOiYDGlccE2g2BA=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#w0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://sbc.techfusion.it/admin/index.php?r=dr-gateways'
+    'HTTP_COOKIE' => '_ga=GA1.2.37984932.1436264237; PHPSESSID=ftmv0ronb6arqu4eh7hlker2b5; _csrf=30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yU2ozv-yEUviix7rR2VebXYpQjbpwZUR%22%3B%7D; _identity=313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'sbc.techfusion.it'
+    'SERVER_ADDR' => '82.165.137.15'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '62.10.81.205'
+    'DOCUMENT_ROOT' => '/var/www/html/OpenSBC'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => '/admin'
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/OpenSBC/backend/web'
+    'SERVER_ADMIN' => 'parantido@techfusion.it'
+    'SCRIPT_FILENAME' => '/var/www/html/OpenSBC/backend/web/index.php'
+    'REMOTE_PORT' => '35443'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dr-gateways%2Fcreate&_pjax=%23w0'
+    'REQUEST_URI' => '/admin/index.php?r=dr-gateways%2Fcreate&_pjax=%23w0'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1440951635.776
+    'REQUEST_TIME' => 1440951635
+]
+2015-08-30 16:20:35 [62.10.81.205][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The class '\kartik\slider\Slider' was not found and is required as an input widget for DetailView edit mode.
+
+Please ensure you have installed the 'yii2-slider' extension. To install, you can run this console command from your application root:
+
+php composer.phar require kartik-v/yii2-slider: "@dev"' in /var/www/html/OpenSBC/vendor/kartik-v/yii2-krajee-base/Config.php:118
+Stack trace:
+#0 /var/www/html/OpenSBC/vendor/kartik-v/yii2-krajee-base/Config.php(195): kartik\base\Config::checkDependency('\kartik\slider\...', 'yii2-slider', 'as an input wid...')
+#1 /var/www/html/OpenSBC/vendor/kartik-v/yii2-detail-view/DetailView.php(799): kartik\base\Config::validateInputWidget('\kartik\slider\...', 'as an input wid...')
+#2 /var/www/html/OpenSBC/vendor/kartik-v/yii2-detail-view/DetailView.php(735): kartik\detail\DetailView->renderFormAttribute(Array)
+#3 /var/www/html/OpenSBC/vendor/kartik-v/yii2-detail-view/DetailView.php(698): kartik\detail\DetailView->renderAttributeItem(Array)
+#4 /var/www/html/OpenSBC/vendor/kartik-v/yii2-detail-view/DetailView.php(659): kartik\detail\DetailView->renderAttributeRow(Array)
+#5 /var/www/html/OpenSBC/vendor/kartik-v/yii2-detail-view/DetailView.php(562): kartik\detail\DetailView->renderDetailView()
+#6 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/Widget.php(97): kartik\detail\DetailView->run()
+#7 /var/www/html/OpenSBC/backend/views/dr-gateways/_form.php(56): yii\base\Widget::widget(Array)
+#8 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/O...')
+#9 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/O...', Array)
+#10 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/O...', Array, NULL)
+#11 /var/www/html/OpenSBC/backend/views/dr-gateways/create.php(22): yii\base\View->render('_form', Array)
+#12 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/O...')
+#13 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/O...', Array)
+#14 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/O...', Array, Object(backend\controllers\DrGatewaysController))
+#15 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('create', Array, Object(backend\controllers\DrGatewaysController))
+#16 /var/www/html/OpenSBC/backend/controllers/DrGatewaysController.php(74): yii\base\Controller->render('create', Array)
+#17 [internal function]: backend\controllers\DrGatewaysController->actionCreate()
+#18 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#19 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#20 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('create', Array)
+#21 /var/www/html/OpenSBC/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('dr-gateways/cre...', Array)
+#22 /var/www/html/OpenSBC/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /var/www/html/OpenSBC/backend/web/index.php(18): yii\base\Application->run()
+#24 {main}
+2015-08-30 16:20:35 [62.10.81.205][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+2015-08-30 16:20:35 [62.10.81.205][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+2015-08-30 16:20:35 [62.10.81.205][-][-][info][application] $_GET = [
+    'r' => 'dr-gateways/create'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.2.37984932.1436264237'
+    'PHPSESSID' => 'ftmv0ronb6arqu4eh7hlker2b5'
+    '_csrf' => '30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yU2ozv-yEUviix7rR2VebXYpQjbpwZUR\";}'
+    '_identity' => '313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sbc.techfusion.it'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://sbc.techfusion.it/admin/index.php?r=dr-gateways'
+    'HTTP_COOKIE' => '_ga=GA1.2.37984932.1436264237; PHPSESSID=ftmv0ronb6arqu4eh7hlker2b5; _csrf=30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yU2ozv-yEUviix7rR2VebXYpQjbpwZUR%22%3B%7D; _identity=313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'sbc.techfusion.it'
+    'SERVER_ADDR' => '82.165.137.15'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '62.10.81.205'
+    'DOCUMENT_ROOT' => '/var/www/html/OpenSBC'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => '/admin'
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/OpenSBC/backend/web'
+    'SERVER_ADMIN' => 'parantido@techfusion.it'
+    'SCRIPT_FILENAME' => '/var/www/html/OpenSBC/backend/web/index.php'
+    'REMOTE_PORT' => '35441'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dr-gateways%2Fcreate'
+    'REQUEST_URI' => '/admin/index.php?r=dr-gateways%2Fcreate'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1440951635.926
+    'REQUEST_TIME' => 1440951635
+]
+2015-08-30 16:24:32 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/DrGatewaysController.php:74
+2015-08-30 16:24:32 [62.10.81.205][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 62.10.81.205
+    in /var/www/html/OpenSBC/vendor/dmstr/yii2-adminlte-asset/dashboard/yiisoft/yii2-app/layouts/main.php:61
+    in /var/www/html/OpenSBC/backend/controllers/DrGatewaysController.php:74
+2015-08-30 16:24:32 [62.10.81.205][1][-][info][application] $_GET = [
+    'r' => 'dr-gateways/create'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.2.37984932.1436264237'
+    'PHPSESSID' => 'ftmv0ronb6arqu4eh7hlker2b5'
+    '_csrf' => '30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yU2ozv-yEUviix7rR2VebXYpQjbpwZUR\";}'
+    '_identity' => '313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sbc.techfusion.it'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_ga=GA1.2.37984932.1436264237; PHPSESSID=ftmv0ronb6arqu4eh7hlker2b5; _csrf=30014efe1277ba8a1810fbc3b7515b7e32db3aab99cc019dd32b4345913ff192a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yU2ozv-yEUviix7rR2VebXYpQjbpwZUR%22%3B%7D; _identity=313d39a30ac38707f396c5c69997b2f6c4d5d86dbe61f4745f521abf95853138a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ZwT46oEfU2QYhBrKC5J44M9vSAUxeWpU%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'sbc.techfusion.it'
+    'SERVER_ADDR' => '82.165.137.15'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '62.10.81.205'
+    'DOCUMENT_ROOT' => '/var/www/html/OpenSBC'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => '/admin'
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/OpenSBC/backend/web'
+    'SERVER_ADMIN' => 'parantido@techfusion.it'
+    'SCRIPT_FILENAME' => '/var/www/html/OpenSBC/backend/web/index.php'
+    'REMOTE_PORT' => '35487'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dr-gateways%2Fcreate'
+    'REQUEST_URI' => '/admin/index.php?r=dr-gateways%2Fcreate'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1440951872.349
+    'REQUEST_TIME' => 1440951872
+]

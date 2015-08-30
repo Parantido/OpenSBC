@@ -25,7 +25,8 @@
         "kartik-v/yii2-detail-view": "*",
         "kartik-v/yii2-mpdf": "@dev",
         "kartik-v/yii2-dynagrid": "@dev",
-        "warrence/yii2-kartikgii": "dev-master"
+        "warrence/yii2-kartikgii": "dev-master",
+        "kartik-v/yii2-slider": "@dev"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
