@@ -5,7 +5,6 @@ use app\models\Domain;
 use app\models\Countries;
 use yii\helpers\ArrayHelper;
 use kartik\detail\DetailView;
-use kartik\depdrop\DepDrop;
 
 /**
  * @var yii\web\View $this
@@ -33,12 +32,12 @@ $this->params['breadcrumbs'][] = $this->title;
             'address1'=>['attribute'=>'address1', 'type'=> DetailView::INPUT_TEXT],
             'address2'=>['attribute'=>'address2', 'type'=> DetailView::INPUT_TEXT],
             'state'=>['attribute'=>'state', 'items' => $countries_list, 'type'=> DetailView::INPUT_DROPDOWN_LIST, 'options'=>['id' => 'state-id']],
-            'city'=>['attribute'=>'city', 'type'=> DetailView::INPUT_DEPDROP, 'options'=>['id' => 'cities-id'], 'pluginOptions' => [
+            'city'=>['attribute'=>'city', 'type'=> DetailView::INPUT_DEPDROP, 'pluginOptions' => [
                 'maxlength' => 50,
                 'depends' => ['state-id'],
                 'placeholder' => 'Select City...',
                 'url' => \yii\helpers\Url::to(['/customers/getcities'])
-            ]],
+            ], 'options'=>['id' => 'cities-id']],
             'country'=>['attribute'=>'country', 'type'=> DetailView::INPUT_TEXT],
             'province'=>['attribute'=>'province', 'type'=> DetailView::INPUT_TEXT],
             'zip'=>['attribute'=>'zip', 'type'=> DetailView::INPUT_TEXT],
