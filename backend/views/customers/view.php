@@ -1,8 +1,10 @@
 <?php
 
 use yii\helpers\Html;
+use app\models\Domain;
+use app\models\Countries;
+use yii\helpers\ArrayHelper;
 use kartik\detail\DetailView;
-use kartik\datecontrol\DateControl;
 
 /**
  * @var yii\web\View $this
@@ -21,7 +23,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php
         $domains_list = ArrayHelper::map(Domain::find()->all(), 'id', 'domain');
         $countries_list = ArrayHelper::map(Countries::find()->where(['countries_type' => '0'])->all(), 'countries_id', 'name');
-    
+
         $detailViewColumns = [
             'firstname'=>['attribute'=>'firstname', 'type'=> DetailView::INPUT_TEXT],
             'lastname'=>['attribute'=>'lastname', 'type'=> DetailView::INPUT_TEXT],
