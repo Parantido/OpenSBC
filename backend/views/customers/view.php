@@ -22,7 +22,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'firstname'=>['attribute'=>'firstname', 'type'=> DetailView::INPUT_TEXT],
             'lastname'=>['attribute'=>'lastname', 'type'=> DetailView::INPUT_TEXT],
             'status'=>['attribute'=>'status', 'type'=> DetailView::INPUT_DROPDOWN_LIST],
-            'domain_id'=>['attribute'=>'domain_id', 'items' => $domains_list, 'type'=> DetailView::INPUT_DROPDOWN_LIST],
+            'domain_id'=>['attribute'=>'domain_id', 'type'=> DetailView::INPUT_DROPDOWN_LIST],
             'address1'=>['attribute'=>'address1', 'type'=> DetailView::INPUT_TEXT],
             'address2'=>['attribute'=>'address2', 'type'=> DetailView::INPUT_TEXT],
             'state'=>['attribute'=>'state', 'type'=> DetailView::INPUT_DROPDOWN_LIST],
