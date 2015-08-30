@@ -45,6 +45,7 @@ use kartik\widgets\ActiveForm;
 
         echo DetailView::widget([
             'model' => $model,
+            'bootstrap' => true,
             'condensed'=> true,
             'hover' => true,
             'mode' => DetailView::MODE_VIEW,

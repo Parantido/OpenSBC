@@ -45,6 +45,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
         echo DetailView::widget([
             'model' => $model,
+            'bootstrap' => true,
             'condensed' => false,
             'hover' => true,
             'mode' => Yii::$app->request->get('edit')=='t' ? DetailView::MODE_EDIT : DetailView::MODE_VIEW,
