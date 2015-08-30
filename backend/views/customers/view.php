@@ -44,7 +44,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'notes'=>['attribute'=>'notes', 'type'=> DetailView::INPUT_TEXTAREA],
         ];
 
-        DetailView::widget([
+        echo DetailView::widget([
             'model' => $model,
             'condensed'=>false,
             'hover'=>true,
