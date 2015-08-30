@@ -83,7 +83,7 @@ use kartik\detail\DetailView;
             'address1'=>['attribute'=>'address1', 'type'=> DetailView::INPUT_TEXT],
             'address2'=>['attribute'=>'address2', 'type'=> DetailView::INPUT_TEXT],
             'state'=>['attribute'=>'state', 'type'=> DetailView::INPUT_DROPDOWN_LIST],
-            'city'=>['attribute'=>'city', 'type'=> DetailView::INPUT_WIDGET],
+            'city'=>['attribute'=>'city', 'type'=> DetailView::INPUT_DROPDOWN_LIST],
             'country'=>['attribute'=>'country', 'type'=> DetailView::INPUT_TEXT],
             'province'=>['attribute'=>'province', 'type'=> DetailView::INPUT_TEXT],
             'zip'=>['attribute'=>'zip', 'type'=> DetailView::INPUT_TEXT],
