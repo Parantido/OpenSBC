@@ -22,7 +22,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?php
     $domains_list = ArrayHelper::map(Domain::find()->all(), 'id', 'domain');
-    $customers_list = ArrayHelper::map(Customers::find()->where(['countries_type' => '0'])->all(), 'countries_id', 'name');
+    $customers_list = ArrayHelper::map(Customers::find()->all(), 'id', 'username');
 
     $detailViewColumns = [
         'type' => ['attribute'=>'type', 'type'=> DetailView::INPUT_TEXT],
