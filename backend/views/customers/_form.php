@@ -3,6 +3,7 @@
 use yii\helpers\Html;
 use app\models\Domain;
 use app\models\Countries;
+use app\models\PhoneTypes;
 use yii\helpers\ArrayHelper;
 use kartik\detail\DetailView;
 use kartik\widgets\ActiveForm;
@@ -17,6 +18,7 @@ use kartik\widgets\ActiveForm;
 <div class="customers-form">
 
     <?php
+        $ptypes_list = ArrayHelper::map(PhoneTypes::find()->all(), 'id', 'type');
         $domains_list = ArrayHelper::map(Domain::find()->all(), 'id', 'domain');
         $countries_list = ArrayHelper::map(Countries::find()->where(['countries_type' => '0'])->all(), 'countries_id', 'name');
 
