@@ -1,9 +1,6 @@
 <?php
 
 use yii\helpers\Html;
-use app\models\Domain;
-use app\models\Countries;
-use yii\helpers\ArrayHelper;
 use kartik\detail\DetailView;
 
 /**
@@ -21,14 +18,11 @@ $this->params['breadcrumbs'][] = $this->title;
     </div>-->
 
     <?php
-        $domains_list = ArrayHelper::map(Domain::find()->all(), 'id', 'domain');
-        $countries_list = ArrayHelper::map(Countries::find()->where(['countries_type' => '0'])->all(), 'countries_id', 'name');
-
         $detailViewColumns = [
             'firstname'=>['attribute'=>'firstname', 'type'=> DetailView::INPUT_TEXT],
             'lastname'=>['attribute'=>'lastname', 'type'=> DetailView::INPUT_TEXT],
             'status'=>['attribute'=>'status', 'type'=> DetailView::INPUT_DROPDOWN_LIST],
-            'domain_id'=>['attribute'=>'domain_id', 'type'=> DetailView::INPUT_DROPDOWN_LIST],
+            'domain_id'=>['attribute'=>'domain_id', 'items' => $domains_list, 'type'=> DetailView::INPUT_DROPDOWN_LIST],
             'address1'=>['attribute'=>'address1', 'type'=> DetailView::INPUT_TEXT],
             'address2'=>['attribute'=>'address2', 'type'=> DetailView::INPUT_TEXT],
             'state'=>['attribute'=>'state', 'type'=> DetailView::INPUT_DROPDOWN_LIST],
@@ -59,13 +53,38 @@ $this->params['breadcrumbs'][] = $this->title;
             'heading'=>$this->title,
             'type'=>DetailView::TYPE_INFO,
         ],
-        'attributes' => $detailViewColumns,
-        'deleteOptions'=> [
-            'url' => ['delete', 'id' => $model->id],
-            'data' => [
-                'confirm' => Yii::t('app', 'Are you sure you want to delete this customer?'),
-                'method' => 'post',
-            ],
+        'attributes' => [
+            'id',
+            'firstname',
+            'lastname',
+            'address1',
+            'address2',
+            'city',
+            'country',
+            'province',
+            'state',
+            'zip',
+            'phone1',
+            'phone2',
+            'phone3',
+            'ptype1',
+            'ptype2',
+            'ptype3',
+            'email:email',
+            'skypeid',
+            'location',
+            'notes:ntext',
+            'username',
+            'password',
+            'status',
+            'domain_id',
+        ],
+        'deleteOptions'=>[
+        'url'=>['delete', 'id' => $model->id],
+        'data'=>[
+        'confirm'=>Yii::t('app', 'Are you sure you want to delete this item?'),
+        'method'=>'post',
+        ],
         ],
         'enableEditMode'=>true,
     ]) ?>
