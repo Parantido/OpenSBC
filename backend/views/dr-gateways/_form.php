@@ -23,7 +23,7 @@ use kartik\widgets\ActiveForm;
         $formColumns = [
             'type' => ['attribute'=>'type', 'type'=> DetailView::INPUT_TEXT],
             'address' => ['attribute'=>'address', 'type'=> DetailView::INPUT_TEXT],
-            'strip' => ['attribute'=>'strip', 'type'=> DetailView::INPUT_SLIDER, 'widgetOptions' => [
+            'strip' => ['attribute'=>'strip', 'type'=> DetailView::INPUT_SLIDER, 'value'=>'0', 'widgetOptions' => [
                 'pluginOptions' => [
                     'min' => 0,
                     'max' => 15,
