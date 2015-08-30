@@ -27,11 +27,17 @@ $this->params['breadcrumbs'][] = $this->title;
         $detailViewColumns = [
             'type' => ['attribute'=>'type', 'type'=> DetailView::INPUT_TEXT],
             'address' => ['attribute'=>'address', 'type'=> DetailView::INPUT_TEXT],
-            'strip' => ['attribute'=>'strip', 'type'=> DetailView::INPUT_DROPDOWN_LIST],
+            'strip' => ['attribute'=>'strip', 'type'=> DetailView::INPUT_SLIDER, 'widgetOptions' => [
+                'pluginOptions' => [
+                    'min' => 0,
+                    'max' => 15,
+                    'step' => 1
+                ],
+            ]],
             'cust_id' => ['attribute'=>'cust_id', 'items' => $customers_list, 'type'=> DetailView::INPUT_DROPDOWN_LIST],
             'pri_prefix' => ['attribute'=>'pri_prefix', 'type'=> DetailView::INPUT_TEXT],
             'attrs' => ['attribute'=>'attrs', 'type'=> DetailView::INPUT_TEXT],
-            'probe_mode' => ['attribute'=>'probe_mode', 'type'=> DetailView::INPUT_TEXT],
+            'probe_mode' => ['attribute'=>'probe_mode', 'items' => [0, 1, 2], 'type'=> DetailView::INPUT_DROPDOWN_LIST],
             'state' => ['attribute'=>'state', 'type'=> DetailView::INPUT_TEXT],
             'socket' => ['attribute'=>'socket', 'type'=> DetailView::INPUT_TEXT],
             'description' => ['attribute'=>'description', 'type'=> DetailView::INPUT_TEXTAREA],

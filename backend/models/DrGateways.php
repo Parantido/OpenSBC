@@ -39,7 +39,7 @@ class DrGateways extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['gwid', 'cust_id', 'address'], 'required'],
+            [['cust_id', 'address'], 'required'],
             [['cust_id', 'type', 'strip', 'probe_mode', 'state'], 'integer'],
             [['gwid'], 'string', 'max' => 64],
             [['address', 'socket', 'description'], 'string', 'max' => 128],
@@ -57,13 +57,13 @@ class DrGateways extends \yii\db\ActiveRecord
         return [
             'id' => Yii::t('app', 'ID'),
             'gwid' => Yii::t('app', 'Gwid'),
-            'cust_id' => Yii::t('app', 'Cust ID'),
+            'cust_id' => Yii::t('app', 'Customer'),
             'type' => Yii::t('app', 'Type'),
-            'address' => Yii::t('app', 'Address'),
+            'address' => Yii::t('app', 'Gw Address'),
             'strip' => Yii::t('app', 'Strip'),
-            'pri_prefix' => Yii::t('app', 'Pri Prefix'),
-            'attrs' => Yii::t('app', 'Attrs'),
-            'probe_mode' => Yii::t('app', 'Probe Mode'),
+            'pri_prefix' => Yii::t('app', 'Prefix'),
+            'attrs' => Yii::t('app', 'Attributes'),
+            'probe_mode' => Yii::t('app', 'Probeing Mode'),
             'state' => Yii::t('app', 'State'),
             'socket' => Yii::t('app', 'Socket'),
             'description' => Yii::t('app', 'Description'),
