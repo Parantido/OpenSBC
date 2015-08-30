@@ -7,7 +7,7 @@ use Yii;
 /**
  * This is the model class for table "phone_types".
  *
- * @property integer $1
+ * @property integer $id
  * @property string $type
  * @property string $regex
  */
@@ -39,7 +39,7 @@ class PhoneTypes extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            '1' => Yii::t('app', '1'),
+            'id' => Yii::t('app', 'ID'),
             'type' => Yii::t('app', 'Type'),
             'regex' => Yii::t('app', 'Regex'),
         ];
