@@ -21,11 +21,14 @@ use kartik\depdrop\DepDrop;
     $domains_list = ArrayHelper::map(Domain::find()->all(), 'id', 'domain');
     $countries_list = ArrayHelper::map(Countries::find()->where(['countries_type' => '0'])->all(), 'countries_id', 'name');
 
-    $form = ActiveForm::begin(['type' => ActiveForm::TYPE_HORIZONTAL]); echo Form::widget([
+    $form = ActiveForm::begin([
+        'type' => ActiveForm::TYPE_HORIZONTAL,
+        'fullSpan' => 9,
+    ]);
+    echo Form::widget([
         'model' => $model,
         'form' => $form,
         'columns' => 1,
-        'fullSpan' => 9,
         'attributes' => [
             'firstname'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter First Name...', 'maxlength'=>50]],
             'lastname'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Last Name...', 'maxlength'=>50]],
