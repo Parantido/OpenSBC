@@ -1,7 +1,6 @@
 <?php
 
 use yii\helpers\Html;
-use kartik\builder\Form;
 use kartik\detail\DetailView;
 use kartik\widgets\ActiveForm;
 
@@ -57,11 +56,18 @@ use kartik\widgets\ActiveForm;
         ];
 
         $form = ActiveForm::begin(['type'=>ActiveForm::TYPE_HORIZONTAL]);
-        echo Form::widget([
+
+        echo DetailView::widget([
             'model' => $model,
-            'form' => $form,
-            'columns' => 1,
-            'attributes' => $formColumns,
+            'bootstrap' => true,
+            'condensed'=> true,
+            'hover' => true,
+            'mode' => DetailView::MODE_VIEW,
+            'panel' => [
+                'heading'=>'Gateway # ' . $model->id,
+                'type'=>DetailView::TYPE_INFO,
+            ],
+            'attributes' => $formColumns
         ]);
 
         echo Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']);
