@@ -14,9 +14,9 @@ $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Resource Groups'), '
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="resource-groups-create">
-    <div class="page-header">
+    <!--<div class="page-header">
         <h1><?= Html::encode($this->title) ?></h1>
-    </div>
+    </div>-->
     <?= $this->render('_form', [
         'model' => $model,
     ]) ?>

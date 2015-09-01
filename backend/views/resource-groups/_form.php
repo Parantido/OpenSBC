@@ -17,8 +17,8 @@ use kartik\widgets\ActiveForm;
     <?php
         $formColumns = [
             'name' => ['attribute'=>'name', 'type'=> DetailView::INPUT_TEXT],
-            'ani_dp_id' => ['attribute'=>'ani_dp_id', 'items' => [1], 'type'=> DetailView::INPUT_DROPDOWN_LIST],
-            'dnis_dp_id' => ['attribute'=>'dnis_dp_id', 'items' => [1], 'type'=> DetailView::INPUT_DROPDOWN_LIST],
+            'ani_dp_id' => ['attribute'=>'ani_dp_id', 'items' => [0, 1, 2], 'type'=> DetailView::INPUT_DROPDOWN_LIST],
+            'dnis_dp_id' => ['attribute'=>'dnis_dp_id', 'items' => [0, 1, 2], 'type'=> DetailView::INPUT_DROPDOWN_LIST],
             'max_concurrent' => ['attribute'=>'max_concurrent', 'type'=> DetailView::INPUT_SLIDER, 'value'=>'0', 'widgetOptions' => [
                 'pluginOptions' => [
                     'min' => 0,
@@ -34,7 +34,7 @@ use kartik\widgets\ActiveForm;
                 ],
             ]],
             'use_rtpproxy' => ['attribute'=>'use_rtpproxy', 'type'=> DetailView::INPUT_CHECKBOX],
-            'rtp_proxy_set_id' => ['attribute'=>'rtp_proxy_set_id', 'type'=> DetailView::INPUT_CHECKBOX],
+            'rtp_proxy_set_id' => ['attribute'=>'rtp_proxy_set_id', 'items' => [0, 1, 2], 'type'=> DetailView::INPUT_DROPDOWN_LIST],
             'do_lnp_dip' => ['attribute'=>'do_lnp_dip', 'type'=> DetailView::INPUT_CHECKBOX],
             'do_sip_trace' => ['attribute'=>'do_sip_trace', 'type'=> DetailView::INPUT_CHECKBOX],
             'do_isup_oli' => ['attribute'=>'do_isup_oli', 'type'=> DetailView::INPUT_CHECKBOX],
