@@ -33,7 +33,7 @@ use kartik\widgets\ActiveForm;
                     'step' => 1
                 ],
             ]],
-            'use_rtpproxy' => ['attribute'=>'use_rtpproxy', 'items' => $customers_list, 'type'=> DetailView::INPUT_CHECKBOX],
+            'use_rtpproxy' => ['attribute'=>'use_rtpproxy', 'items' => [], 'type'=> DetailView::INPUT_CHECKBOX],
             'rtp_proxy_set_id' => ['attribute'=>'rtp_proxy_set_id', 'items' => [], 'type'=> DetailView::INPUT_CHECKBOX],
             'do_lnp_dip' => ['attribute'=>'do_lnp_dip', 'type'=> DetailView::INPUT_CHECKBOX],
             'do_sip_trace' => ['attribute'=>'do_sip_trace', 'type'=> DetailView::INPUT_CHECKBOX],
