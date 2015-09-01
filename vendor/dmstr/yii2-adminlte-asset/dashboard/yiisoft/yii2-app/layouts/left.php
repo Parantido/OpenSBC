@@ -111,7 +111,7 @@ use yii\bootstrap\Nav;
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="<?= \yii\helpers\Url::to(['/rg-groups']) ?>"><span class="fa fa-angle-right"></span> Resource Groups</a></li>
+                    <li><a href="<?= \yii\helpers\Url::to(['/resource-groups']) ?>"><span class="fa fa-angle-right"></span> Resource Groups</a></li>
                 </ul>
             </li>
             <li class="treeview">

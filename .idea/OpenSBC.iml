@@ -19,6 +19,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/kartik-v/yii2-builder" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/kartik-v/yii2-datecontrol" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/kartik-v/yii2-icons" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/kartik-v/yii2-slider" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-affix" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-alert" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-colorinput" />
@@ -66,6 +67,7 @@
           <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-jui" />
           <root url="file://$MODULE_DIR$/vendor/kartik-v/dependent-dropdown" />
           <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-touchspin" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-slider" />
           <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-sidenav" />
           <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-rangeinput" />
           <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-rating" />
@@ -97,6 +99,7 @@
           <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-jui" />
           <root url="file://$MODULE_DIR$/vendor/kartik-v/dependent-dropdown" />
           <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-touchspin" />
+          <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-slider" />
           <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-sidenav" />
           <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-rangeinput" />
           <root url="file://$MODULE_DIR$/vendor/kartik-v/yii2-widget-rating" />

@@ -14,9 +14,9 @@ $this->title = Yii::t('app', 'Gateways');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="dr-gateways-index">
-    <div class="page-header">
+    <!--<div class="page-header">
             <h1><?= Html::encode($this->title) ?></h1>
-    </div>
+    </div>-->
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
