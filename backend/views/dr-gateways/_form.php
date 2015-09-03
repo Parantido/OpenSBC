@@ -21,7 +21,7 @@ use kartik\widgets\ActiveForm;
         $customers_list = ArrayHelper::map(Customers::find()->all(), 'id', 'username');
 
         $formColumns = [
-            'type' => ['attribute'=>'type', 'type'=> DetailView::INPUT_TEXT],
+            'type' => ['attribute'=>'type', 'items' => [1, 3, 13], 'type'=> DetailView::INPUT_TEXT],
             'address' => ['attribute'=>'address', 'type'=> DetailView::INPUT_TEXT],
             'strip' => ['attribute'=>'strip', 'type'=> DetailView::INPUT_SLIDER, 'value'=>'0', 'widgetOptions' => [
                 'pluginOptions' => [

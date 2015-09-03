@@ -11,7 +11,7 @@ use kartik\detail\DetailView;
  * @var app\models\DrGateways $model
  */
 
-$this->title = $model->id;
+$this->title = $model->address;
 $this->params['breadcrumbs'][] = ['label' => 'Gateways', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
