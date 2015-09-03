@@ -46,6 +46,7 @@ $this->params['breadcrumbs'][] = $this->title;
     //            'description',
                 [
                     'class' => 'yii\grid\ActionColumn',
+                    'template' => '{update}',
                     'buttons' => [
                     'update' => function ($url, $model) {
                         return Html::a('<span class="glyphicon glyphicon-pencil"></span>', Yii::$app->urlManager->createUrl(['dr-gateways/view','id' => $model->id,'edit'=>'t']), [
