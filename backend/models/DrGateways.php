@@ -46,25 +46,8 @@ class DrGateways extends \yii\db\ActiveRecord
             [['pri_prefix'], 'string', 'max' => 16],
             [['attrs'], 'string', 'max' => 255],
             [['gwid'], 'unique'],
-            [['address'], 'ipPortValidate']
+            [['address'], 'match', '/^([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3}):([0-9]{1,5})$/']
         ];
-    }
-
-    public function ipPortValidate($attribute) {
-        if (!preg_match(
-            '/\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)
-            (?::
-              (?![7-9]\d\d\d\d) #Ignrore anything above 7....
-              (?!6[6-9]\d\d\d)  #Ignore anything abovr 69...
-              (?!65[6-9]\d\d)   #etc...
-              (?!655[4-9]\d)
-              (?!6553[6-9])
-              (?!0+)            #ignore complete 0(s)
-              (?P<Port>\d{1,5})
-            )?\b/x', $attribute)
-        ) {
-            $this->addError($attribute, Yii::t('user', 'Invalid address entered.'));
-        }
     }
 
     /**
