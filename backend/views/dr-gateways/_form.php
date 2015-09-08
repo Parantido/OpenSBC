@@ -53,7 +53,7 @@ use kartik\widgets\ActiveForm;
                 'heading'=>'Gateway # ' . $model->address,
                 'type' => DetailView::TYPE_INFO,
             ],
-            'valueColOptions' => ['style' => 'width: 70%'],
+            'inputContainer' => ['class'=>'col-sm-6'],
             'attributes' => $formColumns,
             'enableEditMode' => true,
         ]);
