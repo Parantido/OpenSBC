@@ -48,14 +48,15 @@ use kartik\widgets\ActiveForm;
         echo DetailView::widget([
             'model' => $model,
             'bootstrap' => true,
-            'condensed'=> true,
+            'condensed' => false,
             'hover' => true,
             'mode' => DetailView::MODE_EDIT,
             'panel' => [
-                'heading'=>'Gateway # ' . $model->id,
-                'type'=>DetailView::TYPE_INFO,
+                'heading'=>'Gateway # ' . $model->address,
+                'type' => DetailView::TYPE_INFO,
             ],
-            'attributes' => $formColumns
+            'attributes' => $formColumns,
+            'enableEditMode' => true,
         ]);
 
         echo Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']);
