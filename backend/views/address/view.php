@@ -15,7 +15,9 @@ $this->params['breadcrumbs'][] = $this->title;
     <!--<h1><?= Html::encode($this->title) ?></h1>-->
 
     <?php
-
+        $netmasks = array();
+        for($i = 8; $i <= 32; $i++) array_push($netmasks, $i);
+    
         $detailViewColumns = [
             'grp'=>['attribute'=>'grp', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
             'ip'=>['attribute'=>'ip', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
