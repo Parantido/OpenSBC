@@ -112,6 +112,7 @@ use yii\bootstrap\Nav;
                 </a>
                 <ul class="treeview-menu">
                     <li><a href="<?= \yii\helpers\Url::to(['/resource-groups']) ?>"><span class="fa fa-angle-right"></span> Resource Groups</a></li>
+                    <li><a href="<?= \yii\helpers\Url::to(['/address']) ?>"><span class="fa fa-angle-right"></span> Trusted Hosts</a></li>
                 </ul>
             </li>
             <li class="treeview">
