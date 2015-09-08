@@ -15,9 +15,10 @@ $this->params['breadcrumbs'][] = $this->title;
     <!--<h1><?= Html::encode($this->title) ?></h1>-->
 
     <?php
+
         $netmasks = array();
         for($i = 8; $i <= 32; $i++) array_push($netmasks, $i);
-    
+
         $detailViewColumns = [
             'grp'=>['attribute'=>'grp', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
             'ip'=>['attribute'=>'ip', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
@@ -25,7 +26,6 @@ $this->params['breadcrumbs'][] = $this->title;
             'port'=>['attribute'=>'port', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
             'proto'=>['attribute'=>'proto', 'items' => ['udp', 'tcp'], 'type'=> DetailView::INPUT_DROPDOWN_LIST, 'inputContainer' => ['style' => $inputStyle]],
             'pattern'=>['attribute'=>'pattern', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle], 'value' => '^sip:.*$'],
-            'state'=>['attribute'=>'state', 'items' => $countries_list, 'type'=> DetailView::INPUT_DROPDOWN_LIST, 'options'=>['id' => 'state-id'], 'inputContainer' => ['style' => $inputStyle]],
             'context_info'=>['attribute'=>'context_info', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]]
         ];
 
