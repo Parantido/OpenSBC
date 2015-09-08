@@ -20,7 +20,7 @@ use kartik\widgets\ActiveForm;
         $domains_list = ArrayHelper::map(Domain::find()->all(), 'id', 'domain');
         $customers_list = ArrayHelper::map(Customers::find()->all(), 'id', 'username');
 
-        $inputStyle = "padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px;";
+        $inputStyle = "padding-left: 10px; padding-right: 10px; padding-top: 2px; padding-bottom: 10px;";
 
         $formColumns = [
             'type' => ['attribute'=>'type', 'items' => [1, 3, 13], 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
