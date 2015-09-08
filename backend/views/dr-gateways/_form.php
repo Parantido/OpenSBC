@@ -17,6 +17,8 @@ use kartik\widgets\ActiveForm;
 <div class="dr-gateways-form">
 
     <?php
+        echo "Cazzo passo: Yii::$app->request->get('edit')";
+    
         $domains_list = ArrayHelper::map(Domain::find()->all(), 'id', 'domain');
         $customers_list = ArrayHelper::map(Customers::find()->all(), 'id', 'username');
 
@@ -48,7 +50,7 @@ use kartik\widgets\ActiveForm;
             'bootstrap' => true,
             'condensed'=> true,
             'hover' => true,
-            'mode' => Yii::$app->request->get('edit')=='t' ? DetailView::MODE_EDIT : DetailView::MODE_VIEW,
+            'mode' => Yii::$app->request->get('edit') == 't' ? DetailView::MODE_EDIT : DetailView::MODE_VIEW,
             'panel' => [
                 'heading'=>'Gateway # ' . $model->id,
                 'type'=>DetailView::TYPE_INFO,
