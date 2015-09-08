@@ -5,9 +5,10 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\Address */
 
-$this->title = 'Update Trusted Host: ' . ' ' .$model->proto. ':' .$model->ip. ':' .$model->port;
+$address = $model->proto. ':' .$model->ip. ':' .$model->port;
+$this->title = 'Update Trusted Host: ' . ' ' .$address;
 $this->params['breadcrumbs'][] = ['label' => 'Addresses', 'url' => ['index']];
-$this->params['breadcrumbs'][] = ['label' => $model->id, 'url' => ['view', 'id' => $model->id]];
+$this->params['breadcrumbs'][] = ['label' => $address, 'url' => ['view', 'id' => $model->id]];
 $this->params['breadcrumbs'][] = 'Update';
 ?>
 <div class="address-update">

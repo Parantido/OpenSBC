@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?php
         $inputStyle = "padding-left: 10px; padding-right: 10px; padding-top: 2px; padding-bottom: 10px;";
-        
+
         $netmasks = array();
         for($i = 8; $i <= 32; $i++) array_push($netmasks, $i);
 
