@@ -20,23 +20,25 @@ use kartik\widgets\ActiveForm;
         $domains_list = ArrayHelper::map(Domain::find()->all(), 'id', 'domain');
         $customers_list = ArrayHelper::map(Customers::find()->all(), 'id', 'username');
 
+        $inputStyle = "padding-left: 10px; padding-right: 10px; padding-top: 2px; padding-bottom: 2px;";
+
         $formColumns = [
-            'type' => ['attribute'=>'type', 'items' => [1, 3, 13], 'type'=> DetailView::INPUT_TEXT],
-            'address' => ['attribute'=>'address', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => 'padding-left: 10px;']],
+            'type' => ['attribute'=>'type', 'items' => [1, 3, 13], 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
+            'address' => ['attribute'=>'address', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
             'strip' => ['attribute'=>'strip', 'type'=> DetailView::INPUT_SLIDER, 'value'=>'0', 'widgetOptions' => [
                 'pluginOptions' => [
                     'min' => 0,
                     'max' => 15,
                     'step' => 1
                 ],
-            ]],
-            'cust_id' => ['attribute'=>'cust_id', 'items' => $customers_list, 'type'=> DetailView::INPUT_DROPDOWN_LIST],
-            'pri_prefix' => ['attribute'=>'pri_prefix', 'type'=> DetailView::INPUT_TEXT],
-            'attrs' => ['attribute'=>'attrs', 'type'=> DetailView::INPUT_TEXT],
-            'probe_mode' => ['attribute'=>'probe_mode', 'items' => [0, 1, 2], 'type'=> DetailView::INPUT_DROPDOWN_LIST],
-            'state' => ['attribute'=>'state', 'type'=> DetailView::INPUT_TEXT],
-            'socket' => ['attribute'=>'socket', 'type'=> DetailView::INPUT_TEXT],
-            'description' => ['attribute'=>'description', 'type'=> DetailView::INPUT_TEXTAREA],
+            ], 'inputContainer' => ['style' => $inputStyle]],
+            'cust_id' => ['attribute'=>'cust_id', 'items' => $customers_list, 'type'=> DetailView::INPUT_DROPDOWN_LIST, 'inputContainer' => ['style' => $inputStyle]],
+            'pri_prefix' => ['attribute'=>'pri_prefix', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
+            'attrs' => ['attribute'=>'attrs', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
+            'probe_mode' => ['attribute'=>'probe_mode', 'items' => [0, 1, 2], 'type'=> DetailView::INPUT_DROPDOWN_LIST, 'inputContainer' => ['style' => $inputStyle]],
+            'state' => ['attribute'=>'state', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
+            'socket' => ['attribute'=>'socket', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
+            'description' => ['attribute'=>'description', 'type'=> DetailView::INPUT_TEXTAREA, 'inputContainer' => ['style' => $inputStyle]],
         ];
 
         $form = ActiveForm::begin([
