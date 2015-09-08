@@ -48,12 +48,12 @@ class Address extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'grp' => 'Grp',
-            'ip' => 'Ip',
-            'mask' => 'Mask',
+            'grp' => 'Group',
+            'ip' => 'IP',
+            'mask' => 'Netmask',
             'port' => 'Port',
-            'proto' => 'Proto',
-            'pattern' => 'Pattern',
+            'proto' => 'Protocol',
+            'pattern' => 'Match Pattern',
             'context_info' => 'Context Info',
         ];
     }

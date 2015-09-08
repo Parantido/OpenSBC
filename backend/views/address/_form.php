@@ -13,15 +13,17 @@ use kartik\detail\DetailView;
     <?php
         $inputStyle = "padding-left: 10px; padding-right: 10px; padding-top: 2px; padding-bottom: 10px;";
 
+        for($i = 8; $i <= 32; $i++) array_push($netmasks, $i);
+
         // Define Form Widget Columns
         $formColumns = [
             'grp'=>['attribute'=>'grp', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
             'ip'=>['attribute'=>'ip', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
-            'mask'=>['attribute'=>'mask', 'type'=> DetailView::INPUT_DROPDOWN_LIST, 'inputContainer' => ['style' => $inputStyle]],
+            'mask'=>['attribute'=>'mask', 'items' => $netmasks, 'type'=> DetailView::INPUT_DROPDOWN_LIST, 'inputContainer' => ['style' => $inputStyle]],
             'port'=>['attribute'=>'port', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
             'proto'=>['attribute'=>'proto', 'items' => ['udp', 'tcp'], 'type'=> DetailView::INPUT_DROPDOWN_LIST, 'inputContainer' => ['style' => $inputStyle]],
             'pattern'=>['attribute'=>'pattern', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle], 'value' => ''],
-            'state'=>['attribute'=>'state', 'items' => $countries_list, 'type'=> DetailView::INPUT_DROPDOWN_LIST, 'options'=>['id' => 'state-id'], 'inputContainer' => ['style' => $inputStyle]],
+            'state'=>['attribute'=>'state', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
             'context_info'=>['attribute'=>'context_info', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]]
         ];
 
@@ -36,7 +38,7 @@ use kartik\detail\DetailView;
             'hover' => true,
             'mode' => DetailView::MODE_EDIT,
             'panel' => [
-                'heading'=>'Whitelist # ' .$model->ip. ":" .$model->port,
+                'heading'=>'Trusted Host # ' .$model->ip. ":" .$model->port,
                 'type'=>DetailView::TYPE_INFO,
             ],
             'attributes' => $formColumns
