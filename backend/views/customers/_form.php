@@ -67,7 +67,7 @@ use kartik\widgets\ActiveForm;
             'model' => $model,
             'condensed'=> true,
             'hover' => true,
-            'mode' => DetailView::MODE_VIEW,
+            'mode' => DetailView::MODE_EDIT,
             'panel' => [
                 'heading'=>'Customer # ' . $model->id,
                 'type'=>DetailView::TYPE_INFO,
