@@ -17,8 +17,6 @@ use kartik\widgets\ActiveForm;
 <div class="dr-gateways-form">
 
     <?php
-        echo "Cazzo passo: " .Yii::$app->request->get('edit'). ".";
-
         $domains_list = ArrayHelper::map(Domain::find()->all(), 'id', 'domain');
         $customers_list = ArrayHelper::map(Customers::find()->all(), 'id', 'username');
 
@@ -55,6 +53,7 @@ use kartik\widgets\ActiveForm;
                 'heading'=>'Gateway # ' . $model->address,
                 'type' => DetailView::TYPE_INFO,
             ],
+            'valueColOptions' => ['style' => 'width: 70%'],
             'attributes' => $formColumns,
             'enableEditMode' => true,
         ]);
