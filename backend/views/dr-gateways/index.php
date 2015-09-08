@@ -20,9 +20,11 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?php /* echo Html::a(Yii::t('app', 'Create {modelClass}', [
-    'modelClass' => 'Dr Gateways',
-]), ['create'], ['class' => 'btn btn-success'])*/  ?>
+        <?php
+            /* echo Html::a(Yii::t('app', 'Create {modelClass}', [
+                'modelClass' => 'Dr Gateways',
+            ]), ['create'], ['class' => 'btn btn-success']) */
+        ?>
     </p>
 
     <?php
@@ -32,18 +34,11 @@ $this->params['breadcrumbs'][] = $this->title;
             'filterModel' => $searchModel,
             'columns' => [
                 ['class' => 'yii\grid\SerialColumn'],
-    //            'id',
-    //            'gwid',
                 'address',
                 'cust_id',
                 'type',
                 'strip',
                 'pri_prefix',
-    //            'attrs',
-    //            'probe_mode',
-    //            'state',
-    //            'socket',
-    //            'description',
                 [
                     'class' => 'yii\grid\ActionColumn',
                     'template' => '{update}',
@@ -60,13 +55,13 @@ $this->params['breadcrumbs'][] = $this->title;
             'condensed'=>true,
             'floatHeader'=>true,
             'panel' => [
-                'heading'=>'<h3 class="panel-title"><i class="glyphicon glyphicon-th-list"></i> '.Html::encode($this->title).' </h3>',
-                'type'=>'info',
-                'before'=>Html::a('<i class="glyphicon glyphicon-plus"></i> Add', ['create'], ['class' => 'btn btn-success']),                                                                                                                                                          'after'=>Html::a('<i class="glyphicon glyphicon-repeat"></i> Reset List', ['index'], ['class' => 'btn btn-info']),
-                'showFooter'=>false
+                'heading' => '<h3 class="panel-title"><i class="glyphicon glyphicon-th-list"></i> ' .Html::encode($this->title). ' </h3>',
+                'type' => 'info',
+                'before' => Html::a('<i class="glyphicon glyphicon-plus"></i> Add', ['create'], ['class' => 'btn btn-success']),
+                'after' => Html::a('<i class="glyphicon glyphicon-repeat"></i> Reset List', ['index'], ['class' => 'btn btn-info']),
+                'showFooter' => false
             ],
         ]);
         Pjax::end();
     ?>
-
 </div>

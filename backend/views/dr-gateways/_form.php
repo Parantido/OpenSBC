@@ -48,7 +48,7 @@ use kartik\widgets\ActiveForm;
             'bootstrap' => true,
             'condensed'=> true,
             'hover' => true,
-            'mode' => DetailView::MODE_VIEW,
+            'mode' => Yii::$app->request->get('edit')=='t' ? DetailView::MODE_EDIT : DetailView::MODE_VIEW,
             'panel' => [
                 'heading'=>'Gateway # ' . $model->id,
                 'type'=>DetailView::TYPE_INFO,
