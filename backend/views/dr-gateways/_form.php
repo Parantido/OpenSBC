@@ -22,7 +22,7 @@ use kartik\widgets\ActiveForm;
 
         $formColumns = [
             'type' => ['attribute'=>'type', 'items' => [1, 3, 13], 'type'=> DetailView::INPUT_TEXT],
-            'address' => ['attribute'=>'address', 'type'=> DetailView::INPUT_TEXT],
+            'address' => ['attribute'=>'address', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['class'=>'col-sm-6']],
             'strip' => ['attribute'=>'strip', 'type'=> DetailView::INPUT_SLIDER, 'value'=>'0', 'widgetOptions' => [
                 'pluginOptions' => [
                     'min' => 0,
@@ -53,7 +53,6 @@ use kartik\widgets\ActiveForm;
                 'heading'=>'Gateway # ' . $model->address,
                 'type' => DetailView::TYPE_INFO,
             ],
-            'inputContainer' => ['class'=>'col-sm-6'],
             'attributes' => $formColumns,
             'enableEditMode' => true,
         ]);
