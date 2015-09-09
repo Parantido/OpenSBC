@@ -10,7 +10,7 @@ use kartik\grid\GridView;
  * @var app\models\DrCarriersSearch $searchModel
  */
 
-$this->title = 'Dr Carriers';
+$this->title = 'Carriers';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="dr-carriers-index">

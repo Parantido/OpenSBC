@@ -21,6 +21,7 @@ $this->params['breadcrumbs'][] = $this->title;
         $inputStyle = "padding-left: 10px; padding-right: 10px; padding-top: 2px; padding-bottom: 2px;";
 
         $detailViewColumns = [
+            'carrierid'=>['attribute'=>'carrierid', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
             'gwlist'=>['attribute'=>'gwlist', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
             'flags'=>['attribute'=>'flags', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
             'state'=>['attribute'=>'state', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],

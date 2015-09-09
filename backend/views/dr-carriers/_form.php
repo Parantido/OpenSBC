@@ -18,6 +18,7 @@ use kartik\detail\DetailView;
 
         // Define Form Widget Columns
         $formColumns = [
+            'carrierid'=>['attribute'=>'carrierid', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
             'gwlist'=>['attribute'=>'gwlist', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
             'flags'=>['attribute'=>'flags', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
             'state'=>['attribute'=>'state', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
