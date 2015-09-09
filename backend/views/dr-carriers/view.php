@@ -1,6 +1,7 @@
 <?php
 
 use yii\helpers\Html;
+use app\models\DrGateways;
 use kartik\detail\DetailView;
 
 /**
@@ -20,9 +21,11 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php
         $inputStyle = "padding-left: 10px; padding-right: 10px; padding-top: 2px; padding-bottom: 2px;";
 
+        $gateways_list = ArrayHelper::map(DrGateways::find()->all(), 'id', 'address');
+
         $detailViewColumns = [
             'carrierid'=>['attribute'=>'carrierid', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
-            'gwlist'=>['attribute'=>'gwlist', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
+            'gwlist'=>['attribute'=>'gwlist', 'items' => $gateways_list, 'type'=> DetailView::INPUT_DROPDOWN_LIST, 'inputContainer' => ['style' => $inputStyle]],
             'flags'=>['attribute'=>'flags', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
             'state'=>['attribute'=>'state', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
             'attrs'=>['attribute'=>'attrs', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
