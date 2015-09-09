@@ -23,7 +23,7 @@ use kartik\widgets\ActiveForm;
         $inputStyle = "padding-left: 10px; padding-right: 10px; padding-top: 2px; padding-bottom: 10px;";
 
         $formColumns = [
-            'group_id' => ['attribute'=>'group_id', 'items' => $domains_list, 'type'=> DetailView::INPUT_DROPDOWN_LIST, 'inputContainer' => ['style' => $inputStyle]],
+            'groupid' => ['attribute'=>'groupid', 'items' => $domains_list, 'type'=> DetailView::INPUT_DROPDOWN_LIST, 'inputContainer' => ['style' => $inputStyle]],
             'prefix' => ['attribute'=>'prefix', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
             'timerec' => ['attribute'=>'timerec', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
             'gwlist' => ['attribute'=>'gwlist', 'items' => $gateways_list, 'type'=> DetailView::INPUT_DROPDOWN_LIST, 'inputContainer' => ['style' => $inputStyle]],
