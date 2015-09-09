@@ -47,11 +47,11 @@ class DrCarriers extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'carrierid' => 'Carrierid',
-            'gwlist' => 'Gwlist',
+            'carrierid' => 'Carrier Id',
+            'gwlist' => 'Gateways List',
             'flags' => 'Flags',
             'state' => 'State',
-            'attrs' => 'Attrs',
+            'attrs' => 'Attributes',
             'description' => 'Description',
         ];
     }
