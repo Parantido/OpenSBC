@@ -48,7 +48,7 @@ class DrRules extends \yii\db\ActiveRecord
     {
         return [
             'ruleid' => 'Rule Id',
-            'groupid' => 'Group Id',
+            'groupid' => 'Tenant',
             'prefix' => 'Prefix',
             'timerec' => 'Time Validity',
             'priority' => 'Priority',

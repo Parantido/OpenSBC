@@ -48,15 +48,15 @@ class Dialplan extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'dpid' => 'Dpid',
-            'pr' => 'Pr',
-            'match_op' => 'Match Op',
-            'match_exp' => 'Match Exp',
+            'dpid' => 'Tenant',
+            'pr' => 'Priority',
+            'match_op' => 'Match Op.',
+            'match_exp' => 'Match Exp.',
             'match_flags' => 'Match Flags',
-            'subst_exp' => 'Subst Exp',
-            'repl_exp' => 'Repl Exp',
+            'subst_exp' => 'Subst Exp.',
+            'repl_exp' => 'Repl Exp.',
             'disabled' => 'Disabled',
-            'attrs' => 'Attrs',
+            'attrs' => 'Attributes',
         ];
     }
 }
