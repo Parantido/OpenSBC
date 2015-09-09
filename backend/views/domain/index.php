@@ -19,10 +19,6 @@ $this->params['breadcrumbs'][] = $this->title;
     </div>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
-    <p>
-        <?php /* echo Html::a('Create Domain', ['create'], ['class' => 'btn btn-success'])*/  ?>
-    </p>
-
     <?php
         Pjax::begin(); echo GridView::widget([
             'dataProvider' => $dataProvider,
@@ -34,6 +30,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 ['attribute'=>'last_modified','format'=>['datetime',(isset(Yii::$app->modules['datecontrol']['displaySettings']['datetime'])) ? Yii::$app->modules['datecontrol']['displaySettings']['datetime'] : 'd-m-Y H:i:s A']],
                 [
                     'class' => 'yii\grid\ActionColumn',
+                    'template' => '{update}',
                     'buttons' => [
                         'update' => function ($url, $model) {
                             return Html::a('<span class="glyphicon glyphicon-pencil"></span>', Yii::$app->urlManager->createUrl(['domain/view','id' => $model->id,'edit'=>'t']), [

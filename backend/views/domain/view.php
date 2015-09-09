@@ -18,37 +18,31 @@ $this->params['breadcrumbs'][] = $this->title;
         <h1><?= Html::encode($this->title) ?></h1>
     </div>
 
+    <?php
+        $detailViewColumns = [
+            'domain'=>['attribute'=>'grp', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
+            'last_modified'=>['attribute'=>'ip', 'type'=> DetailView::INPUT_DATETIME, 'inputContainer' => ['style' => $inputStyle]],
+        ];
 
-    <?= DetailView::widget([
+        echo DetailView::widget([
             'model' => $model,
             'condensed'=>false,
             'hover'=>true,
             'mode'=>Yii::$app->request->get('edit')=='t' ? DetailView::MODE_EDIT : DetailView::MODE_VIEW,
             'panel'=>[
-            'heading'=>$this->title,
-            'type'=>DetailView::TYPE_INFO,
-        ],
-        'attributes' => [
-            'id',
-            'domain',
-            [
-                'attribute'=>'last_modified',
-                'format'=>['datetime',(isset(Yii::$app->modules['datecontrol']['displaySettings']['datetime'])) ? Yii::$app->modules['datecontrol']['displaySettings']['datetime'] : 'd-m-Y H:i:s A'],
-                'type'=>DetailView::INPUT_WIDGET,
-                'widgetOptions'=> [
-                    'class'=>DateControl::classname(),
-                    'type'=>DateControl::FORMAT_DATETIME
-                ]
+                'heading'=>$this->title,
+                'type'=>DetailView::TYPE_INFO,
             ],
-        ],
-        'deleteOptions'=>[
-        'url'=>['delete', 'id' => $model->id],
-        'data'=>[
-        'confirm'=>Yii::t('app', 'Are you sure you want to delete this item?'),
-        'method'=>'post',
-        ],
-        ],
-        'enableEditMode'=>true,
-    ]) ?>
+            'attributes' => $detailViewColumns,
+            'deleteOptions'=>[
+                'url'=>['delete', 'id' => $model->id],
+                'data'=>[
+                    'confirm'=>Yii::t('app', 'Are you sure you want to delete this item?'),
+                    'method'=>'post',
+                ],
+            ],
+            'enableEditMode'=>true,
+        ])
+    ?>
 
 </div>
