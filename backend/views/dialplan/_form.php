@@ -1,9 +1,11 @@
 <?php
 
 use yii\helpers\Html;
+use app\models\Domain;
+use app\models\DrGateways;
+use yii\helpers\ArrayHelper;
+use kartik\detail\DetailView;
 use kartik\widgets\ActiveForm;
-use kartik\builder\Form;
-use kartik\datecontrol\DateControl;
 
 /**
  * @var yii\web\View $this
@@ -14,36 +16,46 @@ use kartik\datecontrol\DateControl;
 
 <div class="dialplan-form">
 
-    <?php $form = ActiveForm::begin(['type'=>ActiveForm::TYPE_HORIZONTAL]); echo Form::widget([
+    <?php
 
-    'model' => $model,
-    'form' => $form,
-    'columns' => 1,
-    'attributes' => [
+        $domains_list = ArrayHelper::map(Domain::find()->all(), 'id', 'domain');
+        $gateways_list = ArrayHelper::map(DrGateways::find()->all(), 'id', 'address');
 
-'dpid'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Dpid...']], 
+        $inputStyle = "padding-left: 10px; padding-right: 10px; padding-top: 2px; padding-bottom: 10px;";
 
-'pr'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Pr...']], 
+        $formColumns = [
+            'dpid' => ['attribute'=>'dpid', 'items' => $domains_list, 'type'=> DetailView::INPUT_DROPDOWN_LIST, 'inputContainer' => ['style' => $inputStyle]],
+            'disabled' => ['attribute'=>'disabled', 'type'=> DetailView::INPUT_CHECKBOX, 'inputContainer' => ['style' => $inputStyle]],
+            'pr' => ['attribute'=>'pr', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
+            'match_op' => ['attribute'=>'match_op', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
+            'match_exp' => ['attribute'=>'match_exp', 'items' => $gateways_list, 'type'=> DetailView::INPUT_DROPDOWN_LIST, 'inputContainer' => ['style' => $inputStyle]],
+            'match_flags' => ['attribute'=>'match_flags', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
+            'subst_exp' => ['attribute'=>'subst_exp', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
+            'repl_exp' => ['attribute'=>'repl_exp', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
+            'attrs' => ['attribute'=>'attrs', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
+        ];
 
-'match_op'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Match Op...']], 
+        $form = ActiveForm::begin([
+            'type' => ActiveForm::TYPE_HORIZONTAL,
+        ]);
 
-'match_exp'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Match Exp...', 'maxlength'=>64]], 
+        echo DetailView::widget([
+            'model' => $model,
+            'bootstrap' => true,
+            'condensed' => false,
+            'hover' => true,
+            'mode' => DetailView::MODE_EDIT,
+            'panel' => [
+                'heading'=>'Routing Rule # ' . $model->ruleid,
+                'type' => DetailView::TYPE_INFO,
+            ],
+            'attributes' => $formColumns,
+            'enableEditMode' => true,
+        ]);
 
-'match_flags'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Match Flags...']], 
+        echo Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']);
+        ActiveForm::end();
 
-'subst_exp'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Subst Exp...', 'maxlength'=>64]], 
-
-'repl_exp'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Repl Exp...', 'maxlength'=>32]], 
-
-'attrs'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Attrs...', 'maxlength'=>32]], 
-
-'disabled'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Disabled...']], 
-
-    ]
-
-
-    ]);
-    echo Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']);
-    ActiveForm::end(); ?>
+    ?>
 
 </div>
