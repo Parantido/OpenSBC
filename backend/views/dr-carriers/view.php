@@ -10,8 +10,8 @@ use kartik\detail\DetailView;
  * @var app\models\DrCarriers $model
  */
 
-$this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Dr Carriers', 'url' => ['index']];
+$this->title = $model->carrierid;
+$this->params['breadcrumbs'][] = ['label' => 'Carriers', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="dr-carriers-view">
