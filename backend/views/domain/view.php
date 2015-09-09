@@ -44,7 +44,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 ],
             ],
             'enableEditMode'=>true,
-        ])
+        ]);
     ?>
 
 </div>

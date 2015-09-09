@@ -1,9 +1,8 @@
 <?php
 
 use yii\helpers\Html;
-use kartik\widgets\ActiveForm;
-use kartik\builder\Form;
-use kartik\datecontrol\DateControl;
+use kartik\form\ActiveForm;
+use kartik\detail\DetailView;
 
 /**
  * @var yii\web\View $this
@@ -14,30 +13,38 @@ use kartik\datecontrol\DateControl;
 
 <div class="dr-carriers-form">
 
-    <?php $form = ActiveForm::begin(['type'=>ActiveForm::TYPE_HORIZONTAL]); echo Form::widget([
+    <?php
+        $inputStyle = "padding-left: 20px; padding-right: 20px; padding-top: 2px; padding-bottom: 10px;";
 
-    'model' => $model,
-    'form' => $form,
-    'columns' => 1,
-    'attributes' => [
+        // Define Form Widget Columns
+        $formColumns = [
+            'gwlist'=>['attribute'=>'gwlist', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
+            'flags'=>['attribute'=>'flags', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
+            'state'=>['attribute'=>'state', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
+            'attrs'=>['attribute'=>'attrs', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
+            'description'=>['attribute'=>'description', 'type'=> DetailView::INPUT_TEXTAREA, 'inputContainer' => ['style' => $inputStyle]],
+        ];
 
-'carrierid'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Carrierid...', 'maxlength'=>64]], 
+        $form = ActiveForm::begin([
+            'type' => ActiveForm::TYPE_HORIZONTAL,
+            'fullSpan' => 12,
+        ]);
 
-'gwlist'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Gwlist...', 'maxlength'=>255]], 
+        echo DetailView::widget([
+            'model' => $model,
+            'condensed'=> true,
+            'hover' => true,
+            'mode' => DetailView::MODE_EDIT,
+            'panel' => [
+                'heading'=>'Domain # ' .$model->carrierid,
+                'type'=>DetailView::TYPE_INFO,
+            ],
+            'attributes' => $formColumns
+        ]);
 
-'flags'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Flags...']], 
+        //echo Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']);
 
-'state'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter State...']], 
-
-'attrs'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Attrs...', 'maxlength'=>255]], 
-
-'description'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Description...', 'maxlength'=>128]], 
-
-    ]
-
-
-    ]);
-    echo Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']);
-    ActiveForm::end(); ?>
+        ActiveForm::end();
+    ?>
 
 </div>
