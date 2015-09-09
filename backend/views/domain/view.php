@@ -20,10 +20,10 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?php
         $inputStyle = "padding-left: 10px; padding-right: 10px; padding-top: 2px; padding-bottom: 10px;";
-    
+
         $detailViewColumns = [
-            'domain'=>['attribute'=>'grp', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
-            'last_modified'=>['attribute'=>'ip', 'type'=> DetailView::INPUT_DATETIME, 'inputContainer' => ['style' => $inputStyle]],
+            'domain'=>['attribute'=>'domain', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
+            'last_modified'=>['attribute'=>'last_modified', 'type'=> DetailView::INPUT_DATETIME, 'inputContainer' => ['style' => $inputStyle]],
         ];
 
         echo DetailView::widget([

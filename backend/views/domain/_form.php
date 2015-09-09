@@ -18,8 +18,8 @@ use kartik\detail\DetailView;
 
         // Define Form Widget Columns
         $formColumns = [
-            'domain'=>['attribute'=>'grp', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
-            'last_modified'=>['attribute'=>'ip', 'type'=> DetailView::INPUT_DATETIME, 'inputContainer' => ['style' => $inputStyle]],
+            'domain'=>['attribute'=>'domain', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
+            'last_modified'=>['attribute'=>'last_modified', 'type'=> DetailView::INPUT_DATETIME, 'inputContainer' => ['style' => $inputStyle]],
         ];
 
         $form = ActiveForm::begin([
