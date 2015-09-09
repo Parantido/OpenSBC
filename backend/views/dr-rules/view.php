@@ -22,7 +22,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?php
         $domains_list = ArrayHelper::map(Domain::find()->all(), 'id', 'domain');
-        $gateways_list = ArrayHelper::map(DrGateways::find()->all(), 'id', 'username');
+        $gateways_list = ArrayHelper::map(DrGateways::find()->all(), 'id', 'address');
 
         $inputStyle = "padding-left: 10px; padding-right: 10px; padding-top: 2px; padding-bottom: 2px;";
 
