@@ -44,7 +44,7 @@ use kartik\widgets\ActiveForm;
             'hover' => true,
             'mode' => DetailView::MODE_EDIT,
             'panel' => [
-                'heading'=>'Gateway # ' . $model->address,
+                'heading'=>'Routing Rule # ' . $model->ruleid,
                 'type' => DetailView::TYPE_INFO,
             ],
             'attributes' => $formColumns,
