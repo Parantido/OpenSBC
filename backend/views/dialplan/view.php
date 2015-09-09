@@ -2,7 +2,6 @@
 
 use yii\helpers\Html;
 use app\models\Domain;
-use app\models\DrGateways;
 use yii\helpers\ArrayHelper;
 use kartik\detail\DetailView;
 
@@ -21,15 +20,16 @@ $this->params['breadcrumbs'][] = $this->title;
     </div>-->
 
     <?php
+        $inputStyle = "padding-left: 10px; padding-right: 10px; padding-top: 2px; padding-bottom: 2px;";
+
         $domains_list = ArrayHelper::map(Domain::find()->all(), 'id', 'domain');
-        $gateways_list = ArrayHelper::map(DrGateways::find()->all(), 'id', 'address');
 
         $detailViewColumns = [
             'dpid' => ['attribute'=>'dpid', 'items' => $domains_list, 'type'=> DetailView::INPUT_DROPDOWN_LIST, 'inputContainer' => ['style' => $inputStyle]],
             'disabled' => ['attribute'=>'disabled', 'type'=> DetailView::INPUT_CHECKBOX, 'inputContainer' => ['style' => $inputStyle]],
             'pr' => ['attribute'=>'pr', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
             'match_op' => ['attribute'=>'match_op', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
-            'match_exp' => ['attribute'=>'match_exp', 'items' => $gateways_list, 'type'=> DetailView::INPUT_DROPDOWN_LIST, 'inputContainer' => ['style' => $inputStyle]],
+            'match_exp' => ['attribute'=>'match_exp', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
             'match_flags' => ['attribute'=>'match_flags', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
             'subst_exp' => ['attribute'=>'subst_exp', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
             'repl_exp' => ['attribute'=>'repl_exp', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
