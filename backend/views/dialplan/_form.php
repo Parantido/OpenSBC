@@ -19,7 +19,7 @@ use kartik\widgets\ActiveForm;
 
         $domains_list = ArrayHelper::map(Domain::find()->all(), 'id', 'domain');
 
-        $inputStyle = "padding-left: 10px; padding-right: 10px; padding-top: 2px; padding-bottom: 10px;";
+        $inputStyle = "padding-left: 20px; padding-right: 20px; padding-top: 2px; padding-bottom: 10px;";
 
         $formColumns = [
             'dpid' => ['attribute'=>'dpid', 'items' => $domains_list, 'type'=> DetailView::INPUT_DROPDOWN_LIST, 'inputContainer' => ['style' => $inputStyle]],
