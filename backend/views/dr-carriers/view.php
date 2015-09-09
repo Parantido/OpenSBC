@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use app\models\DrGateways;
+use yii\helpers\ArrayHelper;
 use kartik\detail\DetailView;
 
 /**

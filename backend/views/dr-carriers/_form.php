@@ -3,6 +3,7 @@
 use yii\helpers\Html;
 use app\models\DrGateways;
 use kartik\form\ActiveForm;
+use yii\helpers\ArrayHelper;
 use kartik\detail\DetailView;
 
 /**
