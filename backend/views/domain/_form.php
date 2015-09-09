@@ -14,7 +14,7 @@ use kartik\detail\DetailView;
 <div class="domain-form">
 
     <?php
-        $inputStyle = "padding-left: 10px; padding-right: 10px; padding-top: 2px; padding-bottom: 10px;";
+        $inputStyle = "padding-left: 10px; padding-right: 10px; padding-top: 2px; padding-bottom: 2px;";
 
         // Define Form Widget Columns
         $formColumns = [

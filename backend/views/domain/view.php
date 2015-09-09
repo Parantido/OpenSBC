@@ -9,17 +9,17 @@ use kartik\datecontrol\DateControl;
  * @var app\models\Domain $model
  */
 
-$this->title = $model->id;
+$this->title = $model->domain;
 $this->params['breadcrumbs'][] = ['label' => 'Domains', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="domain-view">
-    <div class="page-header">
+    <!--<div class="page-header">
         <h1><?= Html::encode($this->title) ?></h1>
-    </div>
+    </div>-->
 
     <?php
-        $inputStyle = "padding-left: 10px; padding-right: 10px; padding-top: 2px; padding-bottom: 10px;";
+        $inputStyle = "padding-left: 10px; padding-right: 10px; padding-top: 2px; padding-bottom: 2px;";
 
         $detailViewColumns = [
             'domain'=>['attribute'=>'domain', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
