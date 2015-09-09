@@ -47,14 +47,14 @@ class DrRules extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'ruleid' => 'Ruleid',
-            'groupid' => 'Groupid',
+            'ruleid' => 'Rule Id',
+            'groupid' => 'Group Id',
             'prefix' => 'Prefix',
-            'timerec' => 'Timerec',
+            'timerec' => 'Time Validity',
             'priority' => 'Priority',
-            'routeid' => 'Routeid',
-            'gwlist' => 'Gwlist',
-            'attrs' => 'Attrs',
+            'routeid' => 'Route Id',
+            'gwlist' => 'Gateways List',
+            'attrs' => 'Attributes',
             'description' => 'Description',
         ];
     }

@@ -7,14 +7,14 @@ use yii\helpers\Html;
  * @var app\models\DrRules $model
  */
 
-$this->title = 'Create Dr Rules';
-$this->params['breadcrumbs'][] = ['label' => 'Dr Rules', 'url' => ['index']];
+$this->title = 'Create Routing Rule';
+$this->params['breadcrumbs'][] = ['label' => 'Routing Rules', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="dr-rules-create">
-    <div class="page-header">
+    <!--<div class="page-header">
         <h1><?= Html::encode($this->title) ?></h1>
-    </div>
+    </div>-->
     <?= $this->render('_form', [
         'model' => $model,
     ]) ?>

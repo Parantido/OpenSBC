@@ -1,8 +1,11 @@
 <?php
 
 use yii\helpers\Html;
-use kartik\widgets\ActiveForm;
+use app\models\Domain;
 use kartik\builder\Form;
+use app\models\DrGateways;
+use yii\helpers\ArrayHelper;
+use kartik\widgets\ActiveForm;
 use kartik\datecontrol\DateControl;
 
 /**
@@ -14,34 +17,43 @@ use kartik\datecontrol\DateControl;
 
 <div class="dr-rules-form">
 
-    <?php $form = ActiveForm::begin(['type'=>ActiveForm::TYPE_HORIZONTAL]); echo Form::widget([
+    <?php
+        $domains_list = ArrayHelper::map(Domain::find()->all(), 'id', 'domain');
+        $gateways_list = ArrayHelper::map(DrGateways::find()->all(), 'id', 'username');
 
-    'model' => $model,
-    'form' => $form,
-    'columns' => 1,
-    'attributes' => [
+        $inputStyle = "padding-left: 10px; padding-right: 10px; padding-top: 2px; padding-bottom: 10px;";
 
-'groupid'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Groupid...', 'maxlength'=>255]], 
+        $formColumns = [
+            'group_id' => ['attribute'=>'group_id', 'items' => $domains_list, 'type'=> DetailView::INPUT_DROPDOWN_LIST, 'inputContainer' => ['style' => $inputStyle]],
+            'prefix' => ['attribute'=>'prefix', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
+            'timerec' => ['attribute'=>'timerec', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
+            'gwlist' => ['attribute'=>'gwlist', 'items' => $gateways_list, 'type'=> DetailView::INPUT_DROPDOWN_LIST, 'inputContainer' => ['style' => $inputStyle]],
+            'priority' => ['attribute'=>'priority', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
+            'routeid' => ['attribute'=>'routeid', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
+            'attrs' => ['attribute'=>'attrs', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
+            'description' => ['attribute'=>'description', 'type'=> DetailView::INPUT_TEXTAREA, 'inputContainer' => ['style' => $inputStyle]],
+        ];
 
-'prefix'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Prefix...', 'maxlength'=>64]], 
+        $form = ActiveForm::begin([
+            'type' => ActiveForm::TYPE_HORIZONTAL,
+        ]);
 
-'timerec'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Timerec...', 'maxlength'=>255]], 
+        echo DetailView::widget([
+            'model' => $model,
+            'bootstrap' => true,
+            'condensed' => false,
+            'hover' => true,
+            'mode' => DetailView::MODE_EDIT,
+            'panel' => [
+                'heading'=>'Gateway # ' . $model->address,
+                'type' => DetailView::TYPE_INFO,
+            ],
+            'attributes' => $formColumns,
+            'enableEditMode' => true,
+        ]);
 
-'gwlist'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Gwlist...', 'maxlength'=>255]], 
-
-'priority'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Priority...']], 
-
-'routeid'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Routeid...', 'maxlength'=>255]], 
-
-'attrs'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Attrs...', 'maxlength'=>255]], 
-
-'description'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Description...', 'maxlength'=>128]], 
-
-    ]
-
-
-    ]);
-    echo Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']);
-    ActiveForm::end(); ?>
+        echo Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']);
+        ActiveForm::end();
+    ?>
 
 </div>
