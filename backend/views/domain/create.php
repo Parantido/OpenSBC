@@ -7,14 +7,16 @@ use yii\helpers\Html;
  * @var app\models\Domain $model
  */
 
-$this->title = 'Create Domain';
+$this->title = 'Create Tenant';
 $this->params['breadcrumbs'][] = ['label' => 'Domains', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="domain-create">
-    <div class="page-header">
+
+    <!--<div class="page-header">
         <h1><?= Html::encode($this->title) ?></h1>
-    </div>
+    </div>-->
+
     <?= $this->render('_form', [
         'model' => $model,
     ]) ?>

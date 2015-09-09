@@ -1,9 +1,8 @@
 <?php
 
 use yii\helpers\Html;
-use kartik\widgets\ActiveForm;
-use kartik\builder\Form;
-use kartik\datecontrol\DateControl;
+use kartik\form\ActiveForm;
+use kartik\detail\DetailView;
 
 /**
  * @var yii\web\View $this
@@ -14,22 +13,35 @@ use kartik\datecontrol\DateControl;
 
 <div class="domain-form">
 
-    <?php $form = ActiveForm::begin(['type'=>ActiveForm::TYPE_HORIZONTAL]); echo Form::widget([
+    <?php
+        $inputStyle = "padding-left: 10px; padding-right: 10px; padding-top: 2px; padding-bottom: 10px;";
 
-    'model' => $model,
-    'form' => $form,
-    'columns' => 1,
-    'attributes' => [
+        // Define Form Widget Columns
+        $formColumns = [
+            'domain'=>['attribute'=>'grp', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
+            'last_modified'=>['attribute'=>'ip', 'type'=> DetailView::INPUT_DATETIME, 'inputContainer' => ['style' => $inputStyle]],
+        ];
 
-'last_modified'=>['type'=> Form::INPUT_WIDGET, 'widgetClass'=>DateControl::classname(),'options'=>['type'=>DateControl::FORMAT_DATETIME]], 
+        $form = ActiveForm::begin([
+            'type' => ActiveForm::TYPE_HORIZONTAL,
+            'fullSpan' => 12,
+        ]);
 
-'domain'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Domain...', 'maxlength'=>64]], 
+        echo DetailView::widget([
+            'model' => $model,
+            'condensed'=> true,
+            'hover' => true,
+            'mode' => DetailView::MODE_EDIT,
+            'panel' => [
+                'heading'=>'Domain # ' .$model->domain,
+                'type'=>DetailView::TYPE_INFO,
+            ],
+            'attributes' => $formColumns
+        ]);
 
-    ]
+        //echo Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']);
 
-
-    ]);
-    echo Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']);
-    ActiveForm::end(); ?>
+        ActiveForm::end();
+    ?>
 
 </div>

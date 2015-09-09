@@ -43,7 +43,7 @@ class Domain extends \yii\db\ActiveRecord
         return [
             'id' => Yii::t('app', 'ID'),
             'domain' => Yii::t('app', 'Domain'),
-            'last_modified' => Yii::t('app', 'Last Modified'),
+            'last_modified' => Yii::t('app', 'Latest Change'),
         ];
     }
 
