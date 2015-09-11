@@ -39,18 +39,18 @@ class DrGateways extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['cust_id', 'address'], 'required'],
+            ['cust_id', 'required'],
+            [['address'], 'required', function($attribute, $params) {
+                if(!preg_match('/^([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3}):([0-9]{1,5})$/', $this->$attribute)) {
+                    $this->addError($attribute, 'Address should be filled with syntax IP:Port.');
+                }
+            }],
             [['cust_id', 'type', 'strip', 'probe_mode', 'state'], 'integer'],
             [['gwid'], 'string', 'max' => 64],
             [['address', 'socket', 'description'], 'string', 'max' => 128],
             [['pri_prefix'], 'string', 'max' => 16],
             [['attrs'], 'string', 'max' => 255],
-            [['gwid'], 'unique'],
-            [['address'], function($attribute, $params) {
-                if(!preg_match('/^([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3}):([0-9]{1,5})$/', $this->$attribute)) {
-                    $this->addError($attribute, 'Address should be filled with syntax IP:Port.');
-                }
-            }]
+            [['gwid'], 'unique']
         ];
     }
 
@@ -62,7 +62,7 @@ class DrGateways extends \yii\db\ActiveRecord
         return [
             'id' => Yii::t('app', 'ID'),
             'gwid' => Yii::t('app', 'Gwid'),
-            'cust_id' => Yii::t('app', 'Customer'),
+            'cust_id' => Yii::t('app', 'Owner'),
             'type' => Yii::t('app', 'Type'),
             'address' => Yii::t('app', 'Gw Address'),
             'strip' => Yii::t('app', 'Strip'),
