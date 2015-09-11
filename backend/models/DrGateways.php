@@ -39,7 +39,7 @@ class DrGateways extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            ['cust_id', 'required'],
+            [['cust_id'], 'required'],
             [['address'], 'match', 'pattern' => '/^([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3}):([0-9]{1,5})$/', 'Address should be filled with syntax IP:Port.'],
             [['cust_id', 'type', 'strip', 'probe_mode', 'state'], 'integer'],
             [['gwid'], 'string', 'max' => 64],
