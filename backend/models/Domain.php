@@ -40,7 +40,7 @@ class Domain extends \yii\db\ActiveRecord
      * @param $value
      * @return null
      */
-    public function dateOnNull($value) {
+    function dateOnNull($value) {
         if($value === null)
             return date('Y-m-d H:i:s');
 
