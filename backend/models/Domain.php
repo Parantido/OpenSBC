@@ -29,10 +29,22 @@ class Domain extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['last_modified'], 'safe'],
+            [['last_modified'], 'filter', 'filter' => 'dateOnNull'],
             [['domain'], 'string', 'max' => 64],
-            [['domain'], 'unique']
+            [['domain'], 'unique'],
         ];
+    }
+
+    /**
+     * Return MySQL Date&Time on Null value
+     * @param $value
+     * @return null
+     */
+    private function dateOnNull($value) {
+        if($value === null)
+            return date('Y-m-d H:i:s');
+
+        return $value;
     }
 
     /**
