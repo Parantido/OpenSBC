@@ -30,7 +30,7 @@ class Domain extends \yii\db\ActiveRecord
     {
         return [
             [['last_modified'], 'filter', 'filter' => function($value) {
-                return ($value === null) ? date('Y-m-d H:i:s') : $value;
+                return (trim($value) === '') ? date('Y-m-d H:i:s') : $value;
             }],
             [['domain'], 'string', 'max' => 64],
             [['domain'], 'unique'],
