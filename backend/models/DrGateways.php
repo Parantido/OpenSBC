@@ -40,11 +40,7 @@ class DrGateways extends \yii\db\ActiveRecord
     {
         return [
             ['cust_id', 'required'],
-            [['address'], 'required', function($attribute, $params) {
-                if(!preg_match('/^([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3}):([0-9]{1,5})$/', $this->$attribute)) {
-                    $this->addError($attribute, 'Address should be filled with syntax IP:Port.');
-                }
-            }],
+            [['address'], 'match', 'pattern' => '/^([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3}):([0-9]{1,5})$/', 'Address should be filled with syntax IP:Port.'],
             [['cust_id', 'type', 'strip', 'probe_mode', 'state'], 'integer'],
             [['gwid'], 'string', 'max' => 64],
             [['address', 'socket', 'description'], 'string', 'max' => 128],
