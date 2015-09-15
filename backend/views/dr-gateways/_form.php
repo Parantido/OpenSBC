@@ -1,8 +1,8 @@
 <?php
 
-use yii\helpers\Html;
 use app\models\Domain;
 use app\models\Customers;
+use yii\widgets\MaskedInput;
 use yii\helpers\ArrayHelper;
 use kartik\detail\DetailView;
 use kartik\widgets\ActiveForm;
@@ -24,8 +24,11 @@ use kartik\widgets\ActiveForm;
 
         $formColumns = [
             'type' => ['attribute'=>'type', 'items' => [1, 3, 13], 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
-            'address' => ['attribute'=>'address', 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
-            'strip' => ['attribute'=>'strip', 'type'=> DetailView::INPUT_SLIDER, 'value'=>'0', 'widgetOptions' => [
+            'address' => ['attribute'=>'address', 'type'=> DetailView::INPUT_WIDGET, 'widgetOptions'=> [
+                'class' => MaskedInput::classname(),
+                'options' => [ 'mask' => '([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3}):([0-9]{1,5})' ],
+            ], 'inputContainer' => ['style' => $inputStyle]],
+            'strip' => ['attribute'=>'strip', 'type'=> DetailView::INPUT_SLIDER, 'widgetOptions' => [
                 'pluginOptions' => [
                     'min' => 0,
                     'max' => 15,
