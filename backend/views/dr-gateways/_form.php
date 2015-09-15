@@ -23,10 +23,10 @@ use kartik\widgets\ActiveForm;
         $inputStyle = "padding-left: 10px; padding-right: 10px; padding-top: 2px; padding-bottom: 10px;";
 
         $formColumns = [
-            'type' => ['attribute'=>'type', 'items' => [1, 3, 13], 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
+            'type' => ['attribute'=>'type', 'items' => [1, 3, 13], 'type'=> DetailView::INPUT_DROPDOWN_LIST, 'inputContainer' => ['style' => $inputStyle]],
             'address' => ['attribute'=>'address', 'type'=> DetailView::INPUT_WIDGET, 'widgetOptions'=> [
                 'class' => MaskedInput::classname(),
-                'mask' => '([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3}):([0-9]{1,5})',
+                'mask' => 'a{1,3}.a{1,3}.a{1,3}.a{1,3}:a{1,5}',
             ], 'inputContainer' => ['style' => $inputStyle]],
             'strip' => ['attribute'=>'strip', 'type'=> DetailView::INPUT_SLIDER, 'widgetOptions' => [
                 'pluginOptions' => [
