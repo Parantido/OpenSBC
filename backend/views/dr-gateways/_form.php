@@ -26,7 +26,7 @@ use kartik\widgets\ActiveForm;
             'type' => ['attribute'=>'type', 'items' => [1, 3, 13], 'type'=> DetailView::INPUT_DROPDOWN_LIST, 'inputContainer' => ['style' => $inputStyle]],
             'address' => ['attribute'=>'address', 'type'=> DetailView::INPUT_WIDGET, 'widgetOptions'=> [
                 'class' => MaskedInput::classname(),
-                'mask' => '9{1,3}.9{1,3}.9{1,3}.9{1,3}:9{1,5}',
+                'mask' => '[1-5]{1,3}.9{1,3}.9{1,3}.9{1,3}:9{1,5}',
             ], 'inputContainer' => ['style' => $inputStyle]],
             'strip' => ['attribute'=>'strip', 'type'=> DetailView::INPUT_SLIDER, 'widgetOptions' => [
                 'pluginOptions' => [
