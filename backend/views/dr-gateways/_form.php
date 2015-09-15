@@ -26,7 +26,7 @@ use kartik\widgets\ActiveForm;
             'type' => ['attribute'=>'type', 'items' => [1, 3, 13], 'type'=> DetailView::INPUT_TEXT, 'inputContainer' => ['style' => $inputStyle]],
             'address' => ['attribute'=>'address', 'type'=> DetailView::INPUT_WIDGET, 'widgetOptions'=> [
                 'class' => MaskedInput::classname(),
-                'options' => [ 'mask' => '([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3}):([0-9]{1,5})' ],
+                'mask' => '([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3}):([0-9]{1,5})',
             ], 'inputContainer' => ['style' => $inputStyle]],
             'strip' => ['attribute'=>'strip', 'type'=> DetailView::INPUT_SLIDER, 'widgetOptions' => [
                 'pluginOptions' => [
